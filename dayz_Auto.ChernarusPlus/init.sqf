@@ -3,12 +3,12 @@ setTimeForScripts 90;
 call compile preprocessFileLineNumbers "\dz\modulesDayZ\init.sqf";
 if (isServer) then{call compile preprocessFileLineNumbers "scripts\init.sqf";};
 
-DZ_MAX_ZOMBIES = 1200;
-DZ_MAX_ANIMALS = 250;
+DZ_MAX_ZOMBIES = 1800;
+DZ_MAX_ANIMALS = 500;
 DZ_MP_CONNECT = false;
 DB_DEBUG = false; // enable/disable diag_log for fnc_db
 
-// dbSelectHost "https://192.168.1.2/";
+dbSelectHost "https://192.168.1.2/";
 dbSelectShard "123456";
 dbSelectEnviroment "stable";
 dboffline;
@@ -20,18 +20,17 @@ diag_log format ["SCHEDULER: Connected players array init, count %1, %2",count c
 
 call dbLoadPlayer;
 
-// setDate getSystemTime;
+// setDate getSystemTime;									
 // setDate getLocalTime;
 setDate [2016,12,11,10,0]; //yyyy.mm.dd.hh.mm.
+
 _humidity = random 0.8;
 [0,0] setOvercast _humidity;
 simulWeatherSync;
 
-
 call init_spawnZombies;
 sleep 1;
 call init_spawnWildAnimals;
-sleep 1;
 
 setTimeForScripts 0.03;
 

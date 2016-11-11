@@ -6,7 +6,9 @@ _agent = _this select 1;
 
 _key = format ["UID_%1", _uid];
 
-_char = profileNamespace getVariable _key;
+_char = [];
+
+// _char = profileNamespace getVariable [_key,[]];
 
 _inventory = itemsInInventory _agent;
 
@@ -38,12 +40,13 @@ _vars = [
 ["bloodtype","BloodONeg"],
 ["unconscious",true],
 ["damageArray",[]],
-["myNotifiers",[]],
+["myNotifiers",[[],[],[]]],
 ["bleedingsources","[]"],
 ["bleedingLevel",0],
 ["modstates",[]],
 ["modifiers",[]]
 ];
+
 
 _stat = [];	
 { 
@@ -55,16 +58,18 @@ _stat = [];
 /*
  alive 0 | model/type 1 | pos 2 | dir 3 | inv 4 | stats 5 | online 6 
 */
-_char set [0, ((lifeState _agent == "ALIVE") && (not captive _agent))];
-_char set [1, typeOf _agent];
-_char set [2, getPosATL _agent];
-_char set [3, getDir _agent];
-_char set [4, _inventoryStr];
-_char set [5, _stat];
-_char set [6, true];
+_char set [0,((lifeState _agent == "ALIVE") && (not captive _agent))];
+_char set [1,(typeOf _agent)];
+_char set [2,(getPosATL _agent)];
+_char set [3,(getDir _agent)];
+_char set [4,_inventoryStr];
+_char set [5,_stat];
+_char set [6,true];
+
+
+profileNamespace setVariable [_key,_char];
 
 saveProfileNamespace;
-
 
 if (DB_DEBUG) then {
 	diag_log format ["dbSaveToProfile: %1",_char];

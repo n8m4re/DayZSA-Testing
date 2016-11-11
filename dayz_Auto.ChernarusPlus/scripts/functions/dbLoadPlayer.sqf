@@ -133,7 +133,8 @@ idleTime = 5;
 				sleep _wait;
 	
 				_agent = _uid call fnc_dbLoadFromProfile;
-			
+				
+					
 				if (isNull _agent) then 
 				{ 
 					//this should never happen!
