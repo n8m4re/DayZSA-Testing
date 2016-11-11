@@ -8,9 +8,9 @@ DZ_MAX_ANIMALS = 500;
 DZ_MP_CONNECT = false;
 DB_DEBUG = false; // enable/disable diag_log for fnc_db
 
-dbSelectHost "https://192.168.1.2/";
-dbSelectShard "123456";
-dbSelectEnviroment "stable";
+// dbSelectHost "https://192.168.1.2/";
+// dbSelectShard "099999";
+// dbSelectEnviroment "experimental";
 dboffline;
 dbInitServer;
 
@@ -22,8 +22,8 @@ call dbLoadPlayer;
 
 // setDate getSystemTime;									
 // setDate getLocalTime;
-setDate [2016,12,11,10,0]; //yyyy.mm.dd.hh.mm.
-
+// setDate [2016,12,11,10,0]; //yyyy.mm.dd.hh.mm.
+ 
 _humidity = random 0.8;
 [0,0] setOvercast _humidity;
 simulWeatherSync;
