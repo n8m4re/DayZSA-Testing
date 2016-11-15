@@ -47,9 +47,12 @@ void Enf_DbWrite(string in1, string in2)
 		
 	FileHandle file = OpenFile(_dbfile, FILEMODE_WRITE);
 	
-
 	if (file != 0) {
+		
+		strrep(in2, "<null>", " ");
+		
 		FPrintln(file, in2);
+		
 		CloseFile(file);
 	}
 
@@ -72,8 +75,6 @@ string Enf_DbRead(string in1)
 	FGets( file_index,  line_content );
 
 	CloseFile(file_index);
-	
-	strrep(line_content, "<null>", "nil");
 	
 	return line_content;
 	
