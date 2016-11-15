@@ -49,7 +49,7 @@ void Enf_DbWrite(string in1, string in2)
 	
 	if (file != 0) {
 		
-		strrep(in2, "<null>", " ");
+		strrep(in2, "<null>", "[]");
 		
 		FPrintln(file, in2);
 		
