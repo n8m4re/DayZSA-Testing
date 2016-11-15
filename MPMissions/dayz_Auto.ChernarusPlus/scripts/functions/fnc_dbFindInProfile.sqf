@@ -9,8 +9,6 @@ _re = [false,"",[0,0,0],0,[],[],true];
 // _char = profileNamespace getVariable _key;
 
 _c = callFunction ["Enf_DbRead", _key];
-
-diag_log format ["DEBUG-LOAD: %1", _c];
 	
 if (_c != "") then { 
 	
