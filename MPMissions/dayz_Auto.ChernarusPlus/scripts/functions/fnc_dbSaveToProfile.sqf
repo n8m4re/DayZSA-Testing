@@ -67,9 +67,10 @@ _char set [5,_stat];
 _char set [6,true];
 
 
-profileNamespace setVariable [_key,_char];
+// profileNamespace setVariable [_key,_char];
+// saveProfileNamespace;
 
-saveProfileNamespace;
+callFunction ["Enf_DbWrite",_key, format ["%1",_char]];
 
 if (DB_DEBUG) then {
 	diag_log format ["dbSaveToProfile: %1",_char];

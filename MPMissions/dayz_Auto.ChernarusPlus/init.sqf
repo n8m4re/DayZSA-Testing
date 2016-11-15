@@ -61,16 +61,3 @@ onEachFrame {
 };
 
 DZ_MP_CONNECT = true;
-
-/**
-_bool = dbSetQueue uid, +-time  // Increase or decrease queue time for player. playerUID,QueueTime
-dbSelectShard 099999 			// Set custom server shard id.
-dbSelectEnviroment internal		// Set custom server host enviroment.
-dbSpawnAnalyze M4A1 			// Analyze given class spawn ability across map.
-dbSpawnAttempt M4A1				// Attempt to spawn given class anywhere in map.
-dbEvent []						// Register event for game statistics.
-dbEvent							// Register event 
-dbStats []						// Update specific statistical record. 
-dbStats							// Update players statistical record 
-dbAutotest []					// Choose autotest to process. AutoTest processing
-**/
