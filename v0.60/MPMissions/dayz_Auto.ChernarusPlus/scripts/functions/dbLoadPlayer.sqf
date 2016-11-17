@@ -2,7 +2,90 @@ DZ_spawnpass3params = [30.0,70.0,25.0,70.0,0.5,2.0];
 DZ_spawnpointsfile = "spawnpoints_players.bin";
 idleTime = 5;
 
+_createPlayer = 
+{
+	diag_log format["CONNECTION: _id: %1 _uid: %2 _name: %3",_id,_uid,_name];
+	
+	_savedChar = _uid call fnc_dbFindInProfile;
+	_isAlive = _savedChar select 0;
+	_pos = _savedChar select 2;
+	_isOnline = _savedChar select 6;
+	_idleTime = idleTime;
+	// _idleTime = -3; //short timer for internal testing
+	
+	diag_log format["SPAWN: updateServerCameraForNewCLient for existing player"];
+	
+	_id updateServerCameraForNewClient _pos;
 
+	if (!_isOnline) then
+	{
+		diag_log format["WARNING: No connection to HIVE. Player %1 could not be loaded.",_uid];
+	};
+	
+	[_id,_isAlive,_pos,overcast,rain,_isOnline,_idleTime] spawnForClient {
+		titleText ["","BLACK FADED",10e10];
+		diag_log str(_this);
+		playerQueueVM = _this call player_queued;
+	};
+};
+
+
+
+
+//DISCONNECTION PROCESSING
+_disconnectPlayer =
+{
+	if (!isNull _agent) then
+	{	
+		if (vehicle _agent != _agent) then
+		{
+			moveOut _agent;
+		};
+
+		_killed = [0] call dbSavePlayer;
+		
+		diag_log format ["KILLED: %1 ",_killed];
+	
+		_vm = [_uid,_agent,_id,_name,_killed] spawn 
+		{
+			_uid = _this select 0;
+			_agent = _this select 1;
+			_id = _this select 2;
+			_name = _this select 3;
+			_killed = _this select 4;
+
+			_connected = diag_tickTime - (_agent getVariable ["starttime",diag_tickTime]);
+			diag_log format ["DISCONNECT: Player %1 agent %2 after %3 seconds",_uid,_agent,_connected];
+			_hands = itemInHands _agent;
+			// _vs = DBSetQueue [_uid,33]; // 33 sec default queue for disconnecting
+			sleep 1;
+			_agent playAction "SitDown";
+			sleep idleTime;
+
+			if ( !_killed ) then
+			{
+				[1] call dbSavePlayer;
+			};
+
+			//----- simple scheduler part -----
+			diag_log format ["SCHEDULER: Removing disconnecting clientId %1, name %2, UID %3", _id, _name, _uid];
+			_freedPos = connectedPlayers find _id;
+			connectedPlayers set [_freedPos,0];
+			diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
+			//---------------------------------	
+			
+			if (alive _agent) then
+			{
+				deleteVehicle _agent;
+			};			
+		};
+	};
+};
+
+
+// Create player on connection
+onPlayerConnecting _createPlayer;
+onPlayerDisconnected _disconnectPlayer;
 
 // --- clientNew ------------------------------------------------------------------------------------------------------------------------
 
@@ -166,90 +249,3 @@ idleTime = 5;
 		};
 	};
 };
-
-
-
-_createPlayer = 
-{
-	diag_log format["CONNECTION: _id: %1 _uid: %2 _name: %3",_id,_uid,_name];
-	
-	_savedChar = _uid call fnc_dbFindInProfile;
-	_isAlive = _savedChar select 0;
-	_pos = _savedChar select 2;
-	_isOnline = _savedChar select 6;
-	_idleTime = idleTime;
-	// _idleTime = -3; //short timer for internal testing
-	
-	diag_log format["SPAWN: updateServerCameraForNewCLient for existing player"];
-	
-	_id updateServerCameraForNewClient _pos;
-
-	if (!_isOnline) then
-	{
-		diag_log format["WARNING: No connection to HIVE. Player %1 could not be loaded.",_uid];
-	};
-	
-	[_id,_isAlive,_pos,overcast,rain,_isOnline,_idleTime] spawnForClient {
-		titleText ["","BLACK FADED",10e10];
-		diag_log str(_this);
-		playerQueueVM = _this call player_queued;
-	};
-};
-
-
-
-
-//DISCONNECTION PROCESSING
-_disconnectPlayer =
-{
-	if (!isNull _agent) then
-	{	
-		if (vehicle _agent != _agent) then
-		{
-			moveOut _agent;
-		};
-
-		_killed = [0] call dbSavePlayer;
-		
-		diag_log format ["KILLED: %1 ",_killed];
-	
-		_vm = [_uid,_agent,_id,_name,_killed] spawn 
-		{
-			_uid = _this select 0;
-			_agent = _this select 1;
-			_id = _this select 2;
-			_name = _this select 3;
-			_killed = _this select 4;
-
-			_connected = diag_tickTime - (_agent getVariable ["starttime",diag_tickTime]);
-			diag_log format ["DISCONNECT: Player %1 agent %2 after %3 seconds",_uid,_agent,_connected];
-			_hands = itemInHands _agent;
-			// _vs = DBSetQueue [_uid,33]; // 33 sec default queue for disconnecting
-			sleep 1;
-			_agent playAction "SitDown";
-			sleep idleTime;
-
-			if ( !_killed ) then
-			{
-				[1] call dbSavePlayer;
-			};
-
-			//----- simple scheduler part -----
-			diag_log format ["SCHEDULER: Removing disconnecting clientId %1, name %2, UID %3", _id, _name, _uid];
-			_freedPos = connectedPlayers find _id;
-			connectedPlayers set [_freedPos,0];
-			diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
-			//---------------------------------	
-			
-			if (alive _agent) then
-			{
-				deleteVehicle _agent;
-			};			
-		};
-	};
-};
-
-// Create player on connection
-onPlayerConnecting _createPlayer;
-onPlayerDisconnected _disconnectPlayer;
-
