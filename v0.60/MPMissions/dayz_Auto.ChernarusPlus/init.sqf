@@ -2,8 +2,8 @@ setTimeForScripts 90;
 
 call compile preprocessFileLineNumbers "modulesDayZ\init.sqf";
 
-DZ_MAX_ZOMBIES = 1800;
-DZ_MAX_ANIMALS = 500;
+DZ_MAX_ZOMBIES = 500;
+DZ_MAX_ANIMALS = 250;
 DZ_MP_CONNECT = true;
 DB_DEBUG = false; // enable/disable diag_log for fnc_db
 
@@ -11,8 +11,9 @@ connectedPlayers = [];
 for "_x" from 0 to 49 do{connectedPlayers set [_x,0];};
 diag_log format ["SCHEDULER: Connected players array init, count %1, %2",count connectedPlayers, connectedPlayers];
 
-call dbLoadPlayer;
 dboffline;
+call dbLoadPlayer;
+
 // dbSelectHost "https://192.168.1.2/";
 // dbSelectShard "099999";
 // dbSelectEnviroment "experimental";
