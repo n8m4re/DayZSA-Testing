@@ -9,8 +9,14 @@ _stat = [];
 _hands = [];
 _vars = [["health",0],["blood",0],["energy",0],["water",0],["shock",0],["stomach",0],["diet",0],["bodytemperature",0],["heatcomfort",0],["wet",0],["musclecramp",0],["restrainedwith",0],["totalHeatIsolation",0],["totalWeight",0],["bloodtype","BloodONeg"],["unconscious",true],["damageArray",[]],["myNotifiers",[]],["bleedingsources","[]"],["bleedingLevel",0],["modstates",[]],["modifiers",[]]];
 
+
 // diag_log format["itemsInInventory: %1 | itemsInCargo: %2" , (itemsInInventory _agent), (itemsInCargo _agent)];	
 
+// Player stats
+{ _val = _agent getVariable[(_x select 0),(_x select 1)]; _stat set [count _stat, [(_x select 0),_val] ]; } forEach _vars;
+
+
+// Inventory Items
 {
 	_slotName = _x;
 	_item = _agent itemInSlot _slotName;
@@ -23,15 +29,17 @@ _vars = [["health",0],["blood",0],["energy",0],["water",0],["shock",0],["stomach
 		if (_item isKindOf "MagazineBase") then {
 			_qty = (magazineAmmo _item);
 		};
-		_slotArr = [(typeOf _item), (damage _item), _qty, (_item call fnc_getInvItems)];
+		
+		
+		_slotArr = [(typeOf _item), (damage _item), _qty, (_item call fnc_getInvItems), (_item getVariable ["wet",0])];
+		
 		_inventoryStr set [(count _inventoryStr), _slotArr];
 	};
 } forEach itemEnumSlots _agent;
 
 
-{ _val = _agent getVariable[(_x select 0),(_x select 1)]; _stat set [count _stat, [(_x select 0),_val] ]; } forEach _vars;
 
-
+// Hands
 _itemInHands = itemInHands _agent;
 
 if !(isNull _itemInHands) then {
@@ -42,7 +50,7 @@ if !(isNull _itemInHands) then {
 		_qty = (magazineAmmo _itemInHands);
 	};
 		
-	_hands = [(typeOf _itemInHands),(damage _itemInHands),_qty,(_itemInHands call fnc_getInvItems) ];
+	_hands = [(typeOf _itemInHands), (damage _itemInHands), _qty, (_itemInHands call fnc_getInvItems), (_itemInHands getVariable ["wet",0])];
 	
 };
 

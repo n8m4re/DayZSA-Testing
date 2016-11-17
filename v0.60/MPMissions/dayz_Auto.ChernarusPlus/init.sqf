@@ -2,6 +2,12 @@ setTimeForScripts 90;
 
 call compile preprocessFileLineNumbers "modulesDayZ\init.sqf";
 
+dboffline;
+// dbSelectHost "https://192.168.1.2/";
+// dbSelectShard "099999";
+// dbSelectEnviroment "experimental";
+dbInitServer;
+
 DZ_MAX_ZOMBIES = 500;
 DZ_MAX_ANIMALS = 250;
 DZ_MP_CONNECT = true;
@@ -11,25 +17,16 @@ connectedPlayers = [];
 for "_x" from 0 to 49 do{connectedPlayers set [_x,0];};
 diag_log format ["SCHEDULER: Connected players array init, count %1, %2",count connectedPlayers, connectedPlayers];
 
-dboffline;
 call dbLoadPlayer;
-
-// dbSelectHost "https://192.168.1.2/";
-// dbSelectShard "099999";
-// dbSelectEnviroment "experimental";
 // setDate getSystemTime;									
 // setDate getLocalTime;
 // setDate [2016,12,11,10,0]; //yyyy.mm.dd.hh.mm.
-
 _humidity = random 0.8;
 [0,0] setOvercast _humidity;
 simulWeatherSync;
+[] spawn init_spawnZombies;
+[] spawn init_spawnWildAnimals;
 
-call init_spawnZombies;
-sleep 1;
-call init_spawnWildAnimals;
-
-dbInitServer;
 
 setTimeForScripts 0.03;
 index = 0;

@@ -109,7 +109,7 @@ onPlayerDisconnected _disconnectPlayer;
 	_pos = findCachedSpawnPoint [ DZ_spawnpointsfile, DZ_spawnpass3params ];
 	
 	// _pos = [7201.3716, 3013.104,0]; // Cherno
-	// _pos = [7053.37,2771.16,11.8116];
+	 // _pos = [7053.37,2771.16,11.8116];
 	
 	// approximate position of camera needs to be set ASAP (network optimization)
 		diag_log format["SPAWN: updateServerCameraForNewCLient for new player"];

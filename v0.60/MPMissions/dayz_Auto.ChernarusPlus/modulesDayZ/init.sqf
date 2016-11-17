@@ -410,6 +410,7 @@ DZ_BONES = call {
 };
 
 player_queued = 		compile preprocessFileLineNumbers "\dz\modulesDayZ\scripts\player_queued.sqf";
+// player_queued = 		compile preprocessFileLineNumbers "modulesDayZ\scripts\player_queued.sqf";
 
 //functions
 fnc_generateTooltip = compile preprocessFileLineNumbers "\dz\modulesDayZ\scripts\fn_generateTooltip.sqf";
@@ -528,7 +529,7 @@ syncWeather = {
 
 randomValue = {
 private["_min","_max","_v"];
-	hint str _this;
+	// hint str _this;
 	if (count _this == 0) exitWith {-1};
 	//[2,format["Random %1",_this],"colorStatusChannel"] call fnc_playerMessage;
 	_min = (_this select 0);
