@@ -1,6 +1,6 @@
 DZ_spawnpass3params = [30.0,70.0,25.0,70.0,0.5,2.0];
 DZ_spawnpointsfile = "spawnpoints_players.bin";
-idleTime = 5;
+idleTime = 15;
 
 _createPlayer = 
 {
