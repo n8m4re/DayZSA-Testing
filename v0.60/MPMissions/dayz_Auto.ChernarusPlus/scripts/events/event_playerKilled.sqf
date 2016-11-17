@@ -23,7 +23,7 @@ if (DZ_MP_CONNECT) then
 	
 	_uid call fnc_dbDestroyProfile;
 	
-	deleteVehicle _agent;
+	// deleteVehicle _agent;
 	
 };
 
