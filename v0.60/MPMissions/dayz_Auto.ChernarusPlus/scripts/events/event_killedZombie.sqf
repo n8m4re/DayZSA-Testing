@@ -41,3 +41,5 @@ _zombie addeventhandler ["killed",{null = _this spawn event_killedZombie} ];
 _zombie setDir floor(random 360);
 
 diag_log format ["ZOMBIE:: %1 spawned at %2, distance from original spot %3",_zombie, _pos, (_pos distance _last_pos)];
+
+true

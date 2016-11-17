@@ -1,4 +1,3 @@
-
 respawn = "BASE";
 respawndelay = 5;
 onLoadMission="DayZ";

@@ -41,3 +41,5 @@ _wildAnimal addeventhandler ["killed",{null = _this spawn event_killedWildAnimal
 _wildAnimal setDir floor(random 360);
 
 diag_log format ["Wild Animal died: %1, %2 spawned", _type, _wildAnimal];
+
+true

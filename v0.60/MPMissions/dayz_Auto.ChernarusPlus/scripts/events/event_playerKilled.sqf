@@ -11,13 +11,20 @@ _agent setVariable ["timeOfDeath",diag_tickTime];
 //	diag_log format["Disconnected player %1 was killed by %2",typeOf _agent, name _killer];
 //};
 
-//diag_log format["Player %1 was killed by %2 at %3",name _agent, name _killer,diag_tickTime];
-//admin_log format["%1(uid=%2) was KILLED by %3(uid=%4).",name _agent, getPlayerUID _agent, name _killer, getPlayerUID _killer];
+diag_log format["Player %1 was killed by %2 at %3",name _agent, name _killer,diag_tickTime];
+admin_log format["%1(uid=%2) was KILLED by %3(uid=%4).",name _agent, getPlayerUID _agent, name _killer, getPlayerUID _killer];
 
-if (DZ_MP_CONNECT) then
+if (DZ_MP_CONNECT) then 
 {
-//	_agent call dbSavePlayerPrep;
-//	dbServerSaveCharacter _agent;
-// dbDestroyCharacter [_uid, _agent];
+	
+	_agent call dbSavePlayerPrep;
+	
+	[_uid, _agent] call fnc_dbSaveToProfile;
+	
 	_uid call fnc_dbDestroyProfile;
+	
+	deleteVehicle _agent;
+	
 };
+
+true
