@@ -18,6 +18,6 @@ if (DZ_MP_CONNECT) then
 {
 //	_agent call dbSavePlayerPrep;
 //	dbServerSaveCharacter _agent;
-	// dbDestroyCharacter [_uid, _agent];
-	[_uid, _agent] fnc_dbDestroyProfile;
+// dbDestroyCharacter [_uid, _agent];
+	_uid call fnc_dbDestroyProfile;
 };

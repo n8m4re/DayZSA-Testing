@@ -1,29 +1,25 @@
 setTimeForScripts 90;
 
-call compile preprocessFileLineNumbers "\dz\modulesDayZ\init.sqf";
-if (isServer) then{call compile preprocessFileLineNumbers "scripts\init.sqf";};
+call compile preprocessFileLineNumbers "modulesDayZ\init.sqf";
 
 DZ_MAX_ZOMBIES = 1800;
 DZ_MAX_ANIMALS = 500;
-DZ_MP_CONNECT = false;
+DZ_MP_CONNECT = true;
 DB_DEBUG = false; // enable/disable diag_log for fnc_db
-
-// dbSelectHost "https://192.168.1.2/";
-// dbSelectShard "099999";
-// dbSelectEnviroment "experimental";
-dboffline;
-dbInitServer;
 
 connectedPlayers = [];
 for "_x" from 0 to 49 do{connectedPlayers set [_x,0];};
 diag_log format ["SCHEDULER: Connected players array init, count %1, %2",count connectedPlayers, connectedPlayers];
 
 call dbLoadPlayer;
-
+dboffline;
+// dbSelectHost "https://192.168.1.2/";
+// dbSelectShard "099999";
+// dbSelectEnviroment "experimental";
 // setDate getSystemTime;									
 // setDate getLocalTime;
 // setDate [2016,12,11,10,0]; //yyyy.mm.dd.hh.mm.
- 
+
 _humidity = random 0.8;
 [0,0] setOvercast _humidity;
 simulWeatherSync;
@@ -32,8 +28,9 @@ call init_spawnZombies;
 sleep 1;
 call init_spawnWildAnimals;
 
-setTimeForScripts 0.03;
+dbInitServer;
 
+setTimeForScripts 0.03;
 index = 0;
 indexTarget = 50; //indexTarget = 50;
 onEachFrame {	
@@ -59,5 +56,3 @@ onEachFrame {
 		index = 0;
 	};
 };
-
-DZ_MP_CONNECT = true;

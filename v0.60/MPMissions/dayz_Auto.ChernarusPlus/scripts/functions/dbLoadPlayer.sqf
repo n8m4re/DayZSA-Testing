@@ -26,7 +26,7 @@ idleTime = 5;
 	_pos = findCachedSpawnPoint [ DZ_spawnpointsfile, DZ_spawnpass3params ];
 	
 	// _pos = [7201.3716, 3013.104,0]; // Cherno
-	// _pos = [7056.26,2776.66,21.3347];
+	 _pos = [7053.37,2771.16,11.8116];
 	
 	// approximate position of camera needs to be set ASAP (network optimization)
 		diag_log format["SPAWN: updateServerCameraForNewCLient for new player"];
@@ -43,16 +43,21 @@ idleTime = 5;
 	_mySkin = DZ_SkinsArray select _charType;
 	
 	_uid = getClientUID _id;
+	
 	_res1 = _uid call fnc_dbCreateCharInProfile;
 	
 	diag_log format["SERVER: Creating %1 at %2 for clientId %3 (DB result %4)",_mySkin,_pos,_id,_res1];
 	
 	_agent = createAgent [_mySkin,  _pos, [], 0, "NONE"];
+	
 	{null = _agent createInInventory _x} forEach [_myTop,_myBottom,_myShoe];
+
+	// call createFullEquipment;
 	//_v = _agent createInInventory "tool_flashlight";
 	//_v = _agent createInInventory "tool_transmitter";
 	//_v = _agent createInInventory "consumable_battery9V";_v setVariable ["power",30000];
 	//_v = _agent createInInventory "Consumable_Chemlight_White";
+	//_v = _agent createInInventory "FirefighterAxe";
 	
 	_v = _agent createInInventory "Consumable_Roadflare";
 	_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;
@@ -86,7 +91,9 @@ idleTime = 5;
 		_id = owner _agent;
 		_uid = getClientUID _id;
 		_agent setDamage 1;
-		[_uid, _agent] call fnc_dbDestroyProfile;
+		
+		_uid call fnc_dbDestroyProfile;
+		
 		diag_log format ["CLIENT killed character %1 (clientId %2 / Unit %2)",_uid,_id,lifeState _agent];
 		
 		//----- simple scheduler part -----
@@ -129,7 +136,9 @@ idleTime = 5;
 				_wait = idleTime;
 				//_wait = (-_wait) max 0;
 				//_wait = -3; //short timer for internal testing 
+				
 				diag_log format["Player %1 ready to load previous character, waiting %2 seconds",_uid,_wait];
+				
 				sleep _wait;
 	
 				_agent = _uid call fnc_dbLoadFromProfile;
@@ -163,13 +172,16 @@ idleTime = 5;
 _createPlayer = 
 {
 	diag_log format["CONNECTION: _id: %1 _uid: %2 _name: %3",_id,_uid,_name];
+	
 	_savedChar = _uid call fnc_dbFindInProfile;
 	_isAlive = _savedChar select 0;
 	_pos = _savedChar select 2;
 	_isOnline = _savedChar select 6;
 	_idleTime = idleTime;
 	// _idleTime = -3; //short timer for internal testing
+	
 	diag_log format["SPAWN: updateServerCameraForNewCLient for existing player"];
+	
 	_id updateServerCameraForNewClient _pos;
 
 	if (!_isOnline) then

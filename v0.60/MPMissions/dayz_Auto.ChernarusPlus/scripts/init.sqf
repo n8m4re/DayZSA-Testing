@@ -7,6 +7,9 @@ event_assessDamage = 		compile preprocessFileLineNumbers "scripts\events\event_a
 event_killedWildAnimal = 	compile preprocessFileLineNumbers "scripts\events\event_killedWildAnimal.sqf";
 
 //functions
+fnc_getInvItems =			compile preprocessFileLineNumbers "scripts\functions\fnc_getInvItems.sqf";
+fnc_addInvItems =			compile preprocessFileLineNumbers "scripts\functions\fnc_addInvItems.sqf";
+
 fnc_dbDestroyProfile =		compile preprocessFileLineNumbers "scripts\functions\fnc_dbDestroyProfile.sqf";
 fnc_dbFindInProfile =		compile preprocessFileLineNumbers "scripts\functions\fnc_dbFindInProfile.sqf";
 fnc_dbLoadFromProfile =		compile preprocessFileLineNumbers "scripts\functions\fnc_dbLoadFromProfile.sqf";
@@ -17,10 +20,15 @@ tick_environment = 			compile preprocessFileLineNumbers "scripts\functions\tick_
 
 //server
 init_spawnChristmasTrees =	compile preprocessFileLineNumbers "scripts\init\spawnChristmasTrees.sqf";
-init_spawnACar =			compile preprocessFileLineNumbers "scripts\init\spawnACar.sqf";
 
 //initialize
 player_initialize = 		compile preprocessFileLineNumbers "scripts\init\player_initialize.sqf";
+
+// custom
+spawnACar =					compile preprocessFileLineNumbers "scripts\custom\spawnACar.sqf";
+createFullEquipment =		compile preprocessFileLineNumbers "scripts\custom\createFullEquipment.sqf";
+
+
 
 
 init_newPlayer =
@@ -140,7 +148,7 @@ dbSavePlayer =
 	{
 		if (!isNull _agent) then
 		{
-			[_uid, _agent] call fnc_dbDestroyProfile;
+			_uid call fnc_dbDestroyProfile;
 			_agent setDamage 1;
 			_killed = true;
 			diag_log "Saved as dead";
