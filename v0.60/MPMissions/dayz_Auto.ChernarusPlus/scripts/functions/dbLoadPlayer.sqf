@@ -1,6 +1,6 @@
 DZ_spawnpass3params = [30.0,70.0,25.0,70.0,0.5,2.0];
 DZ_spawnpointsfile = "spawnpoints_players.bin";
-idleTime = 8;
+idleTime = 6;
 
 _createPlayer = 
 {
@@ -60,7 +60,7 @@ _disconnectPlayer =
 			// _vs = DBSetQueue [_uid,33]; // 33 sec default queue for disconnecting
 			sleep 1;
 			_agent playAction "SitDown";
-			// sleep idleTime;
+			sleep idleTime;
 
 			if ( !_killed ) then
 			{
@@ -109,7 +109,7 @@ onPlayerDisconnected _disconnectPlayer;
 	_pos = findCachedSpawnPoint [ DZ_spawnpointsfile, DZ_spawnpass3params ];
 	
 	// _pos = [7201.3716, 3013.104,0]; // Cherno
-	//  _pos = [7053.37,2771.16,11.8116];
+	 // _pos = [7053.37,2771.16,11.8116];
 	
 	// approximate position of camera needs to be set ASAP (network optimization)
 		diag_log format["SPAWN: updateServerCameraForNewCLient for new player"];
