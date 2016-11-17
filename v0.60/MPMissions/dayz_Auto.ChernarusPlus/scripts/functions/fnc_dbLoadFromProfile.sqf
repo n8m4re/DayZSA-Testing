@@ -28,7 +28,7 @@ if ( count (_char select 7) != 0 ) then {
 		[_hand, ((_char select 7) select 3)] call fnc_addInvItems;
 	};
 	
-	_hand setVariable ["wet",((_hand select 7) select 4)];
+	_hand setVariable ["wet",((_char select 7) select 4)];
 	
 };
 
