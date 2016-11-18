@@ -1,4 +1,6 @@
-DB_DEBUG = false;
+DB_DEBUG=false; 
+DEBUG_SPAWN=false;
+
 
 //events
 event_playerKilled = compile preprocessFileLineNumbers "scripts\events\event_playerKilled.sqf";
@@ -14,20 +16,25 @@ fnc_dbFindInProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_d
 fnc_dbLoadFromProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbLoadFromProfile.sqf";
 fnc_dbSaveToProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbSaveToProfile.sqf";
 fnc_dbCreateCharInProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbCreateCharInProfile.sqf";
+
+
 dbLoadPlayer = compile preprocessFileLineNumbers "scripts\functions\dbLoadPlayer.sqf";
-tick_environment = compile preprocessFileLineNumbers "scripts\functions\tick_environment.sqf";
 dbSavePlayerPrep = compile preprocessFileLineNumbers "scripts\functions\dbSavePlayerPrep.sqf";
 dbSavePlayer = compile preprocessFileLineNumbers "scripts\functions\dbSavePlayer.sqf";
+tick_environment = compile preprocessFileLineNumbers "scripts\functions\tick_environment.sqf";
+
 
 //initialize
 player_initialize = compile preprocessFileLineNumbers "scripts\init\player_initialize.sqf";
 init_newPlayer = compile preprocessFileLineNumbers "scripts\init\init_newPlayer.sqf";
 init_newBody = compile preprocessFileLineNumbers "scripts\init\init_newBody.sqf";
 
+
 // custom
 spawnACar =	compile preprocessFileLineNumbers "scripts\custom\spawnACar.sqf";
 createFullEquipment = compile preprocessFileLineNumbers "scripts\custom\createFullEquipment.sqf";
 spawnChristmasTrees = compile preprocessFileLineNumbers "scripts\custom\spawnChristmasTrees.sqf";
+
 
 
 
@@ -67,11 +74,12 @@ player_fnc_roundsDistribute = {
 	};
 	*/
 	_magdmg = _this;
-	_max = 	getNumber (configFile >> "CfgMagazines" >> _ammo >> "count");
+	
+	 _max = getNumber (configFile >> "CfgMagazines" >> _ammo >> "count");
 	_sound = getText (configFile >> "CfgMagazines" >> _ammo >> "emptySound");
 	
-	// _max = 	getNumber (configFile >> "CfgVehicles" >> _ammo >> "count");
-	// _sound = getText (configFile >> "CfgVehicles" >> _ammo >> "emptySound");
+	// _max =  getNumber (configFile >> "CfgVehicles" >> _ammo >> "count");
+	 // _sound = getText (configFile >> "CfgVehicles" >> _ammo >> "emptySound");
 	
 	if (_quantity > _max)then{
 		_amam = floor (_quantity/_max);

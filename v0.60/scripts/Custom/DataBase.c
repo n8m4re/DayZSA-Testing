@@ -66,9 +66,14 @@ static bool Enf_DbWrite(string in1, string in2)
 		FPrintln(file, in2);
 		
 		CloseFile(file);
+		
+		return true;
+		
+	} else {
+		
+		return false;
 	}
-
-	return true;
+	
 }
 
 
@@ -77,6 +82,8 @@ static string Enf_DbRead(string in1)
 {
 	string player_alive , file_content;
 	
+	file_content = "";
+	
 	string file_name = "$FILENAME$.db"
 	
 	strrep(file_name, "$FILENAME$", in1);
@@ -84,12 +91,14 @@ static string Enf_DbRead(string in1)
 	player_alive = DB_BASE_DIR + DB_ALIVE_DIR + file_name;
 		
 	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
-
-	FGets(file, file_content);
-
-	CloseFile(file);
 	
-	return file_content;	
+	if (file != 0)  {   
+		FGets(file, file_content);
+		CloseFile(file);
+		return file_content;	
+	} else {
+		return "";	
+	}
 }
 
 

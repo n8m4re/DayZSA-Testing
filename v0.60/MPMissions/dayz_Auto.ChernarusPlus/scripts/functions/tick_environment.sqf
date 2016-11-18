@@ -262,7 +262,7 @@ if !(isNil "_fireplace") then
 };
 
 _heatcomfort = (_heatcomfort_inv_items + _fireplace_temper_coef + (((_airTemperature+_totalHeatIsolation) max 7)*((((_agentSpeed/3.2) max 1) - _playerWet) max 0.1))- ( _playerTemperature + (((worldLightScale max 0) min 2)*5) - ((windSpeed*3) min 6) - ((getPosASL _agent select 2)/100) ) ) min _heatcomfort_max;
-hint str _heatcomfort;
+
 _agent setVariable ["heatcomfort",_heatcomfort];
 
 ProfileStop "tick_environment.sqf";

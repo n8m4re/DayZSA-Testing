@@ -409,8 +409,8 @@ DZ_BONES = call {
 	_bones
 };
 
-player_queued = 		compile preprocessFileLineNumbers "\dz\modulesDayZ\scripts\player_queued.sqf";
-// player_queued = 		compile preprocessFileLineNumbers "modulesDayZ\scripts\player_queued.sqf";
+// player_queued = 		compile preprocessFileLineNumbers "\dz\modulesDayZ\scripts\player_queued.sqf";
+player_queued = 		compile preprocessFileLineNumbers "modulesDayZ\scripts\player_queued.sqf";
 
 //functions
 fnc_generateTooltip = compile preprocessFileLineNumbers "\dz\modulesDayZ\scripts\fn_generateTooltip.sqf";
