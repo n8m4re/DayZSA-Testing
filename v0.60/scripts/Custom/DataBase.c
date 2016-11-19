@@ -38,11 +38,19 @@ static bool Enf_DbDelete(string in1)
 	
 	player_dead = DB_BASE_DIR + DB_DEAD_DIR + GetDate() + "_"  + file_name;
 	
-	CopyFile(player_alive, player_dead); 	
-			
-	DeleteFile(player_alive);
-
-	return true;
+	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
+	
+	if (file != 0)  {   
+	
+		CopyFile(player_alive, player_dead); 	
+				
+		DeleteFile(player_alive);
+		
+		return true;
+		
+	} 
+		
+	return false;
 }
 
 
@@ -68,12 +76,9 @@ static bool Enf_DbWrite(string in1, string in2)
 		CloseFile(file);
 		
 		return true;
-		
-	} else {
-		
-		return false;
-	}
+	} 
 	
+	return false;
 }
 
 
@@ -92,13 +97,17 @@ static string Enf_DbRead(string in1)
 		
 	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
 	
-	if (file != 0)  {   
+	if (file != 0)  {  
+	
 		FGets(file, file_content);
+		
 		CloseFile(file);
+		
 		return file_content;	
-	} else {
-		return "";	
 	}
+	
+	
+	return "";
 }
 
 
