@@ -1,7 +1,7 @@
 respawn = "BASE";
 respawndelay = 5;
 onLoadMission="DayZ";
-OnLoadIntro = "BANGARANG!";
+OnLoadIntro = "BENWOOD!";
 OnLoadIntroTime = false;
 OnLoadMissionTime = false;
 destroyDisconnected = false;
