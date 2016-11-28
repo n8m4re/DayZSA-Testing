@@ -16,24 +16,29 @@ _vars = [
 ["blood",0],
 ["health",0],
 ["shock",0],
+["feet",0],
 ["energy",0],
 ["water",0],
 ["stomach",0],
+["restrainedwith",0],
 ["bodytemperature",0],
 ["heatcomfort",0],
 ["diet",0],
+["kzombies",0],
+["kplayers",0],
+["bleedingsources","[]"],
 ["unconscious",true],
-["mynotifiers",[]],
+["myNotifiers",[]],
 ["damageArray",[]],
 ["wet",0],
 ["musclecramp",0],
-["restrainedwith",0],
-["totalHeatIsolation",0],
+["penalties",0],
 ["totalWeight",0],
-["bleedingsources","[]"],
+["totalHeatIsolation",0],
 ["bleedingLevel",0],
 ["underwater",0]
 ];
+
 
 _items = [[],[]]; // inventory 0 | hands 1
 _state = [[],["","","","","","","","","",""]]; // vars 0 | quickbar 1
