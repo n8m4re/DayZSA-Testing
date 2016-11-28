@@ -19,7 +19,7 @@ if (_this isKindOf "MagazineBase") then {
 		_itemVars set [(count _itemVars),[_x,_var]];
 	 };
  
-} forEach ["power","wet","internalenergy","butane","liquidType","fire"];
+} forEach ["power","wet","internalenergy","butane","liquidType","fire","modifiers"];
 
 
 _itemState set [2,_itemVars];
