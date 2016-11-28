@@ -7,7 +7,7 @@ static string GetDate()
 	
 	GetHourMinuteSecond(hour, minute, second);
 
-	string date = itoal(month, 2) + "-" + itoal(day, 2) + "_" + itoal(hour, 2) + itoal(minute, 2);
+	string date = itoal(month, 2) + "-" + itoal(day, 2) + "-" + itoal(hour, 2) + itoal(minute, 2);
 	
 	return date;
 }
@@ -28,9 +28,9 @@ static void DbCreateDir()
 
 static bool Enf_DbDelete(string in1)
 {
-	string player_alive, player_dead;
+	string player_alive, player_dead, file_name;
 	
-	string file_name = "$FILENAME$.db";
+	file_name = "$FILENAME$.db";
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
@@ -42,8 +42,10 @@ static bool Enf_DbDelete(string in1)
 	
 	if (file != 0)  {   
 	
+		CloseFile(file);
+		
 		CopyFile(player_alive, player_dead); 	
-				
+		
 		DeleteFile(player_alive);
 		
 		return true;
@@ -57,9 +59,9 @@ static bool Enf_DbDelete(string in1)
 
 static bool Enf_DbWrite(string in1, string in2)
 {	
-	string player_alive;
+	string player_alive, file_name;
 	
-	string file_name = "$FILENAME$.db";
+	file_name = "$FILENAME$.db";
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
@@ -68,8 +70,6 @@ static bool Enf_DbWrite(string in1, string in2)
 	FileHandle file = OpenFile(player_alive, FILEMODE_WRITE);
 	
 	if (file != 0) {
-		
-		strrep(in2, "<null>", "[]");
 		
 		FPrintln(file, in2);
 		
@@ -85,11 +85,11 @@ static bool Enf_DbWrite(string in1, string in2)
 
 static string Enf_DbRead(string in1)
 {
-	string player_alive , file_content;
+	string player_alive, file_content, file_name;
 	
 	file_content = "";
 	
-	string file_name = "$FILENAME$.db"
+	file_name = "$FILENAME$.db"
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
@@ -102,6 +102,8 @@ static string Enf_DbRead(string in1)
 		FGets(file, file_content);
 		
 		CloseFile(file);
+		
+		strrep(file_content, "<null>", "false");
 		
 		return file_content;	
 	}

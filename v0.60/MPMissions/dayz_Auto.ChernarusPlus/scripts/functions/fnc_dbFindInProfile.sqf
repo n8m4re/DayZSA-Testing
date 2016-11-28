@@ -1,6 +1,6 @@
-private ["_re","_key"];
-_key = format["UID_%1",_this];
-_re = callFunction ["Enf_DbRead",_key];
+private ["_re"];
+// _re = callFunction ["Enf_DbRead",_key];
+_re = callFunction ["Enf_DbRead",format["%1_CHAR",_this]];
 if ( _re == "") then 
 { [false,"",[0,0,0]] } 
 else 

@@ -2,8 +2,8 @@ setTimeForScripts 90;
 
 call compile preprocessFileLineNumbers "modulesDayZ\init.sqf";
 
-DZ_MAX_ZOMBIES = 500;
-DZ_MAX_ANIMALS = 250;
+DZ_MAX_ZOMBIES = 1200;
+DZ_MAX_ANIMALS = 500;
 DZ_MP_CONNECT = true;
 DEBUG_SPAWN = false;
 DB_DEBUG = false; 
@@ -28,9 +28,9 @@ _humidity = random 0.8;
 simulWeatherSync;
 
 
-[] spawn init_spawnZombies;
+call init_spawnZombies;
 sleep 1;
-[] spawn init_spawnWildAnimals;
+call init_spawnWildAnimals;
 
 dbInitServer;
 

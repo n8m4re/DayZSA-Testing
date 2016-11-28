@@ -8,15 +8,14 @@ _agent setDamage 1;
 
 null = [_uid, _agent] call fnc_dbSaveToProfile;
 
-_key = format ["UID_%1", _uid];
+_re = callFunction ["Enf_DbDelete",format["%1_CHAR",_uid]];
 
-_re = callFunction ["Enf_DbDelete",_key];
+_re = callFunction ["Enf_DbDelete",format["%1_ITEMS",_uid]];
 
-// _uid call fnc_dbCreateCharInProfile;
+_re = callFunction ["Enf_DbDelete",format["%1_STATE",_uid]];
 
 if (DB_DEBUG) then {
-	diag_log format ["dbDestroyProfile: %1", _key];
-	diag_log format ["callFunction result: %1",_re];
+	diag_log format ["dbDestroyProfile: %1", _uid];
 };
 
 true

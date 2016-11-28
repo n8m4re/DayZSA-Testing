@@ -220,18 +220,23 @@ _disconnectPlayer =
 	
 	if (DEBUG_SPAWN) then {
 		call createFullEquipment;
+		_v = _agent createInInventory "tool_flashlight";
+		_v = _agent createInInventory "tool_transmitter";
+		_v = _agent createInInventory "Container_Protector_Small";
+		_v = _agent createInInventory "consumable_battery9V";_v setVariable ["power",30000];
+		_v = _agent createInInventory "Consumable_Chemlight_White";
+		_v = _agent createInInventory "Consumable_Roadflare";
+		_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;
+		
 	} else { 
 	
 		{null = _agent createInInventory _x} forEach [_myTop,_myBottom,_myShoe];
-		//_v = _agent createInInventory "tool_flashlight";
-		//_v = _agent createInInventory "tool_transmitter";
-		//_v = _agent createInInventory "consumable_battery9V";_v setVariable ["power",30000];
-		//_v = _agent createInInventory "Consumable_Chemlight_White";
-		//_v = _agent createInInventory "FirefighterAxe";
 		_v = _agent createInInventory "Consumable_Roadflare";
 		_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;
 	};
 
+	
+	
 	_agent call init_newPlayer;
 	call init_newBody;
 	
