@@ -1,4 +1,4 @@
-// private["_array"];
+private["_array"];
 _agent = _this;
 //save lifestate
 switch (lifeState _agent) do
@@ -16,7 +16,7 @@ switch (lifeState _agent) do
 
 //save damage
 //diag_log format ["Using %1",DZ_PlayerHitpoints];
-/*
+
 _array = [];
 {
 	_v = _agent getHitPointDamage _x;
@@ -28,6 +28,5 @@ _array = [];
 } forEach DZ_PlayerHitpoints;
 _agent setVariable ["damageArray",_array];
 //diag_log format ["Saved %1",_array];
-*/
 
 true

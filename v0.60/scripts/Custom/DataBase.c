@@ -71,9 +71,12 @@ static bool Enf_DbWrite(string in1, string in2)
 	
 	if (file != 0) {
 		
+		strrep(in2, "<null>", "false");
+		
 		FPrintln(file, in2);
 		
 		CloseFile(file);
+		
 		
 		return true;
 	} 
@@ -102,8 +105,6 @@ static string Enf_DbRead(string in1)
 		FGets(file, file_content);
 		
 		CloseFile(file);
-		
-		strrep(file_content, "<null>", "false");
 		
 		return file_content;	
 	}

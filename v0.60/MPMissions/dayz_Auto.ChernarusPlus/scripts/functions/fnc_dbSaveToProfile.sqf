@@ -36,7 +36,8 @@ _vars = [
 ["totalWeight",0],
 ["totalHeatIsolation",0],
 ["bleedingLevel",0],
-["underwater",0]
+["underwater",0],
+["falldamage",false]
 ];
 
 

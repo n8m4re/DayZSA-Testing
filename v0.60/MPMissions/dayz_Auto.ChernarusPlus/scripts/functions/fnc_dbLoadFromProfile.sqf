@@ -23,6 +23,8 @@ if ( (_char select 0) ) then
 
 	// _agent setVectorDirAndUp [_dir,_up];
 	
+	
+	
 	_state = call compile callFunction ["Enf_DbRead",format["%1_STATE",_this]];
 	
 	// Player state
@@ -34,6 +36,15 @@ if ( (_char select 0) ) then
 	if ( (count _vars) > 0 ) then {
 		{ _agent setVariable[(_x select 0),(_x select 1)] } forEach _vars;
 	};
+	
+	/*
+		// break Legs 
+		
+		if ( _agent getVariable ["falldamage",false] ) then {
+			null = breakLegs _agent;
+		};
+	*/
+	
 
 	_items = call compile callFunction ["Enf_DbRead",format["%1_ITEMS",_this]];
 	
@@ -70,11 +81,15 @@ if ( (_char select 0) ) then
 		} forEach (itemsInInventory _agent);
 	};
 	
+
+	
+	
 };
 
 
 if (DB_DEBUG) then {
 	diag_log format ["dbLoadFromProfile: %1",_char];
+	diag_log format ["::::: %1",_agent getVariable "myNotifiers"];
 };
 
 _agent
