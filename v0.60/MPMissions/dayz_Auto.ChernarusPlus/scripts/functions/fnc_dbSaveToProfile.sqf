@@ -82,7 +82,7 @@ _re = callFunction ["Enf_DbWrite",format["%1_STATE",_uid],format["%1",_state]];
 		(_items select 0) set [(count (_items select 0)), [ (typeOf _slotItem),(_slotItem call fnc_getItemState),(_slotItem call fnc_getInvItems)]];
 	};
 	
-} forEach (itemEnumSlots _agent);
+} count (itemEnumSlots _agent);
 
 
 

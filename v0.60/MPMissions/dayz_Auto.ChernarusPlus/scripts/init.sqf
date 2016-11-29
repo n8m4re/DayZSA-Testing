@@ -19,27 +19,22 @@ fnc_dbLoadFromProfile = compile preprocessFileLineNumbers "scripts\functions\fnc
 fnc_dbSaveToProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbSaveToProfile.sqf";
 fnc_dbCreateCharInProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbCreateCharInProfile.sqf";
 
-
 dbLoadPlayer = compile preprocessFileLineNumbers "scripts\functions\dbLoadPlayer.sqf";
 dbSavePlayerPrep = compile preprocessFileLineNumbers "scripts\functions\dbSavePlayerPrep.sqf";
 dbSavePlayer = compile preprocessFileLineNumbers "scripts\functions\dbSavePlayer.sqf";
 tick_environment = compile preprocessFileLineNumbers "scripts\functions\tick_environment.sqf";
-
 
 //initialize
 player_initialize = compile preprocessFileLineNumbers "scripts\init\player_initialize.sqf";
 init_newPlayer = compile preprocessFileLineNumbers "scripts\init\init_newPlayer.sqf";
 init_newBody = compile preprocessFileLineNumbers "scripts\init\init_newBody.sqf";
 
+// PLAYER FUNCTIONS
+player_fnc_roundsDistribute = compile preprocessFileLineNumbers "scripts\player\player_fnc_roundsDistribute.sqf";
+player_fnc_processStomach = compile preprocessFileLineNumbers "scripts\player\player_fnc_processStomach.sqf";
 
 // custom
 spawnACar =	compile preprocessFileLineNumbers "scripts\custom\spawnACar.sqf";
 createFullEquipment = compile preprocessFileLineNumbers "scripts\custom\createFullEquipment.sqf";
 spawnChristmasTrees = compile preprocessFileLineNumbers "scripts\custom\spawnChristmasTrees.sqf";
-
-
-
-// PLAYER FUNCTIONS
-player_fnc_roundsDistribute = compile preprocessFileLineNumbers "scripts\player\player_fnc_roundsDistribute.sqf";
-player_fnc_processStomach = compile preprocessFileLineNumbers "scripts\player\player_fnc_processStomach.sqf";
 

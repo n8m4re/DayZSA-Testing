@@ -34,7 +34,7 @@ if ( (_char select 0) ) then
 	_qb = _state select 1;
 	
 	if ( (count _vars) > 0 ) then {
-		{ _agent setVariable[(_x select 0),(_x select 1)] } forEach _vars;
+		{ _agent setVariable[(_x select 0),(_x select 1)] } count _vars;
 	};
 	
 	/*
@@ -68,7 +68,8 @@ if ( (_char select 0) ) then
 	};
 	
 
-	if ( (count _qb) > 0 ) then {
+	if ( (count _qb) > 0 ) then 
+	{
 		{
 			_itemInInv = _x;
 			{
@@ -78,7 +79,7 @@ if ( (_char select 0) ) then
 				};
 			} forEach _qb;	
 			
-		} forEach (itemsInInventory _agent);
+		} count (itemsInInventory _agent);
 	};
 	
 
@@ -89,7 +90,7 @@ if ( (_char select 0) ) then
 
 if (DB_DEBUG) then {
 	diag_log format ["dbLoadFromProfile: %1",_char];
-	diag_log format ["::::: %1",_agent getVariable "myNotifiers"];
+	// diag_log format ["::::: %1",_agent getVariable "myNotifiers"];
 };
 
 _agent

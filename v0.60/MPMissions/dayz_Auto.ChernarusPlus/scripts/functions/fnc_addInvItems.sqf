@@ -25,6 +25,6 @@ _item = objNull;
 		null = [_item, _inv] call fnc_addInvItems;
 	};
 		
-} forEach (_this select 1);
+} count (_this select 1);
 
 true

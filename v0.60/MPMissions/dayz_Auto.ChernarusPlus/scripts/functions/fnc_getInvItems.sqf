@@ -1,35 +1,28 @@
-private ["_invItems","_cargoItems","_arr","_item","_cargo","_inv","_isInCargo"];
+private ["_arr","_item","_cargo","_isInCargo"];
 
-_invItems = itemsInInventory _this;
-// _cargoItems = itemsInCargo _this;
 _isInCargo = [];
-_inv = [];
 _arr = [];
 {			
-
 	if (_x isKindOf "ContainerBase") then 
 	{
 		_cargo = [];
-		_cargoItems = itemsInCargo _x;
 		
 		{
 			_isInCargo set [(count _isInCargo), _x];
 			_cargo set [(count _cargo), [(typeOf _x),(_x call fnc_getItemState),(_x call fnc_getInvItems)]];
-		} forEach _cargoItems;
+		} count (itemsInCargo _x);
 		
-		_inv = [(typeOf _x),(_x call fnc_getItemState),_cargo];
-		_arr set [(count _arr),_inv];
+		_arr set [(count _arr),[(typeOf _x),(_x call fnc_getItemState),_cargo]];
 		// diag_log format ["isCARGO: %1 | %2 ",(typeOf _x) ,_inv];
 		
 	} else {
 	
 		if !( _x in _isInCargo ) then
 		{	
-			_inv = [(typeOf _x),(_x call fnc_getItemState),(_x call fnc_getInvItems)];
-			_arr set [(count _arr),_inv];
+			_arr set [(count _arr),[(typeOf _x),(_x call fnc_getItemState),(_x call fnc_getInvItems)]];
 			// diag_log format ["notCARGO: %1 | %2 ",(typeOf _x) ,_inv];
 		};
 	};
-} forEach _invItems;
+} count (itemsInInventory _this);
 
 _arr

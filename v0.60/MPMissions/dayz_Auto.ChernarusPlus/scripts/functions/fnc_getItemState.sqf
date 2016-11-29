@@ -19,7 +19,7 @@ if (_this isKindOf "MagazineBase") then {
 		_itemVars set [(count _itemVars),[_x,_var]];
 	 };
  
-} forEach ["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"];
+} count ["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"];
 
 
 _itemState set [2,_itemVars];

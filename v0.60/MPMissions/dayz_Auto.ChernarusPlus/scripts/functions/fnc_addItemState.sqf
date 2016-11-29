@@ -11,6 +11,6 @@ if (_item isKindOf "MagazineBase") then {
 
 _itemVars = _state select 2;
 
-{ _item setVariable [(_x select 0),(_x select 1)] } forEach _itemVars;
+{ _item setVariable [(_x select 0),(_x select 1)] } count _itemVars;
 
 true
