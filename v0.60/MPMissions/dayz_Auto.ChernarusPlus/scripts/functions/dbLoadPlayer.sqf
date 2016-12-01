@@ -125,7 +125,7 @@ _disconnectPlayer =
 {
 	_agent = _this select 1;
 	
-	_agent setVariable["respawningPlayer", true];
+	// _agent setVariable["respawningPlayer", true];
 	 
 	diag_log format ["CLIENT request to respawn %1 (%2)",_this,lifeState _agent];
 	
