@@ -17,14 +17,6 @@ _agent = createAgent [(_char select 1),(_char select 2),[],0,"NONE"];
 
 _agent setPosATL (_char select 2); // _agent setPos (_char select 2);	_agent setposASL (_char select 2);
 
-_agent setDir (_char select 3);
-
-_agent setVectorUp (_char select 4);
-
-_agent setVectorDir (_char select 5);
-
-_agent switchMove (_char select 6); 
-
 // Inventory Items
 [_agent,(_items select 0)] call fnc_addInvItems;
 
@@ -36,6 +28,14 @@ _agent switchMove (_char select 6);
 
 
 // break Legs if ( _agent getVariable ["falldamage",false] ) then {null = breakLegs _agent;};
+
+_agent setDir (_char select 3);
+
+// _agent setVectorUp (_char select 4);
+
+// _agent setVectorDir (_char select 5);
+
+_agent switchMove (_char select 6); 
 
 if (DB_DEBUG) then {diag_log format["dbLoadFromProfile: %1",_char]};
 
