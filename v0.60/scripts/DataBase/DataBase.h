@@ -7,6 +7,6 @@ class DataBase
 	static void CreateDir();
 };
 
-static string Read(string in1);
-static void Write(string in1, string in2);
-static void Delete(string in1);
+static string DataBaseRead(string in1);
+static void DataBaseWrite(string in1, string in2);
+static void DataBaseDelete(string in1);
