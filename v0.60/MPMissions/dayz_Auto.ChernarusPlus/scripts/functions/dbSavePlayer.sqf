@@ -9,7 +9,7 @@ if ((lifeState _agent == "ALIVE")&&(not captive _agent)) then {
 		
 		_agent call dbSavePlayerPrep;
 		
-		null = [_uid, _agent] call fnc_dbSaveToProfile;
+		[_uid, _agent] call fnc_dbSaveToProfile;
 		
 		diag_log "Saved as alive";
 	};
@@ -23,7 +23,7 @@ if ((lifeState _agent == "ALIVE")&&(not captive _agent)) then {
 		
 		_agent setDamage 1;
 		
-		null = [_uid, _agent] call fnc_dbDestroyProfile;
+		[_uid, _agent] call fnc_dbDestroyProfile;
 		
 		diag_log "Saved as dead";
 		

@@ -97,7 +97,7 @@ class FSM
            "					_uid = getClientUID (owner _x);" \n
 		   "					_result = [_uid, _x] call fnc_dbSaveToProfile;" \n
            "				};" \n
-           "			} forEach players;" \n
+           "			} count players;" \n
            "			sleep DZ_SAVE_SLEEP;" \n
            "		};" \n
            "	};" \n

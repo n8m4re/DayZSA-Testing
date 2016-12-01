@@ -23,6 +23,10 @@ _arr = [];
 			// diag_log format ["notCARGO: %1 | %2 ",(typeOf _x) ,_inv];
 		};
 	};
+	
+	
+		// diag_log format ["itemParent: %1",(typeOf (temParent _x)), (typeOf _x)];
+	
 } count (itemsInInventory _this);
 
 _arr

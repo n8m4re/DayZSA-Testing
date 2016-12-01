@@ -238,9 +238,13 @@ if !(isNil "_fireplace") then
 	{
 		_oldtemp = _agent getVariable["bodytemperature",37.7];
 	
-		if(_oldtemp < 37.6)then{
-		temp = 0.004*(2.5 - ((getPosASL _agent) distance (getPosASL _fireplace)));
-		_agent setVariable["bodytemperature",_oldtemp + temp];
+		if(_oldtemp < 37.6)then
+		{
+			_temp = 0.008 * (_fireplace_heat_radius - ((getPosASL _agent) distance (getPosASL _fireplace)));
+			if (_temp > 0) then
+			{
+				_agent setVariable["bodytemperature",_oldtemp + _temp];
+			};
 		};
 		
 		//over-heat
@@ -249,12 +253,12 @@ if !(isNil "_fireplace") then
 			_fireplace_temper_coef = 210; //heatcomformt ~210
 		};
 		//over-heat
-		if (_agent_distance <= 1.0 and _agent_distance > 0.5) exitWith //radius 0.4-0.8m
+		if (_agent_distance <= 1.0 && _agent_distance > 0.5) exitWith //radius 0.4-0.8m
 		{
 			_fireplace_temper_coef = 60;  //heatcomformt ~40-60
 		};
 		//low heat
-		if (_agent_distance <= 2.5 and _agent_distance > 1.0) exitWith //radius 0.8-2.5m
+		if (_agent_distance <= _fireplace_heat_radius && _agent_distance > 1.0) exitWith //radius 0.8-2.5m
 		{
 			_fireplace_temper_coef = 30; //heatcomformt ~10-30
 		};

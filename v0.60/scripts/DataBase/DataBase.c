@@ -1,5 +1,5 @@
 
-static string GetDate()
+static private string DataBase::GetDate()
 {
 	int year, month, day, hour, minute, second;
 	
@@ -13,20 +13,21 @@ static string GetDate()
 }
 
 
-static void DbCreateDir() 
+static void DataBase::CreateDir() 
 {
-	MakeDirectory(DB_BASE_DIR);
+	Print("Database CreateDir");
 	
-	MakeDirectory(DB_BASE_DIR + DB_ALIVE_DIR);
+	MakeDirectory(BASE_DIR);
+
+	MakeDirectory(BASE_DIR + ALIVE_DIR);
+
+	MakeDirectory(BASE_DIR + DEAD_DIR);
 	
-	MakeDirectory(DB_BASE_DIR + DB_DEAD_DIR);
-	
-	Print("DbCreateDir()");
 }
 
 
 
-static bool Enf_DbDelete(string in1)
+static void DataBaseDelete(string in1)
 {
 	string player_alive, player_dead, file_name;
 	
@@ -34,9 +35,9 @@ static bool Enf_DbDelete(string in1)
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
-	player_alive = DB_BASE_DIR + DB_ALIVE_DIR + file_name;
+	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + file_name;
 	
-	player_dead = DB_BASE_DIR + DB_DEAD_DIR + GetDate() + "_"  + file_name;
+	player_dead = DataBase.BASE_DIR + DataBase.DEAD_DIR + DataBase.GetDate() + "_"  + file_name;
 	
 	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
 	
@@ -48,16 +49,16 @@ static bool Enf_DbDelete(string in1)
 		
 		DeleteFile(player_alive);
 		
-		return true;
+		// return true;
 		
 	} 
 		
-	return false;
+	// return false;
 }
 
 
 
-static bool Enf_DbWrite(string in1, string in2)
+static void DataBaseWrite(string in1, string in2)
 {	
 	string player_alive, file_name;
 	
@@ -65,7 +66,7 @@ static bool Enf_DbWrite(string in1, string in2)
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
-	player_alive = DB_BASE_DIR + DB_ALIVE_DIR + file_name;
+	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + file_name;
 			
 	FileHandle file = OpenFile(player_alive, FILEMODE_WRITE);
 	
@@ -76,17 +77,16 @@ static bool Enf_DbWrite(string in1, string in2)
 		FPrintln(file, in2);
 		
 		CloseFile(file);
-		
-		
-		return true;
+
+		// return true;
 	} 
 	
-	return false;
+	// return false;
 }
 
 
 
-static string Enf_DbRead(string in1)
+static string DataBaseRead(string in1)
 {
 	string player_alive, file_content, file_name;
 	
@@ -96,7 +96,7 @@ static string Enf_DbRead(string in1)
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
-	player_alive = DB_BASE_DIR + DB_ALIVE_DIR + file_name;
+	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + file_name;
 		
 	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
 	
@@ -105,12 +105,7 @@ static string Enf_DbRead(string in1)
 		FGets(file, file_content);
 		
 		CloseFile(file);
-		
-		return file_content;	
 	}
 	
-	
-	return "";
+	return file_content;
 }
-
-

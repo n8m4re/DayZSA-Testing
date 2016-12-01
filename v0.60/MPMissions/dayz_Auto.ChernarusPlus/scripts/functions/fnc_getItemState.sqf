@@ -2,7 +2,6 @@ private ["_itemState","_itemVars"];
 
 _itemState = [];
 _itemVars = [];
-
 _itemState set [0, (damage _this)];
 
 if (_this isKindOf "MagazineBase") then {
@@ -10,8 +9,7 @@ if (_this isKindOf "MagazineBase") then {
 } else {
 	_itemState set [1,(quantity _this)];
 };
-
-
+	
 {
 	_var = _this getVariable _x;
 	

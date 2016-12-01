@@ -1,35 +1,31 @@
 DZ_spawnpass3params = [30.0,70.0,25.0,70.0,0.5,2.0];
 DZ_spawnpointsfile = "spawnpoints_players.bin";
 
-idleTime = -10;
+queueTime = -12;
+
 _createPlayer = 
 {
-	//check database
-	
 	diag_log format["CONNECTION: _id: %1 _uid: %2 _name: %3",_id,_uid,_name];
 	
-	//_savedChar = dbFindCharacter _uid;
 	_savedChar = _uid call fnc_dbFindInProfile;
 	_isAlive = _savedChar select 0;
-	// _isOnline = _savedChar select 1;
 	_isOnline = true;
-	// _pos = [_savedChar select 2,_savedChar select 3,_savedChar select 4];
 	_pos = _savedChar select 2;
 	
-	// approximate position of camera needs to be set ASAP (network optimization)
-	diag_log format["SPAWN: updateServerCameraForNewCLient for existing player"];
 	_id updateServerCameraForNewClient _pos;
-
+	
 	if (!_isOnline) then
 	{
 		diag_log format["WARNING: No connection to HIVE. Player %1 could not be loaded.",_uid];
 	};
 	
+
+	// [_id,_isAlive,_pos,overcast,rain,_isOnline,queueTime,player_queued] spawnForClient {
 	//process client
-	[_id,_isAlive,_pos,overcast,rain,_isOnline,idleTime] spawnForClient {
+	[_id,_isAlive,queueTime,player_queued] spawnForClient {
 		titleText ["","BLACK FADED",10e10];
+		player_queued = (_this select 3);
 		playerQueueVM = _this call player_queued;
-		diag_log str(_this);
 	};
 };
 
@@ -40,7 +36,6 @@ _disconnectPlayer =
 	{	
 		if (vehicle _agent != _agent) then
 		{
-			//_agent action ["eject", vehicle _agent]; 
 			moveOut _agent;
 		};
 
@@ -59,14 +54,12 @@ _disconnectPlayer =
 			diag_log format ["DISCONNECT: Player %1 agent %2 after %3 seconds",_uid,_agent,_connected];
 			
 			_hands = itemInHands _agent;
-			// _vs = DBSetQueue [_uid,33]; // 33 sec default queue for disconnecting
+					
+			_wait = queueTime;
 			
-			_agent playAction "SitDown";
-			
-			_wait = idleTime;
 			_wait = (-_wait) max 0;
 			 
-			sleep (_wait - 1);
+			sleep (_wait - 2);
 			
 			if ( !_killed ) then {
 				[1] call dbSavePlayer;
@@ -103,38 +96,27 @@ _disconnectPlayer =
 
 		if ( _uidFound == 0 ) then 
 		{ 
-			// _wait = idleTime;
-			// _wait = (-_wait) max 0;
-			// _wait = 
-			// diag_log format["Player %1 ready to load previous character, waiting %2 seconds",_uid,_wait];
-			// sleep _wait;
-			
-			_agent = _uid call fnc_dbLoadFromProfile;
-
-			// _handler = {
-			
+				
+				sleep 0.5;
+				_agent = _uid call fnc_dbLoadFromProfile;
+				sleep 0.5;
+				
 				if (isNull _agent) then 
 				{ 
 					//this should never happen!
 					diag_log format["Player %1 has no agent on load, kill character",_uid];
 					_id statusChat ["Your character was unable to be loaded and has been reset. A system administrator has been notified. Please reconnect to continue.","ColorImportant"];
-				}
-				else
-				{
+				
+				} else {
+				
 					call init_newBody;
-					
 					//----- simple scheduler part -----
 					diag_log format ["SCHEDULER: Adding ready clientId %1, name %2, UID %3", _id, _name, _uid];
 					_freePos = connectedPlayers find 0;
 					connectedPlayers set [_freePos,_id];	
 					diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
 					//---------------------------------
-					
-					
 				};
-			// }; 
-			
-			// _id dbServerLoadCharacter _handler;
 		};
 	};
 };
@@ -143,16 +125,17 @@ _disconnectPlayer =
 {
 	_agent = _this select 1;
 	
+	_agent setVariable["respawningPlayer", true];
+	 
 	diag_log format ["CLIENT request to respawn %1 (%2)",_this,lifeState _agent];
 	
 	if (lifeState _agent != "ALIVE") then
 	{
-		//get details
 		_id = owner _agent;
 		_uid = getClientUID _id;
 		_agent setDamage 1;
-		// dbDestroyCharacter [_uid, _agent];
-		null = [_uid, _agent] call fnc_dbDestroyProfile;
+		
+		[_uid, _agent] call fnc_dbDestroyProfile;
 		
 		diag_log format ["CLIENT killed character %1 (clientId %2 / Unit %2)",_uid,_id,lifeState _agent];
 		
@@ -164,9 +147,9 @@ _disconnectPlayer =
 		//---------------------------------
 		
 		//process client
-		[_id,false,position _agent,overcast,rain,true,idleTime] spawnForClient { //-3 //short timer for internal testing 
+		[_id,false,queueTime,player_queued] spawnForClient { 
 			titleText ["Respawning... Please wait...","BLACK FADED",10e10];
-			diag_log str(_this);
+			player_queued = (_this select 3);
 			playerQueueVM = _this call player_queued;
 		};
 	};
@@ -177,22 +160,20 @@ _disconnectPlayer =
 	_array = _this select 1;
 	_id = _array select 2;
 	diag_log format ["CLIENT %1 request to spawn %2",_id,_this];
-	_id spawnForClient {statusChat ['testing 1 2 3','']};
 	
-	// _savedChar = dbFindCharacter (getClientUID _id);
+	// _id spawnForClient {statusChat ['testing 1 2 3','']};
+	
 	_savedChar = (getClientUID _id) call fnc_dbFindInProfile;
 	
-	if (_savedChar select 0) exitWith {
-		diag_log format ["CLIENT %1 spawn request rejected as already alive character",_id];
-	};
+	if (_savedChar select 0) exitWith {diag_log format ["CLIENT %1 spawn request rejected as already alive character",_id]};
 		
 	_charType = _array select 0;
 	_charInv = _array select 1;
-
 	_pos = findCachedSpawnPoint [ DZ_spawnpointsfile, DZ_spawnpass3params ];
 	
-	if (DEBUG_SPAWN) then {
-		// _pos = [7201.3716, 3013.104,0]; 
+	if (DEBUG_SPAWN) then 
+	{
+		_pos = [7201.3716, 3013.104,0]; 
 		_pos = [7053.37,2771.16,11.8116]; 
 	};
 	
@@ -211,9 +192,7 @@ _disconnectPlayer =
 	_mySkin = DZ_SkinsArray select _charType;
 	
 	_uid = getClientUID _id;
-	// _res1 = dbCreateCharacter _uid;
 	_res1 = _uid call fnc_dbCreateCharInProfile;
-	
 	diag_log format["SERVER: Creating %1 at %2 for clientId %3 (DB result %4)",_mySkin,_pos,_id,_res1];
 	
 	_agent = createAgent [_mySkin,  _pos, [], 0, "NONE"];
@@ -227,7 +206,6 @@ _disconnectPlayer =
 		_v = _agent createInInventory "Consumable_Chemlight_White";
 		_v = _agent createInInventory "Consumable_Roadflare";
 		_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;
-		
 	} else { 
 	
 		{null = _agent createInInventory _x} forEach [_myTop,_myBottom,_myShoe];
@@ -235,8 +213,6 @@ _disconnectPlayer =
 		_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;
 	};
 
-	
-	
 	_agent call init_newPlayer;
 	call init_newBody;
 	

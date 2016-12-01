@@ -1,7 +1,18 @@
 player_queued_isrunning = true;
 
-_queueTime = _this select 0;
-_newChar = _this select 1;
+_id = _this select 0;
+_alive = _this select 1;
+_queueTime = _this select 2;
+
+
+0 fadeSound 0;
+0 fadeSpeech 0;
+0 fadeMusic 0;
+
+setEVUser -5; //setAperture 10000; //is handled by newui //titleText ["","BLACK OUT",0];
+
+
+simulWeatherSync;
 
 if (_queueTime < 0) then
 {
@@ -15,7 +26,7 @@ if (_queueTime < 0) then
 
 titleText ["Please wait...","BLACK FADED",10e10];
 
-if (_newChar) then
+if (!_alive) then
 {
 	//load data
 	_top = getArray(configFile >> "cfgCharacterCreation" >> "top");
@@ -47,6 +58,20 @@ if (_newChar) then
 			};
 		};
 	} forEach _array;
+	
+	clientNew = [char_type_n,[top_n,bottom_n,shoe_n],_id];
+	publicVariableServer "clientNew";
+	waitUntil {isSceneReady};
+	
+} else {
+
+	clientReady = _id;
+	publicVariableServer "clientReady";		
+	
 };
 
 player_queued_isrunning = false;
+
+5 fadeSound 0;
+5 fadeSpeech 0;
+5 fadeMusic 0;

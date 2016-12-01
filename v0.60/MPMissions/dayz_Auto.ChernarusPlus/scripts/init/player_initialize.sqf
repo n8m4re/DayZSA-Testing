@@ -83,7 +83,6 @@ if (isServer) then
 					_str = _str + format["%1: %2, %3, %4",_x,_stage,_dur,_cool];
 					_i = _i + 1;
 				} forEach (_agent getVariable ["modifiers",[]]);
-				hintSilent _str;
 			};
 			
 			//Ticks
