@@ -1,25 +1,62 @@
-private ["_item","_agent"];
+private ["_agent","_items"];
+
 _agent = _this select 0;
-_item = objNull;
+_items = _this select 1;
+
+if (typeName _items != "ARRAY") exitWith {true}; 
+
 {
-	// _class = _x select 0; _state = _x select 1; _inv = _x select 2;
+
+		_created = 0;
+		_item = objNull;
+		_class = _x select 0;
+		_state = _x select 1;
+		_inv = _x select 2;
 	
-	if ( (_x select 0) isKindOf "AttachmentBase" || (_x select 0) isKindOf "MagazineBase" ) then
-	{
-		_item = _agent createWeaponAttachment (_x select 0);
-		 // diag_log format ["createWeaponAttachment: %1 | %2",(_x select 0) ,itemParent _item];
-	} else {	
+		_att = getArray (configFile >> "cfgWeapons" >> _class >> "attachments");
 	
-		_item = _agent createInInventory (_x select 0);
-		// diag_log format ["createInInventory: %1 | %2",(_x select 0),itemParent _item];
-	};
-	
+		if (_class in _att) then
+		{
+			_item = _agent createWeaponAttachment _class;
+			_created = 1;
+		};
+		
+		if (_class isKindOf "ContainerBase" ) then
+		{
+			_item = _agent createInCargo _class;
+			_created = 1;
+		};
+		
+		if (_created < 1) then
+		{
+			_item = _agent createInInventory _class;
+		};	
+		
+		if ( _agent isKindOf "SurvivorBase" ) then 
+		{
+			if (isNull _item) then
+			{
+				_item = _class createVehicle (getPosATL _agent);
+				_item setPosATL (getPosATL _agent);
+			};	
+		};		
+			
+		if !(isNull _item) then 
+		{	
+			if (typeName _state == "ARRAY") then 
+			{
+				[_item,_state] call fnc_addItemState;
+			};
+				
+			if (typeName _inv == "ARRAY") then 
+			{
+				[_item,_inv] call fnc_addInvItems;
+			};
+		};
+
+		
 	// diag_log format ["INVENTORY: %1 | %2 | %3",_class,_item,(_x select 2)];
 	
-	[_item, (_x select 1)] call fnc_addItemState;
-	
-	if ( (count (_x select 2)) > 0 ) then {[_item, (_x select 2)] call fnc_addInvItems;};
-		
-} forEach (_this select 1);
+} forEach _items;
 
 true

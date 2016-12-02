@@ -10,7 +10,7 @@ _arr = [];
 		{
 			_isInCargo set [(count _isInCargo), _x];
 			_cargo set [(count _cargo), [(typeOf _x),(_x call fnc_getItemState),(_x call fnc_getInvItems)]];
-		} count (itemsInCargo _x);
+		} forEach (itemsInCargo _x);
 		
 		_arr set [(count _arr),[(typeOf _x),(_x call fnc_getItemState),_cargo]];
 		// diag_log format ["isCARGO: %1 | %2 ",(typeOf _x) ,_inv];
@@ -27,6 +27,6 @@ _arr = [];
 	
 		// diag_log format ["itemParent: %1",(typeOf (temParent _x)), (typeOf _x)];
 	
-} count (itemsInInventory _this);
+} forEach (itemsInInventory _this);
 
 _arr
