@@ -12,6 +12,11 @@ _storeVariables = ["power","wet","internalenergy","butane","liquidType","fire","
 	_var = _this getVariable _x;
 	 if !(isNil "_var") then 
 	 {
+		if ( _x == "message") then 
+		{
+			_var = toArray _var;
+		};
+		
 		_itemVars set [(count _itemVars),[_x,_var]];
 	 };
 } forEach _storeVariables;

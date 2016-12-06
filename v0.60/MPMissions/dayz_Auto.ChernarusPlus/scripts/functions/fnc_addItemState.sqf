@@ -14,7 +14,7 @@ _state = _this select 1;
 	// _storeVariables = getArray (configFile >> "CfgVehicles" >> typeOf _item >> "storeVariables"); 
 
 	null = call 
-	{
+	{ 
 		if ( _item isKindOf "MagazineBase" ) exitWith 
 		{
 			_item setMagazineAmmo (_state select 1);
@@ -29,7 +29,17 @@ _state = _this select 1;
 	{
 		if ( count _itemVars > 0 ) then 
 		{ 
-			{ _item setVariable [(_x select 0),(_x select 1)] } forEach _itemVars;
+
+			{ 
+				_var = _x select 1;
+				if ( (_x select 0) == "message") then 
+				{
+					_var = toString _var;
+				};
+				
+				_item setVariable [(_x select 0),_var];
+			
+			} forEach _itemVars;
 		};
 	};
 	
