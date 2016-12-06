@@ -31,7 +31,7 @@ static void DataBaseDelete(string in1)
 {
 	string player_alive, player_dead, file_name;
 	
-	file_name = "$FILENAME$.db";
+	file_name = "$FILENAME$.sqf";
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
@@ -62,7 +62,7 @@ static void DataBaseWrite(string in1, string in2)
 {	
 	string player_alive, file_name;
 	
-	file_name = "$FILENAME$.db";
+	file_name = "$FILENAME$.sqf";
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
@@ -72,7 +72,7 @@ static void DataBaseWrite(string in1, string in2)
 	
 	if (file != 0) {
 		
-		strrep(in2, "<null>", "false");
+		strrep(in2, "<null>", "[]");
 		
 		FPrintln(file, in2);
 		
@@ -92,7 +92,7 @@ static string DataBaseRead(string in1)
 	
 	file_content = "";
 	
-	file_name = "$FILENAME$.db"
+	file_name = "$FILENAME$.sqf"
 	
 	strrep(file_name, "$FILENAME$", in1);
 	

@@ -200,9 +200,9 @@ _disconnectPlayer =
 	if (DEBUG_SPAWN) then {
 		call createFullEquipment;
 		_v = _agent createInInventory "tool_flashlight";
+		_v = _v createInInventory "consumable_battery9V";_v setVariable ["power",30000];	
 		_v = _agent createInInventory "tool_transmitter";
 		_v = _agent createInInventory "Container_Protector_Small";
-		_v = _agent createInInventory "consumable_battery9V";_v setVariable ["power",30000];
 		_v = _agent createInInventory "Consumable_Chemlight_White";
 		_v = _agent createInInventory "Consumable_Roadflare";
 		_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;

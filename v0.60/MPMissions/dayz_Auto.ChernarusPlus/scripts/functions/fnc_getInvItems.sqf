@@ -1,32 +1,48 @@
-private ["_arr","_item","_cargo","_isInCargo"];
+private ["_agent","_item","_arr","_itemsInInventory","_itemsInCargo","_isIn"];
 
-_isInCargo = [];
+_agent = _this select 0;
+
+_item = _this select 1;
+
+if (isNull _agent) exitWith {true};
+
 _arr = [];
-{			
-	if (_x isKindOf "ContainerBase") then 
+
+_itemsInInventory = itemsInInventory _item;
+
+_itemsInCargo = itemsInCargo _item;
+
+_isIn = 
+{
+	if ( count _itemsInInventory > 0 && count _itemsInCargo > 0 ) exitWith 
 	{
-		_cargo = [];
-		
-		{
-			_isInCargo set [(count _isInCargo), _x];
-			_cargo set [(count _cargo), [(typeOf _x),(_x call fnc_getItemState),(_x call fnc_getInvItems)]];
-		} forEach (itemsInCargo _x);
-		
-		_arr set [(count _arr),[(typeOf _x),(_x call fnc_getItemState),_cargo]];
-		// diag_log format ["isCARGO: %1 | %2 ",(typeOf _x) ,_inv];
-		
-	} else {
-	
-		if !( _x in _isInCargo ) then
-		{	
-			_arr set [(count _arr),[(typeOf _x),(_x call fnc_getItemState),(_x call fnc_getInvItems)]];
-			// diag_log format ["notCARGO: %1 | %2 ",(typeOf _x) ,_inv];
-		};
+		_itemsInCargo
+	};
+
+	if ( count _itemsInInventory > 0 && count _itemsInCargo == 0 ) exitWith 
+	{
+		_itemsInInventory
 	};
 	
-	
-		// diag_log format ["itemParent: %1",(typeOf (temParent _x)), (typeOf _x)];
-	
-} forEach (itemsInInventory _this);
+	_itemsInInventory
+};
 
-_arr
+{
+	_class = typeOf _x;
+	
+	_state = _x call fnc_getItemState;
+	
+	null = call 
+	{
+	
+		if (count (itemsInInventory _x) > 0  || count (itemsInCargo _x) > 0 ) exitWith 
+		{
+			_arr set [(count _arr),[_class,_state,([_agent,_x] call fnc_getInvItems)]];
+		};
+		
+		_arr set [(count _arr),[_class,_state,[]]];	
+	};
+
+} forEach ( call _isIn ); 
+
+_arr	

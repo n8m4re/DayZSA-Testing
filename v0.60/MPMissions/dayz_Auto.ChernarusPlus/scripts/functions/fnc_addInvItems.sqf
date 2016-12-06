@@ -1,37 +1,27 @@
-private ["_agent","_items"];
+private ["_agent","_items","_attVehicles","_attWeapons"];
 
 _agent = _this select 0;
+
 _items = _this select 1;
 
-if (typeName _items != "ARRAY") exitWith {true}; 
+if (isNull _agent) exitWith {true};
+
+if !(typeName _items == "ARRAY") exitWith {true};
+
+ _attVehicles = [];
+// {_attVehicles set [count _attVehicles,toLower _x]} forEach getArray (configFile >> "CfgVehicles" >> typeOf _agent >> "attachments");
+ _attWeapons = [];
+// {_attWeapons set [count _attWeapons,toLower _x]} forEach getArray (configFile >> "cfgWeapons" >> typeOf _agent >> "attachments");
+// diag_log format ["_agent: %1 | _class: %2 ", typeOf _agent, _class ]; 
+
 
 {
-
-		_created = 0;
-		_item = objNull;
 		_class = _x select 0;
 		_state = _x select 1;
 		_inv = _x select 2;
+			
+		_item = _agent createInInventory _class;
 	
-		_att = getArray (configFile >> "cfgWeapons" >> _class >> "attachments");
-	
-		if (_class in _att) then
-		{
-			_item = _agent createWeaponAttachment _class;
-			_created = 1;
-		};
-		
-		if (_class isKindOf "ContainerBase" ) then
-		{
-			_item = _agent createInCargo _class;
-			_created = 1;
-		};
-		
-		if (_created < 1) then
-		{
-			_item = _agent createInInventory _class;
-		};	
-		
 		if ( _agent isKindOf "SurvivorBase" ) then 
 		{
 			if (isNull _item) then
@@ -39,23 +29,17 @@ if (typeName _items != "ARRAY") exitWith {true};
 				_item = _class createVehicle (getPosATL _agent);
 				_item setPosATL (getPosATL _agent);
 			};	
-		};		
-			
-		if !(isNull _item) then 
-		{	
-			if (typeName _state == "ARRAY") then 
-			{
-				[_item,_state] call fnc_addItemState;
-			};
-				
-			if (typeName _inv == "ARRAY") then 
-			{
-				[_item,_inv] call fnc_addInvItems;
-			};
+		};	
+		
+		if ( count _state > 0 ) then 
+		{ 
+			 [_item,_state] call fnc_addItemState; 
 		};
 
-		
-	// diag_log format ["INVENTORY: %1 | %2 | %3",_class,_item,(_x select 2)];
+		if ( count _inv > 0 ) then 
+		{
+			[_item,_inv] call fnc_addInvItems;
+		};
 	
 } forEach _items;
 
