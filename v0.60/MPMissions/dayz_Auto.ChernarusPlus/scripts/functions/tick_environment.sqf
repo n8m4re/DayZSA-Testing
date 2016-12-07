@@ -88,7 +88,7 @@ else
 			_delta = rain * 0.2;
 		};
 	};
-	/*
+
 	//THIS SHOULD BE removed completely imo
 	if ( !(isNull (_agent itemInSlot "Feet")) ) then
 	{
@@ -118,7 +118,7 @@ else
 			};
 		};
 	};
-	*/
+
 	
 };
 
