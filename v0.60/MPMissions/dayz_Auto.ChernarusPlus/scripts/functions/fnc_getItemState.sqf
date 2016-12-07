@@ -10,7 +10,7 @@ _storeVariables = call
 {			
 		if (_item isKindOf "CfgVehicles" ) exitWith 
 		{
-			_storeVariables = getArray (configFile >> "CfgVehicles" >> typeOf _item >> "storeVariables")
+			getArray (configFile >> "CfgVehicles" >> typeOf _item >> "storeVariables")
 		};
 
 		if (_item isKindOf "cfgWeapons" ) exitWith 
