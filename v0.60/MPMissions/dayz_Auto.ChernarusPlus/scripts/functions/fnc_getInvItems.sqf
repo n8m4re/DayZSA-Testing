@@ -12,37 +12,25 @@ _itemsInInventory = itemsInInventory _item;
 
 _itemsInCargo = itemsInCargo _item;
 
-_isIn = 
+// diag_log format ["_item: %1",_item];
+// diag_log format ["_itemsInInventory: %1",_itemsInInventory];
+// diag_log format ["_itemsInCargo: %1",_itemsInCargo];
+
+_isIn = call 
 {
-	if ( count _itemsInInventory > 0 && count _itemsInCargo > 0 ) exitWith 
+	if ( (count _itemsInCargo) < (count _itemsInInventory) && !( (count _itemsInCargo) <= 0) ) exitWith 
 	{
 		_itemsInCargo
 	};
-
-	if ( count _itemsInInventory > 0 && count _itemsInCargo == 0 ) exitWith 
-	{
-		_itemsInInventory
-	};
-	
 	_itemsInInventory
 };
 
+if !( count _isIn <= 0) then 
 {
-	_class = typeOf _x;
-	
-	_state = _x call fnc_getItemState;
-	
-	null = call 
 	{
-	
-		if (count (itemsInInventory _x) > 0  || count (itemsInCargo _x) > 0 ) exitWith 
-		{
-			_arr set [(count _arr),[_class,_state,([_agent,_x] call fnc_getInvItems)]];
-		};
-		
-		_arr set [(count _arr),[_class,_state,[]]];	
-	};
-
-} forEach ( call _isIn ); 
+		_arr set [(count _arr),[(typeOf _x),(_x call fnc_getItemState),([_agent,_x] call fnc_getInvItems)]];
+	} forEach _isIn; 
+};
 
 _arr	
+

@@ -6,19 +6,52 @@ _itemVars = [];
 
 if (isNull _this) exitWith {true};
 
-_storeVariables = ["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"];
-
-{
-	_var = _this getVariable _x;
-	 if !(isNil "_var") then 
-	 {
-		if ( _x == "message") then 
+_storeVariables = call 
+{			
+		if (_item isKindOf "CfgVehicles" ) exitWith 
 		{
-			_var = toArray _var;
+			_storeVariables = getArray (configFile >> "CfgVehicles" >> typeOf _item >> "storeVariables")
+		};
+
+		if (_item isKindOf "cfgWeapons" ) exitWith 
+		{
+			getArray (configFile >> "cfgWeapons" >> typeOf _item >> "storeVariables")
 		};
 		
-		_itemVars set [(count _itemVars),[_x,_var]];
-	 };
+		if (_item isKindOf "CfgMagazines" ) exitWith 
+		{
+			getArray (configFile >> "CfgMagazines" >> typeOf _item >> "storeVariables")
+		};
+	["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"]
+};
+	
+	
+	
+{
+	_var = _this getVariable _x;
+	
+	 if !(isNil "_var") then 
+	 {
+			null = call 
+				{
+					
+					if ( _x == "message") exitWith 
+					{
+							
+							_mid = _this getVariable ["message-id",(floor random 200)];
+							
+							null = callFunction ["DataBaseWrite",format["%1_MESSAGE-%2",_uid,_mid],_var];
+												
+							_this setVariable ["message-id",_mid];
+							
+							_itemVars set [(count _itemVars),[_x,_mid]];
+					};
+					
+					_itemVars set [(count _itemVars),[_x,_var]];
+				};
+		};
+	 
+	 
 } forEach _storeVariables;
 
 

@@ -20,13 +20,15 @@ _agent = createAgent [(_char select 1),(_char select 2),[],0,"NONE"];
 { _agent setVariable[(_x select 0),(_x select 1)] } forEach _playerVars;
 
 // Inventory Items
-[_agent,(_items select 0)] call fnc_addInvItems;
+null = [_agent,(_items select 0)] call fnc_addInvItems;
+
+null = _agent moveToHands objNull;
 
 // Hands
-[_agent,(_items select 1)] call fnc_addHandsItem;
+null = [_agent,(_items select 1)] call fnc_addHandsItem;
 
 // Quickbar 
-[_agent,_quickBar] call fnc_addQuickBarItems;
+null = [_agent,_quickBar] call fnc_addQuickBarItems;
 
 // break Legs if ( _agent getVariable ["falldamage",false] ) then {null = breakLegs _agent;};
 

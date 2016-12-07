@@ -48,7 +48,7 @@ if (isServer) then
 		_message = _paper getVariable ["message",""];
 		
 		//make the message
-		if (((strlen _message) + (strlen _text)) < 100) then
+		if (((strlen _message) + (strlen _text)) < 250) then
 		{
 			_messageAdd = format["%3<BR/><BR/><t color='%2'>%1</t>",_text,_color,_message];	
 			_paper setVariable ["message",_messageAdd];

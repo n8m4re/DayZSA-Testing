@@ -31,14 +31,19 @@ _state = _this select 1;
 		{ 
 
 			{ 
+			
 				_var = _x select 1;
+				
 				if ( (_x select 0) == "message") then 
 				{
-					_var = toString _var;
+					
+					_item setVariable ["message-id",_var];
+					_var = callFunction ["DataBaseRead",format ["%1_MESSAGE-%2",_uid,_var]];
 				};
 				
 				_item setVariable [(_x select 0),_var];
 			
+				
 			} forEach _itemVars;
 		};
 	};

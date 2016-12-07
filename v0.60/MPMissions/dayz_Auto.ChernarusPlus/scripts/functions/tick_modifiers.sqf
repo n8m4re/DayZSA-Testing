@@ -13,7 +13,7 @@ private["_person","_modifiers","_modstates","_client","_i","_cleanup","_client",
 
 //calculate tick
 _person = _this;
-_modifiers = _person getVariable ["modifiers",[]];
+_modifiers = _person getVariable["modifiers",[]];
 _modstates = _person getVariable["modstates",[]];
 
 // don't do damage for dead bodies
