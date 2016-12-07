@@ -1,4 +1,4 @@
-private ["_itemState","_itemVars","_storeVariables"];
+private ["_itemState","_itemVars","_storeVariables","_mid"];
 
 _itemState = [];
 
@@ -38,7 +38,7 @@ _storeVariables = call
 					if ( _x == "message") exitWith 
 					{
 							
-							_mid = _this getVariable ["message-id",(floor random 200)];
+							_mid = _this getVariable ["message-id",(floor random 999)+(floor random 999)];
 							
 							null = callFunction ["DataBaseWrite",format["%1_MESSAGE-%2",_uid,_mid],_var];
 												
