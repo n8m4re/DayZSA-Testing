@@ -32,11 +32,16 @@ player_initialize = compile preprocessFileLineNumbers "scripts\init\player_initi
 init_newPlayer = compile preprocessFileLineNumbers "scripts\init\init_newPlayer.sqf";
 init_newBody = compile preprocessFileLineNumbers "scripts\init\init_newBody.sqf";
 
+init_spawnZombies = 	compile preprocessFileLineNumbers "scripts\init\spawnZombies.sqf";
+init_spawnWildAnimals = 	compile preprocessFileLineNumbers "scripts\init\spawnWildAnimals.sqf";
+
 //events
 event_playerKilled = compile preprocessFileLineNumbers "scripts\events\event_playerKilled.sqf";
 event_killedZombie = compile preprocessFileLineNumbers "scripts\events\event_killedZombie.sqf";
 event_assessDamage = compile preprocessFileLineNumbers "scripts\events\event_assessDamage.sqf";
 event_killedWildAnimal = compile preprocessFileLineNumbers "scripts\events\event_killedWildAnimal.sqf";
+event_fnc_sendActvMessage = compile preprocessFileLineNumbers "scripts\events\event_fnc_sendActvMessage.sqf";
+event_fnc_advanceModifier = compile preprocessFileLineNumbers "scripts\events\event_fnc_advanceModifier.sqf";
 
 // PLAYER FUNCTIONS
 player_fnc_roundsDistribute = compile preprocessFileLineNumbers "scripts\player\player_fnc_roundsDistribute.sqf";
@@ -51,3 +56,41 @@ spawnChristmasTrees = compile preprocessFileLineNumbers "scripts\custom\spawnChr
 // client
 player_queued = compile preprocessFileLineNumbers "modulesDayZ\scripts\player_queued.sqf";
 
+
+
+
+// Temporary function for send notifiers to Enfusion Script
+fnc_sendNotifiersToEnfusion = 
+{	
+	private["_myNtfrs","_color","_item","_i","_name"];
+	_myNtfrs = [];
+	_color = [];
+	
+	_myNtfrs = _this getVariable ["myNotifiers",[]];	
+		
+	for [{_i=0},{ _i < count _myNtfrs},{_i=_i+1}] do
+	{
+		_item = _myNtfrs select _i;		
+		
+		if !( isNil "_item" ) then
+		{		
+			if (typeName _item == "ARRAY") then
+			{
+				_name = "";
+				_color = [0,0,0];
+				_alpha = 0;
+			
+				if ( count _item > 0 ) then
+				{	
+					_name = _item select 0;
+					_color = _item select 1;
+					_alpha = 0.5;
+				};
+				
+				_this callMethod ["SQF_PlayerNotifierAdd", _name, _i, _color select 0, _color select 1, _color select 2, _alpha];				
+			};
+		};
+	};
+	
+	_this callMethod ["SQF_PlayerNotifierSend"];
+};
