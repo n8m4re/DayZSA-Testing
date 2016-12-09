@@ -1,4 +1,4 @@
-private ["_uid","_char","_key","_agent","_state","_hands","_slots","_quickbar","_inventory"];
+private ["_uid","_char","_key","_agent","_state","_hands","_slots","_quickbar"];
 
 _uid = _this;
 
@@ -37,13 +37,10 @@ _agent switchMove (_char select 6);
 null = [_agent,_hands] call fnc_addHandsItem;
 
 // INVENTORY
-_inventory = [];
 {
 	_re = call compile callFunction ["DataBaseRead",_x,_key];
-	_inventory set [(count _inventory),_re];
-	sleep 0.01;
+	null = [_agent,[_re]] call fnc_addInvItems;
 } forEach _slots;
-null = [_agent,_inventory] call fnc_addInvItems;
 
 // QUICKBAR
 null = [_agent,_quickbar] call fnc_addQuickBarItems;
