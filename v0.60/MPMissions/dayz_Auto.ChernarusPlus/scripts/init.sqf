@@ -35,8 +35,8 @@ init_spawnZombies = compile preprocessFileLineNumbers "scripts\init\spawnZombies
 init_spawnWildAnimals = compile preprocessFileLineNumbers "scripts\init\spawnWildAnimals.sqf";
 
 //cooking
-cooking_cookingProcess = compile preprocessFileLineNumbers "server\scripts\cooking\cooking_cookingProcess.sqf";
-cooking_processFood = compile preprocessFileLineNumbers "server\scripts\cooking\cooking_processFood.sqf";
+cooking_cookingProcess = compile preprocessFileLineNumbers "scripts\cooking\cooking_cookingProcess.sqf";
+cooking_processFood = compile preprocessFileLineNumbers "scripts\cooking\cooking_processFood.sqf";
 cooking_manageActions = compile preprocessFileLineNumbers "scripts\cooking\cooking_manageActions.sqf";
 //fireplace
 fireplace_manageFire = compile preprocessFileLineNumbers "scripts\cooking\fireplace_manageFire.sqf";
