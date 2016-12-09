@@ -7,6 +7,8 @@ _arr = [];
 	if ( typeName _items != "ARRAY" ) exitWith {true};
 
 	{
+		private["_in"];
+		
 		_in = _items find (typeOf _x);
 		if !( (typeOf _x) in _arr ) then
 		{

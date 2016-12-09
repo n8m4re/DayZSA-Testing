@@ -22,7 +22,8 @@ _storeVariables = call
 		{
 			getArray (configFile >> "CfgMagazines" >> typeOf _item >> "storeVariables")
 		};
-	["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"]
+		
+		["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"]
 };
 	
 	

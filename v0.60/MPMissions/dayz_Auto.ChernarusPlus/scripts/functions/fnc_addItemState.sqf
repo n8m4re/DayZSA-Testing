@@ -29,15 +29,15 @@ _state = _this select 1;
 	{
 		if ( count _itemVars > 0 ) then 
 		{ 
-
 			{ 
-			
+				private ["_var"];
+				
 				_var = _x select 1;
 				
 				if ( (_x select 0) == "message") then 
 				{
-					
 					_item setVariable ["message-id",_var];
+					
 					_var = callFunction ["DataBaseRead",format ["%1_MESSAGE-%2",_uid,_var]];
 				};
 				

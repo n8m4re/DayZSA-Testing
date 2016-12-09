@@ -11,6 +11,8 @@ if !(typeName _items == "ARRAY") exitWith {true};
 // diag_log format ["_obj: %1 | _class: %2 ", typeOf _obj, _class ]; 
 
 {
+		private["_class","_state","_inv","_item"];
+		
 		_class = _x select 0;
 		_state = _x select 1;
 		_inv = _x select 2;

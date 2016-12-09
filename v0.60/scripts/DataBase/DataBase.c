@@ -27,66 +27,68 @@ static void DataBase::CreateDir()
 
 
 
-static void DataBaseDelete(string in1)
+static void DataBaseDelete(string in1, string in2)
 {
-	string player_alive, player_dead, file_name;
+	string player_alive, player_dead, file_name, date;
+	
+	MakeDirectory(DataBase.BASE_DIR + DataBase.DEAD_DIR + in2);
 	
 	file_name = "$FILENAME$.sqf";
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
-	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + file_name;
+	date = DataBase.GetDate();
 	
-	player_dead = DataBase.BASE_DIR + DataBase.DEAD_DIR + DataBase.GetDate() + "_"  + file_name;
+	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + in2 + "\\" + file_name;
+	
+	player_dead = DataBase.BASE_DIR + DataBase.DEAD_DIR + in2 + "\\" + file_name;
 	
 	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
 	
 	if (file != 0)  {   
-	
-		CloseFile(file);
 		
+		CloseFile(file);
+
 		CopyFile(player_alive, player_dead); 	
 		
 		DeleteFile(player_alive);
-		
-		// return true;
-		
 	} 
-		
-	// return false;
 }
 
 
 
-static void DataBaseWrite(string in1, string in2)
+static void DataBaseWrite(string in1, string in2, string in3)
 {	
 	string player_alive, file_name;
-	
+
 	file_name = "$FILENAME$.sqf";
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
-	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + file_name;
+	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + in2 + "\\" + file_name;
 			
 	FileHandle file = OpenFile(player_alive, FILEMODE_WRITE);
 	
+
 	if (file != 0) {
 		
-		strrep(in2, "<null>", "[]");
+		strrep(in3, "<null>","\"" + "\"");
 		
-		FPrintln(file, in2);
+		FPrintln(file, in3);
 		
 		CloseFile(file);
 
-		// return true;
-	} 
+	}  else {
+		
+		MakeDirectory(DataBase.BASE_DIR + DataBase.ALIVE_DIR + in2 );
+		
+	}
 	
-	// return false;
 }
 
 
 
-static string DataBaseRead(string in1)
+static string DataBaseRead(string in1, string in2)
 {
 	string player_alive, file_content, file_name;
 	
@@ -96,7 +98,7 @@ static string DataBaseRead(string in1)
 	
 	strrep(file_name, "$FILENAME$", in1);
 	
-	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + file_name;
+	player_alive = DataBase.BASE_DIR + DataBase.ALIVE_DIR + in2 + "\\" + file_name;
 		
 	FileHandle file = OpenFile(player_alive, FILEMODE_READ);
 	
@@ -109,3 +111,8 @@ static string DataBaseRead(string in1)
 	
 	return file_content;
 }
+
+
+
+
+

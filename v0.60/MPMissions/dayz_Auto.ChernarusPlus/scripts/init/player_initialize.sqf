@@ -69,6 +69,7 @@ if (isServer) then
 		
 		while {alive _this} do 
 		{
+			/*
 			if (debug) then
 			{
 				//if (_agent != player) exitWith {};
@@ -84,11 +85,12 @@ if (isServer) then
 					_i = _i + 1;
 				} forEach (_agent getVariable ["modifiers",[]]);
 			};
+			*/
 			
 			//Ticks
-			//_agent call tick_modifiers;	//records changes in any modifiers
-			//_agent call tick_states;		//records changes in any states
-			//_agent call tick_environment; //records changes due to environment
+			// _this call tick_modifiers;	//records changes in any modifiers
+			// _this call tick_states;		//records changes in any states
+			// _this call tick_environment; //records changes due to environment
 			
 			//death
 			if (_agent getVariable ["health",DZ_HEALTH] <= 0) then

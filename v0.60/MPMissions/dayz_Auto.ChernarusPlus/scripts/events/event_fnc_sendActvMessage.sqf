@@ -35,9 +35,11 @@ private["_messages","_style","_output","_statement","_print"];
 	};
 	
 	_notifier = getArray (_cfgStage >> "notifier");
-	if (count _notifier > 0) then	//send new notifier
+	if (count _notifier > 2) then	//send new notifier
 	{	
-
+		//debug
+		// _debTxt = format["DEBUG: _notifier: %1 _myNotifiers: %2;",_notifier,_myNotifiers];
+		// [_person,_debTxt,"ColorAction"] call fnc_playerMessage;	diag_log _debTxt;
 		_myNotifiers set [_notifier select 0,[_notifier select 1,_notifier select 2]];
 		_person setVariable ["myNotifiers",_myNotifiers];		
 		_publishNotifiers = true;
