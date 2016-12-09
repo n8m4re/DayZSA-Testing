@@ -43,6 +43,6 @@ _agent setDir (_char select 3);
 _agent switchMove (_char select 6); 
 
 
-if (DB_DEBUG) then {diag_log format["dbLoadFromProfile: %1",_char]};
+if (DB_DEBUG) then {diag_log format[":::: dbLoadFromProfile: %1",_char]};
 
 _agent

@@ -19,8 +19,6 @@ _createPlayer =
 		diag_log format["WARNING: No connection to HIVE. Player %1 could not be loaded.",_uid];
 	};
 	
-
-	// [_id,_isAlive,_pos,overcast,rain,_isOnline,queueTime,player_queued] spawnForClient {
 	//process client
 	[_id,_isAlive,queueTime,player_queued] spawnForClient {
 		titleText ["","BLACK FADED",10e10];
@@ -122,15 +120,15 @@ _disconnectPlayer =
 "respawn" addPublicVariableEventHandler
 {
 	_agent = _this select 1;
-	
+	_id = owner _agent;
+	_uid = getClientUID _id;
+		
 	// _agent setVariable["respawningPlayer", true];
 	 
 	diag_log format ["CLIENT request to respawn %1 (%2)",_this,lifeState _agent];
 	
 	if (lifeState _agent != "ALIVE") then
 	{
-		_id = owner _agent;
-		_uid = getClientUID _id;
 		_agent setDamage 1;
 		
 		[_uid, _agent] call fnc_dbDestroyProfile;
@@ -155,23 +153,26 @@ _disconnectPlayer =
 
 "clientNew" addPublicVariableEventHandler
 {
+
 	_array = _this select 1;
 	_id = _array select 2;
+	
 	diag_log format ["CLIENT %1 request to spawn %2",_id,_this];
 	
-	// _id spawnForClient {statusChat ['testing 1 2 3','']};
-	
-	_savedChar = (getClientUID _id) call fnc_dbFindInProfile;
+	_uid = getClientUID _id;
+	_savedChar = _uid call fnc_dbFindInProfile;
 	
 	if (_savedChar select 0) exitWith {diag_log format ["CLIENT %1 spawn request rejected as already alive character",_id]};
 		
 	_charType = _array select 0;
+	
 	_charInv = _array select 1;
+	
 	_pos = findCachedSpawnPoint [ DZ_spawnpointsfile, DZ_spawnpass3params ];
 	
 	if (DEBUG_SPAWN) then 
 	{
-		_pos = [7201.3716, 3013.104,0]; 
+		// _pos = [7201.3716, 3013.104,0]; 
 		_pos = [7053.37,2771.16,11.8116]; 
 	};
 	

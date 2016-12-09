@@ -1,6 +1,6 @@
 ProfileStart "event_assessDamage.sqf";
 //if ((_this select 1)!="") exitWith {0};
-private["_agent","_damage","_source","_bone","_base","_items","_slots"];
+private["_agent","_damage","_source","_bone","_base","_items","_slots","_array"];
 
 //select bone to damage
 _agent = _this select 0;
@@ -290,7 +290,7 @@ _hit = _agent getHitpointDamage _hitpoint;
 _total = (_hit + _damage) min 1;
 _agent setHitPointDamage [_hitpoint,_total];
 
-/*
+
 _array = [];
 _array resize 0;
 {
@@ -302,7 +302,7 @@ _array resize 0;
 	};
 } forEach DZ_PlayerHitpoints;
 _agent setVariable ["damageArray",_array];
-*/
+
 
 //_strc = format["Hit: %1; Selection: %2; Damage: %3; Slots: %4; Items: %5; Hitpoint: %6 (total: %7)",_bone,_selection,_damage,_slots,_items,_hitpoint,_total];
 //statusChat [_strc,""];

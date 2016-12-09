@@ -74,6 +74,6 @@ null = [_uid, _items] spawn
 // null = callFunction ["DataBaseWrite",format["%1_ITEMS",_uid],format["%1",_items]];
 // if (DB_DEBUG) then {diag_log format ["Save ITEMS: %2  | UID: %1",_uid,_items]};
 
-if (DB_DEBUG) then {diag_log format ["dbSaveToProfile: %1 DONE!",_char]};
+if (DB_DEBUG) then {diag_log format [":::: dbSaveToProfile: %1 DONE!",_char]};
 
 true

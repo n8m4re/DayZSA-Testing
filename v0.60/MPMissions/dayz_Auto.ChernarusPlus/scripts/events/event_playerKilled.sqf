@@ -6,7 +6,8 @@ _uid = getClientUID (owner _agent);
 _agent setVariable ["bleedingsources","[]"];
 _agent setVariable ["timeOfDeath",diag_tickTime];
 
-// respawningPlayer = _agent getVariable["respawningPlayer", false];
+respawningPlayer = _agent getVariable["respawningPlayer", false];
+
 //if (_uid == "") exitWith
 //{
 //	diag_log format["Disconnected player %1 was killed by %2",typeOf _agent, name _killer];
