@@ -2,7 +2,7 @@ private ["_uid","_agent","_vars","_char","_quickbar","_state","_items","_itemInH
 
 _uid = _this select 0;
 _agent = _this select 1;
-_vars = [["unconscious",true],["modifiers",[]],["modstates",[]],["myNotifiers",[]],["damageArray",[]],["exposure",0],["bloodtype","BloodONeg"],["blood",0],["health",0],["shock",0],["feet",0],["energy",0],["water",0],["stomach",0],["restrainedwith",0],["bodytemperature",0],["heatcomfort",0],["diet",0],["bleedingsources","[]"],["wet",0],["musclecramp",0],["penalties",0],["totalWeight",0],["totalHeatIsolation",0],["bleedingLevel",0],["underwater",0],["falldamage",false],["kzombies",0],["kplayers",0]];
+_vars = [["unconscious",true],["modifiers",[]],["modstates",[]],["myNotifiers",[]],["damageArray",[]],["exposure",0],["bloodtype","BloodONeg"],["blood",0],["health",0],["shock",0],["feet",0],["energy",0],["water",0],["stomach",0],["restrainedwith",0],["bodytemperature",0],["heatcomfort",0],["diet",0],["bleedingsources",[]],["wet",0],["musclecramp",0],["penalties",0],["totalWeight",0],["totalHeatIsolation",0],["bleedingLevel",0],["underwater",0],["falldamage",false],["kzombies",0],["kplayers",0]];
 _char = [false,"",[0,0,0]];
 _quickbar = ["","","","","","","","",""];
 _state = []; // vars 0 | quickbar 1
@@ -30,7 +30,21 @@ null = [_uid, _char] spawn
 
 
 // Save STATE
-{ _state set [(count _state),[(_x select 0),(_agent getVariable [(_x select 0),(_x select 1)])]] } forEach _vars;
+{ 
+	private ["_name","_value"];
+	
+	_name = _x select 0;
+
+	_value = _agent getVariable [_name,_x select 1];
+	
+	if (_name == "bleedingsources" ) then 
+	{
+		_value = call compile (_agent getVariable [_name,_x select 1]);
+	};
+
+	_state set [(count _state),[_name,_value]]; 
+
+} forEach _vars;
 
 null = [_uid, _state] spawn 
 {

@@ -31,7 +31,21 @@ _agent switchMove (_char select 6);
 // null = _agent moveToHands objNull;
 
 // STATE
-{_agent setVariable[(_x select 0),(_x select 1)]} forEach _state;
+{
+	private ["_name","_value"];
+	
+	_name = _x select 0;
+	
+	_value =  _x select 1;
+	
+	if (_name == "bleedingsources" ) then 
+	{	
+		_value = str(_x select 1);
+	};
+
+	_agent setVariable[_name,_value];
+
+} forEach _state;
 
 // HANDS
 null = [_agent,_hands] call fnc_addHandsItem;

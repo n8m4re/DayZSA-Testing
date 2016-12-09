@@ -19,9 +19,8 @@ _myNtfrs = _this getVariable ["myNotifiers",[]];
 				_name = _x select 0;
 				_color = _x select 1;
 				_alpha = 0.5;
-				
-				_this callMethod ["SQF_PlayerNotifierAdd", _name, _forEachIndex, _color select 0, _color select 1, _color select 2, _alpha];
 			};
+			_this callMethod ["SQF_PlayerNotifierAdd", _name, _forEachIndex, _color select 0, _color select 1, _color select 2, _alpha];
 		};
 	};
 
