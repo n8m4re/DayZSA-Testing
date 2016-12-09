@@ -2,8 +2,8 @@ setTimeForScripts 90;
 
 call compile preprocessFileLineNumbers "modulesDayZ\init.sqf";
 
-DZ_MAX_ZOMBIES = 1200;
-DZ_MAX_ANIMALS = 500;
+DZ_MAX_ZOMBIES = 1500;
+DZ_MAX_ANIMALS = 250;
 DZ_MP_CONNECT = true;
 DEBUG_SPAWN = false;
 DB_DEBUG = false; 

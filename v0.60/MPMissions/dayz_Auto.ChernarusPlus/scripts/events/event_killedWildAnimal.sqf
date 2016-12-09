@@ -31,7 +31,9 @@ _pos = RespawnDeadNPC [ _last_pos, _Z_spawnparams ];
 
 // @TODO: randomize zombie type (commented out because of some errors )
 //_rnd = floor(random(count DZ_ZombieTypes));
-_animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey","Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
+// _animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey","Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
+_animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey"];
+
 
 _types = getArray( configFile >> "CfgSpawns" >> "typesWildAnimals");
 {_types set [count _types,_x]} forEach _animalArray;

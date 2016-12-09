@@ -6,7 +6,9 @@ _totalAreas = ((count _cfgSpawns) - 1);
 _posZ = 0;
 _maxBase = getNumber ( _cfgSpawns >> "WildAnimalBase" >> "maxSpawn");
 
-_animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey","Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
+// _animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey","Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
+_animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey"];
+
 
 //real zombie spawning
 fnc_spawnWildAnimal = 
@@ -14,6 +16,8 @@ fnc_spawnWildAnimal =
 	DZ_TotalAnimals = DZ_TotalAnimals + 1;
 	_type = _this select 0;
 	_wildAnimal = createAgent [_type, _this select 1,[],0,"CAN_COLLIDE"];
+	diag_log format["SPAWN ANIMAL: %1 | POS: %2", _type,_this select 1];
+	
 	
 	if ( _type in _animalArray) then 
 	{
@@ -164,7 +168,5 @@ _lastPopulatedArea = "All";
 	};
 } forEach _spawnsArray;
 
-//write the results into *.rpt file
-_text = format["Global locations: %1, SPAWNED %2 WILD ANIMALS, LAST POPULATED AREA: %3", _posZ, DZ_TotalAnimals, _lastPopulatedArea ];
-//hint _text;
-diag_log _text;
+
+diag_log format["Global locations: %1, SPAWNED %2 WILD ANIMALS, LAST POPULATED AREA: %3", _posZ, DZ_TotalAnimals, _lastPopulatedArea ];
