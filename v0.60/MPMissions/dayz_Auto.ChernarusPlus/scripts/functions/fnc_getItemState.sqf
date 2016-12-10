@@ -41,8 +41,8 @@ _storeVariables = call
 							
 							_mid = _this getVariable ["message-id",(floor random 999)+(floor random 999)];
 							
-							null = callFunction ["DataBaseWrite",format["%1_MESSAGE-%2",_uid,_mid],_var];
-												
+							null = callFunction ["DataBaseWrite",format ["MESSAGE-%1",_mid],format ["UID_%1",_uid],_var];
+
 							_this setVariable ["message-id",_mid];
 							
 							_itemVars set [(count _itemVars),[_x,_mid]];

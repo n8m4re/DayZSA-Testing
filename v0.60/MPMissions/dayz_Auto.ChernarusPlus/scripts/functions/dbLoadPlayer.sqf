@@ -106,6 +106,7 @@ _disconnectPlayer =
 				} else {
 				
 					call init_newBody;
+			
 					//----- simple scheduler part -----
 					diag_log format ["SCHEDULER: Adding ready clientId %1, name %2, UID %3", _id, _name, _uid];
 					_freePos = connectedPlayers find 0;

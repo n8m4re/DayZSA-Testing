@@ -5,8 +5,8 @@ diag_log format["Recording player %1 with %2",name _agent,_uid];
 
 //move player into body
 _id selectPlayer _agent;
-_agent call player_initialize;	
 
+_agent call player_initialize;
 
 [_id] spawnForClient compile "player execFSM '\dz\modulesDayZ\fsm\brain_player_client.fsm'";
 
@@ -25,4 +25,45 @@ myNotifiers = _agent getVariable ["myNotifiers",[]];
 
 _id publicVariableClient "myNotifiers";	
 
+
+
+
+/*
+{
+	if !(isNull _x) then 
+	{
+		if( _x isKindOf "MagazineBase" ) then 
+		{	
+			if(isClass(configFile >> "CfgWeapons" >> typeOf (itemParent _x))) then 
+			{
+				null = moveToGround _x;
+				// null = moveToGround (itemParent _x);
+				null = (itemParent _x) moveToInventory _x;
+				//null = _agent moveToInventory (itemParent _x);
+			};		
+		};
+	};
+
+} forEach (itemsInInventory _agent);
+
+
+if !(isNull (itemInHands _agent)) then 
+{
+	{
+		if !(isNull _x) then
+		{ 
+			if( _x isKindOf "MagazineBase" ) then 
+			{	
+				if(isClass(configFile >> "CfgWeapons" >> typeOf (itemParent _x)) then 
+				{
+					null = moveToGround _x;
+					// null = moveToGround (itemParent _x);
+					null = (itemParent _x) moveToInventory _x;
+					// null = _agent moveToHands (itemParent _x);
+				};		
+			};
+		};
+	} forEach itemsInInventory (itemInHands _agent);
+};
+*/
 true

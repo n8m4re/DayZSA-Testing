@@ -47,18 +47,22 @@ _agent switchMove (_char select 6);
 
 } forEach _state;
 
+
+// INVENTORY
+_inventory = [];
+{
+	_re = call compile callFunction ["DataBaseRead",_x,_key];
+	_inventory set [(count _inventory),_re];
+} forEach _slots;
+null = [_agent,_inventory] call fnc_addInvItems;
+
 // HANDS
 null = [_agent,_hands] call fnc_addHandsItem;
 
-// INVENTORY
-{
-	_re = call compile callFunction ["DataBaseRead",_x,_key];
-	null = [_agent,[_re]] call fnc_addInvItems;
-} forEach _slots;
-
 // QUICKBAR
 null = [_agent,_quickbar] call fnc_addQuickBarItems;
-
+			
+		
 if (DB_DEBUG) then {diag_log format[":::: dbLoadFromProfile: %1",_char]};
 
 _agent

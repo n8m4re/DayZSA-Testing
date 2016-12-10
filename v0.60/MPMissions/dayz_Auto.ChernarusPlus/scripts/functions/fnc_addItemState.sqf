@@ -37,8 +37,7 @@ _state = _this select 1;
 				if ( (_x select 0) == "message") then 
 				{
 					_item setVariable ["message-id",_var];
-					
-					_var = callFunction ["DataBaseRead",format ["%1_MESSAGE-%2",_uid,_var]];
+					_var = callFunction ["DataBaseRead",format ["MESSAGE-%1",_var],format ["UID_%1",_uid]];
 				};
 				
 				_item setVariable [(_x select 0),_var];

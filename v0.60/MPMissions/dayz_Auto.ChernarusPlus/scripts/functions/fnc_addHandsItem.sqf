@@ -8,6 +8,7 @@ if (isNull _obj) exitWith {true};
 
 if !(typeName _itemInHand == "ARRAY") exitWith {true}; 
 
+if !( count _itemInHand > 0 ) exitWith {true}; 
 
 _hand = _obj createInHands (_itemInHand select 0);
 
@@ -30,8 +31,6 @@ if !(isNull _hand) then
 	{ 
 		[_hand, (_itemInHand select 2)] call fnc_addInvItems;
 	};
-	
-
 };
 
 
