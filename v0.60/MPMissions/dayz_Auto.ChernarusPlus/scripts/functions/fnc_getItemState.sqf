@@ -6,26 +6,25 @@ _itemVars = [];
 
 if (isNull _this) exitWith {true};
 
-_storeVariables = call 
-{			
-		if (_item isKindOf "CfgVehicles" ) exitWith 
+_storeVariables = _this call 
+	{	
+		if (_this isKindOf "CfgVehicles" ) exitWith 
 		{
-			getArray (configFile >> "CfgVehicles" >> typeOf _item >> "storeVariables")
+			getArray (configFile >> "CfgVehicles" >> typeOf _this >> "storeVariables")
 		};
 
-		if (_item isKindOf "cfgWeapons" ) exitWith 
+		if (_this isKindOf "cfgWeapons" ) exitWith 
 		{
-			getArray (configFile >> "cfgWeapons" >> typeOf _item >> "storeVariables")
+			getArray (configFile >> "cfgWeapons" >> typeOf _this >> "storeVariables")
 		};
 		
-		if (_item isKindOf "CfgMagazines" ) exitWith 
+		if (_this isKindOf "CfgMagazines" ) exitWith 
 		{
-			getArray (configFile >> "CfgMagazines" >> typeOf _item >> "storeVariables")
+			getArray (configFile >> "CfgMagazines" >> typeOf _this >> "storeVariables")
 		};
 		
-		["power","wet","internalenergy","butane","liquidType","fire","modifiers","note","ropemat","lidopen","busy","filledWith","color","message","ison","food_stage","temperature","used","state"]
-};
-	
+		["ammo","power","wet","internalenergy","liquidType","modifiers","food_stage","message","color","butane","fire","note","ropemat","lidopen","busy","filledWith","ison","temperature","used","state"]
+	};
 	
 	
 {
@@ -33,8 +32,7 @@ _storeVariables = call
 	
 	 if !(isNil "_var") then 
 	 {
-			null = call 
-				{
+			null = call {
 					
 					if ( _x == "message") exitWith 
 					{
@@ -51,24 +49,23 @@ _storeVariables = call
 					_itemVars set [(count _itemVars),[_x,_var]];
 				};
 		};
-	 
-	 
 } forEach _storeVariables;
 
 
 _itemState set [0,(damage _this)];
-	
-	null = call 
+
+null = call {
+
+	if (_this isKindOf "MagazineBase") exitWith 
 	{
-		if (_this isKindOf "MagazineBase") exitWith 
-		{
-			_itemState set [1,(magazineAmmo _this)];
-		};
-	
-		_itemState set [1,(quantity _this)];
+		_itemState set [1,(magazineAmmo _this)];
 	};
+	
+	_itemState set [1,(quantity _this)];	
+};
 
 _itemState set [2,_itemVars];
 
-
 _itemState
+
+

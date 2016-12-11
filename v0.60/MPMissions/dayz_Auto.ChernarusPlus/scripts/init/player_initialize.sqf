@@ -67,7 +67,7 @@ if (isServer) then
 	{
 		_agent = _this;
 		
-		while {alive _this} do 
+		while {alive _agent} do 
 		{
 			/*
 			if (debug) then

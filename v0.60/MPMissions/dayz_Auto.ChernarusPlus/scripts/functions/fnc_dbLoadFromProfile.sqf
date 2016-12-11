@@ -48,6 +48,10 @@ _agent switchMove (_char select 6);
 } forEach _state;
 
 
+// HANDS
+null = [_agent,_hands] call fnc_addHandsItem;
+
+
 // INVENTORY
 _inventory = [];
 {
@@ -56,13 +60,12 @@ _inventory = [];
 } forEach _slots;
 null = [_agent,_inventory] call fnc_addInvItems;
 
-// HANDS
-null = [_agent,_hands] call fnc_addHandsItem;
+
 
 // QUICKBAR
 null = [_agent,_quickbar] call fnc_addQuickBarItems;
+
 			
-		
 if (DB_DEBUG) then {diag_log format[":::: dbLoadFromProfile: %1",_char]};
 
 _agent

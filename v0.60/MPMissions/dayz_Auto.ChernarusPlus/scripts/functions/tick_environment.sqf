@@ -89,37 +89,6 @@ else
 		};
 	};
 
-	//THIS SHOULD BE removed completely imo
-	if ( !(isNull (_agent itemInSlot "Feet")) ) then
-	{
-		_speed = speed _agent;
-		if ( _speed > 0.5 ) then
-		{
-			_shoes = _agent itemInSlot "Feet";
-			if ( damage _shoes < 1 ) then
-			{
-				_rough = getNumber (configFile >> "CfgSurfaces" >> surfaceType getPosASL _agent >> "rough");
-				_hp = getNumber (configFile >> "CfgVehicles" >> typeOf _shoes >> "armor");
-				if (_speed < 5) then
-				{
-					_rough = _rough * 0.25;
-				};
-				if (_speed >= 5 && _speed <= 10) then
-				{
-					_rough = _rough * 0.5;
-				};
-				if (_speed > 15) then
-				{
-					_rough = _rough * 2;
-				};
-
-				_dmg = (1/_hp) * 0.01 * _rough;
-				_shoes setDamage damage _shoes + _dmg;
-			};
-		};
-	};
-
-	
 };
 
 

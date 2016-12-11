@@ -80,9 +80,13 @@ _disconnectPlayer =
 
 "clientReady" addPublicVariableEventHandler
 {
-	_vm = _this spawn {
+	_vm = _this spawn 
+	{
+		
 		_id = _this select 1;
+		
 		_uid = getClientUID _id;
+		
 		_uidFound = 0;
 
 		for "_i" from 0 to count players - 1 do
@@ -113,6 +117,9 @@ _disconnectPlayer =
 					connectedPlayers set [_freePos,_id];	
 					diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
 					//---------------------------------
+					
+					null = _agent call fnc_reloadWeaponOnSpawn;	
+					
 				};
 		};
 	};
@@ -173,8 +180,8 @@ _disconnectPlayer =
 	
 	if (DEBUG_SPAWN) then 
 	{
-		// _pos = [7201.3716, 3013.104,0]; 
-		_pos = [7053.37,2771.16,11.8116]; 
+		_pos = [7201.3716, 3013.104,0]; 
+		// _pos = [7053.37,2771.16,11.8116]; 
 	};
 	
 	// approximate position of camera needs to be set ASAP (network optimization)
@@ -201,14 +208,14 @@ _disconnectPlayer =
 		call createFullEquipment;
 		_v = _agent createInInventory "tool_flashlight";
 		_v = _agent createInInventory "tool_transmitter";
-		_v = _v createInInventory "consumable_battery9V";_v setVariable ["power",30000];	
-		
+		_v = _v createInInventory "consumable_battery9V";_v setVariable ["power",30000];
 		_v = _agent createInInventory "Container_Protector_Small";
 		_v = _agent createInInventory "Consumable_Chemlight_White";
 		_v = _agent createInInventory "Consumable_Roadflare";
 		_v = _agent createInInventory "Consumable_Rags";_v setQuantity 1;
 		_v = _agent createInInventory "Consumable_Paper";
 		_v = _agent createInInventory "Pen_Green";
+		_v = _agent createInInventory "Meat_ChickenBreast";_v setQuantity 1;
 		
 	} else { 
 	
@@ -218,16 +225,19 @@ _disconnectPlayer =
 	};
 
 	_agent call init_newPlayer;
+	
 	call init_newBody;
 	
 	diag_log format["SERVER: Created %1 for clientId %2",_agent,_id];
-	
 	//----- simple scheduler part -----
 	diag_log format ["SCHEDULER: Adding new clientId %1, name %2, UID %3", _id, _name, _uid];
 	_freePos = connectedPlayers find 0;
 	connectedPlayers set [_freePos,_id];	
 	diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];	
 	//---------------------------------
+	
+	null = _agent call fnc_reloadWeaponOnSpawn;
+	
 };
 
 // Create player on connection

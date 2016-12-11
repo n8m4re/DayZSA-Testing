@@ -3,6 +3,7 @@ DEBUG_SPAWN = false;
 DZ_SAVE_SLEEP = 120;
 
 //functions
+fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "scripts\functions\fnc_reloadWeaponOnSpawn.sqf";
 fnc_addHandsItem = compile preprocessFileLineNumbers "scripts\functions\fnc_addHandsItem.sqf";
 fnc_addQuickBarItems = compile preprocessFileLineNumbers "scripts\functions\fnc_addQuickBarItems.sqf";
 fnc_addItemState = compile preprocessFileLineNumbers "scripts\functions\fnc_addItemState.sqf";

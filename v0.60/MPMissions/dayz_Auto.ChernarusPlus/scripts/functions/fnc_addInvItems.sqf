@@ -17,11 +17,21 @@ if !(typeName _items == "ARRAY") exitWith {true};
 		
 		_inv = _x select 2;
 				
-		_item = _obj createInCargo _class;
+		_isCargo = true;
 		
+		_item = _obj createInCargo _class;
+		/*
+		if( count (itemsInCargo _obj) > 0 ) then
+		{
+			// moveToGround _item;
+			// _obj moveToCargo _item;
+		};
+		*/
 		if (isNull _item) then
 		{
+			_isCargo = false;
 			_item = _obj createInInventory _class;
+				
 		};		
 
 		if (count _state > 0) then 
@@ -33,24 +43,15 @@ if !(typeName _items == "ARRAY") exitWith {true};
 		{
 			 null = [_item,_inv] call fnc_addInvItems;
 		};
-
-		/**	
-		if( _class isKindOf "MagazineBase" ) then 
-		{	
-			if(isClass(configFile >> "CfgWeapons" >> (typeOf _obj)) then 
-			{
-				if !(isNull _item) then
-				{
-					diag_log _item;
-					null = moveToGround _item;
-					// null = moveToGround (itemParent _x);
-					null = _item moveToInventory _obj;
-					//null = _agent moveToInventory (itemParent _x);
-				};			
-			};		
+		
+		null = call 
+		{
+			if (_item isKindOf "FoodItemBase") exitWith {
+				// _var = _item getVariable ["food_stage",['Raw',0,0,0]];
+				// [_item,(_var select 0)] call fnc_changeFoodStage;
+				_item call event_fnc_foodStage;
+			};
 		};
-		**/
-
 } forEach _items;
 
 true
