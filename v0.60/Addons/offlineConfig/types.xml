@@ -135,7 +135,7 @@
   <type name="CarRadiator">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -179,7 +179,7 @@
   <type name="MP5K">
     <nominal>5</nominal>
     <lifetime>1800</lifetime>
-    <restock>1800</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -245,7 +245,7 @@
   <type name="PlateCarrierHolster">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -256,7 +256,7 @@
   <type name="Land_Lada_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -278,7 +278,7 @@
   <type name="SurvivorPartsMaleLatino">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -300,7 +300,7 @@
   <type name="Animal_GallusGallusDomesticus">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -322,7 +322,7 @@
   <type name="Animal_CapraHircus_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -333,7 +333,7 @@
   <type name="Animal_CapraHircus_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -409,8 +409,8 @@
   </type>
   <type name="TShirtRed">
     <nominal>0</nominal>
-    <lifetime>300</lifetime>
-    <restock>0</restock>
+    <lifetime>1800</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -420,7 +420,7 @@
   </type>
   <type name="Bagdrybag_Red">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -432,7 +432,7 @@
   <type name="Crafting_HandDrillKit">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -443,7 +443,7 @@
   <type name="V3SDoors_Driver">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -465,7 +465,7 @@
   <type name="Land_Lada_ground_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -476,7 +476,7 @@
   <type name="GhillieBushragMossy">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -498,7 +498,7 @@
   <type name="Animal_CapraHircus_White">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -520,7 +520,7 @@
   <type name="Consumable_SmallStone">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -575,7 +575,7 @@
   <type name="BookLeRougeEtLeNoir">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -607,7 +607,7 @@
   </type>
   <type name="BagMountain_Orange">
     <nominal>10</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -641,7 +641,7 @@
   <type name="ZombieFemale7_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -652,7 +652,7 @@
   <type name="ZombiePrisoner_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -663,7 +663,7 @@
   <type name="BaseRadio">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -674,7 +674,7 @@
   <type name="Consumable_PeltWildboar">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -707,7 +707,7 @@
   <type name="TransitBus">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -729,7 +729,7 @@
   <type name="Mosin9130_Sawedoff">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -740,7 +740,7 @@
   <type name="V3SDoors_Driver_Blue">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -751,7 +751,7 @@
   <type name="V3SDoors_Driver_Grey">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -784,7 +784,7 @@
   <type name="BookATravelerInTime">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -806,7 +806,7 @@
   <type name="Fence">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -850,7 +850,7 @@
   <type name="ZombieFemale2_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -938,7 +938,7 @@
   <type name="BookAliceInWonderland">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -949,7 +949,7 @@
   <type name="TransitBusWheel_Ruined">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -971,7 +971,7 @@
   <type name="Food_CanTacticalBacon_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1004,7 +1004,7 @@
   <type name="Pants_LeatherPants_Beige">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1015,7 +1015,7 @@
   <type name="Pants_LeatherPants_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1026,7 +1026,7 @@
   <type name="Pants_LeatherPants_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1037,7 +1037,7 @@
   <type name="Land_Mil_Barracks_i">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1048,7 +1048,7 @@
   <type name="Land_Mil_Barracks_L">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1059,7 +1059,7 @@
   <type name="GhillieTopMossy">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1070,7 +1070,7 @@
   <type name="BookVerwandlung">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1081,7 +1081,7 @@
   <type name="ZombieSurvivorModNormalMBlack_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1092,7 +1092,7 @@
   <type name="BagAssaultBlack">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1114,7 +1114,7 @@
   <type name="BagAssaultGreen">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1125,7 +1125,7 @@
   <type name="izh18_Sawedoff">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1157,7 +1157,7 @@
   </type>
   <type name="Container_BarrelRed">
     <nominal>30</nominal>
-    <lifetime>3888000</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -1168,7 +1168,7 @@
   </type>
   <type name="BagChilds_Blue">
     <nominal>80</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -1201,7 +1201,7 @@
   </type>
   <type name="BagTortilla">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -1224,7 +1224,7 @@
   <type name="Fruit_Pear">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1235,7 +1235,7 @@
   <type name="Fruit_Plum">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1257,7 +1257,7 @@
   <type name="Meat_FoxSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1290,7 +1290,7 @@
   <type name="Armband_Orange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1301,7 +1301,7 @@
   <type name="Tool_ObsoleteFishingRod">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1312,7 +1312,7 @@
   <type name="Land_T72_Wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1323,7 +1323,7 @@
   <type name="GhillieHoodTan">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1334,7 +1334,7 @@
   <type name="GhillieHoodWoodland">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1345,7 +1345,7 @@
   <type name="BookThePitAndThePendulum">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1356,7 +1356,7 @@
   <type name="GorkaHelmet_complete_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1389,7 +1389,7 @@
   <type name="V3SDoors_CoDriver">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1411,7 +1411,7 @@
   <type name="GorkaHelmet_complete_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1433,7 +1433,7 @@
   <type name="Dart_Syringe">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1455,7 +1455,7 @@
   <type name="ZombieParamedicMRed_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1466,7 +1466,7 @@
   <type name="Fence_CamoNet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1477,7 +1477,7 @@
   <type name="Mosin9130_Black_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1488,7 +1488,7 @@
   <type name="ZombieJournalistFGreen_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1499,7 +1499,7 @@
   <type name="MiniDress_PinkChecker">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1521,7 +1521,7 @@
   <type name="BookLenfer1Of2">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1554,7 +1554,7 @@
   <type name="BookTheCosmicComputer">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1576,7 +1576,7 @@
   <type name="BookTheHouseOfTheSevenGables">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1609,7 +1609,7 @@
   <type name="Land_Farm_Cowshed_a">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1620,7 +1620,7 @@
   <type name="Land_Farm_Cowshed_b">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1631,7 +1631,7 @@
   <type name="Land_Farm_Cowshed_c">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1642,7 +1642,7 @@
   <type name="BookRomeoUndJulia">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1675,7 +1675,7 @@
   <type name="Consumable_PeltMouflon">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1686,7 +1686,7 @@
   <type name="BookPhilosophiaeNaturalis">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1740,8 +1740,8 @@
   </type>
   <type name="Consumable_Bones">
     <nominal>0</nominal>
-    <lifetime>300</lifetime>
-    <restock>0</restock>
+    <lifetime>1800</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -1752,7 +1752,7 @@
   <type name="Consumable_Bandana_redpattern">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1763,7 +1763,7 @@
   <type name="M_CMAG_40Rnd_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1774,7 +1774,7 @@
   <type name="MaleDeanLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1785,7 +1785,7 @@
   <type name="M_CMAG_40Rnd_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1796,7 +1796,7 @@
   <type name="Consumable_Nails">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1807,7 +1807,7 @@
   <type name="BookTheLastTrail">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1829,7 +1829,7 @@
   <type name="Consumable_Stone">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1851,7 +1851,7 @@
   <type name="Animal_VulpesVulpes">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1862,7 +1862,7 @@
   <type name="Green_BarrelHoles">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -1895,7 +1895,7 @@
   <type name="BookTheAeneid">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1906,7 +1906,7 @@
   <type name="MaleJazzHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1972,7 +1972,7 @@
   <type name="BookDracula">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1983,7 +1983,7 @@
   <type name="BookTheArtOfWar">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -1994,7 +1994,7 @@
   <type name="CivSedanDoors_CoDriver">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2016,7 +2016,7 @@
   <type name="ZombieMale13_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2038,7 +2038,7 @@
   <type name="Medical_SyringeBlood">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2049,7 +2049,7 @@
   <type name="V3S_Chassis_Orange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2060,7 +2060,7 @@
   <type name="Medical_SyringeClear">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2071,7 +2071,7 @@
   <type name="BookLaChartreuseDeParme">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2104,7 +2104,7 @@
   <type name="BookKingSolomonsMines">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2115,7 +2115,7 @@
   <type name="Cultivation_ZucchiniSeeds">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2137,7 +2137,7 @@
   <type name="MaleJazzLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2148,7 +2148,7 @@
   <type name="ZombieFirefighter_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2170,7 +2170,7 @@
   <type name="Att_Buttstock_M4MP_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2192,7 +2192,7 @@
   <type name="Att_Buttstock_M4MP_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2203,7 +2203,7 @@
   <type name="BookAPrincessOfMars">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2225,7 +2225,7 @@
   <type name="Mosin9130_Sawedoff_Black_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2236,7 +2236,7 @@
   <type name="ZombieParamedicMWhite_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2247,7 +2247,7 @@
   <type name="Armband_Red">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2291,7 +2291,7 @@
   <type name="BookTheQuirt">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2302,7 +2302,7 @@
   <type name="BookTheRaven">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2313,7 +2313,7 @@
   <type name="ZombieJournalistFRed_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2324,7 +2324,7 @@
   <type name="BookTheTrial">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2346,7 +2346,7 @@
   <type name="BookVoyageAuCentreDeLaTerre">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2379,7 +2379,7 @@
   <type name="SurvivorPartsFemaleIndian">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2412,7 +2412,7 @@
   <type name="TransitBusWheelDouble_Ruined">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2423,7 +2423,7 @@
   <type name="BookTheDecameron">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2434,7 +2434,7 @@
   <type name="Mushroom_Auricularia">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2456,7 +2456,7 @@
   <type name="Land_CampfireNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2478,7 +2478,7 @@
   <type name="Megaphone">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2522,7 +2522,7 @@
   <type name="BookSkyrider">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2555,7 +2555,7 @@
   <type name="FemaleJanaZFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2566,7 +2566,7 @@
   <type name="FemaleJanaZLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2599,7 +2599,7 @@
   <type name="BookWutheringHeights">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2621,7 +2621,7 @@
   <type name="V3SWheel_Ruined">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2643,7 +2643,7 @@
   <type name="MaleIndianLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2654,7 +2654,7 @@
   <type name="Animal_SusDomesticus">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2665,7 +2665,7 @@
   <type name="BookIvanhoe">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2676,7 +2676,7 @@
   <type name="BookTheTimeMachine">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2709,7 +2709,7 @@
   <type name="ZombieMale8_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2720,7 +2720,7 @@
   <type name="Animal_CervusElaphus">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2730,7 +2730,7 @@
   </type>
   <type name="BagTaloon_Orange">
     <nominal>40</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -2775,7 +2775,7 @@
   <type name="SurvivorPartsFemaleKamila">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2797,7 +2797,7 @@
   <type name="BookTheMetamorphosis">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2808,7 +2808,7 @@
   <type name="Consumable_WoodenPlanks">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2841,7 +2841,7 @@
   <type name="BookBible">
     <nominal>2</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2874,7 +2874,7 @@
   <type name="BookScaramouche">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2885,7 +2885,7 @@
   <type name="Battery9V_">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2896,7 +2896,7 @@
   <type name="BookFaust">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2929,7 +2929,7 @@
   <type name="HatchbackHood">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2940,7 +2940,7 @@
   <type name="Land_Ind_Expedice_1">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2951,7 +2951,7 @@
   <type name="Tool_FishingRod_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -2962,7 +2962,7 @@
   <type name="Food_Sardines">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2984,7 +2984,7 @@
   <type name="Consumable_BurlapStrips">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -2995,7 +2995,7 @@
   <type name="ZombieMale3_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3006,7 +3006,7 @@
   <type name="ZombieFarmer4_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3017,7 +3017,7 @@
   <type name="Animal_CanisLupus_Grey">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3028,7 +3028,7 @@
   <type name="BookUlysses">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3039,7 +3039,7 @@
   <type name="BookYouth">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3050,7 +3050,7 @@
   <type name="Vest_LeatherStorage_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3072,7 +3072,7 @@
   <type name="BookGunmansReckoning">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3082,7 +3082,7 @@
   </type>
   <type name="Container_BarrelGreen">
     <nominal>30</nominal>
-    <lifetime>3888000</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -3093,7 +3093,7 @@
   </type>
   <type name="BagChilds_Red">
     <nominal>80</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -3105,7 +3105,7 @@
   <type name="SurvivorPartsFemaleLatino">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3126,8 +3126,8 @@
   </type>
   <type name="BagImprovised">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3138,7 +3138,7 @@
   <type name="BreakFluid">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3149,7 +3149,7 @@
   <type name="FemaleAsianHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3160,7 +3160,7 @@
   <type name="cz527_Green_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3171,7 +3171,7 @@
   <type name="TruckExhaust">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3182,7 +3182,7 @@
   <type name="MaleIndianFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3215,7 +3215,7 @@
   <type name="BookToTheInteriorOfTheEarth">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3259,7 +3259,7 @@
   <type name="FemaleAsianTorso">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3281,7 +3281,7 @@
   <type name="M_CZ75_15Rnd">
     <nominal>20</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3292,7 +3292,7 @@
   <type name="EngineBelt">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3303,7 +3303,7 @@
   <type name="Bow_Quickie">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3325,7 +3325,7 @@
   <type name="Derringer_Pink">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3380,7 +3380,7 @@
   <type name="BookTheCallOfTheWild">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3413,7 +3413,7 @@
   <type name="Animal_BosTaurus_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3424,7 +3424,7 @@
   <type name="V3SDoors_Driver_Orange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3435,7 +3435,7 @@
   <type name="ZombieSurvivorNormalFRed_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3446,7 +3446,7 @@
   <type name="SurvivorMale">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3457,7 +3457,7 @@
   <type name="MaleAfricanHandsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3534,7 +3534,7 @@
   <type name="TShirtRedBlackStripes">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -3556,7 +3556,7 @@
   <type name="Animal_BosTaurus_Spotted">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3567,7 +3567,7 @@
   <type name="Land_Mi8_Crashed">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3589,7 +3589,7 @@
   <type name="Animal_BosTaurus_White">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3600,7 +3600,7 @@
   <type name="BookTheBrothersKaramazov">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3611,7 +3611,7 @@
   <type name="Cultivation_PumpkinSeeds">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3710,7 +3710,7 @@
   <type name="BookTheThunderBird">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3721,7 +3721,7 @@
   <type name="TShirtAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3732,7 +3732,7 @@
   <type name="TShirtBeige">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -3743,7 +3743,7 @@
   <type name="TShirtBlack">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -3754,7 +3754,7 @@
   <type name="Consumable_PeltCow">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3765,7 +3765,7 @@
   <type name="Consumable_PeltFox">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3776,7 +3776,7 @@
   <type name="Consumable_PeltPig">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3787,7 +3787,7 @@
   <type name="TShirtGreen">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -3798,7 +3798,7 @@
   <type name="BookPrideAndPrejudice">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3831,7 +3831,7 @@
   <type name="Armband_Yellow">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3842,7 +3842,7 @@
   <type name="ZombieFemale9_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3853,7 +3853,7 @@
   <type name="ZombieCitizenABlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3875,7 +3875,7 @@
   <type name="TShirtWhite">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -3941,7 +3941,7 @@
   <type name="CivilianSedan">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -3952,7 +3952,7 @@
   <type name="BookNjalsSaga">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -3996,7 +3996,7 @@
   <type name="Meat_PigSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4018,7 +4018,7 @@
   <type name="Land_Ikarus_Dayz">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4029,7 +4029,7 @@
   <type name="SurvivorPartsNewAnimSystem">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4040,7 +4040,7 @@
   <type name="ZombieFemale4_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4051,7 +4051,7 @@
   <type name="BookTheCallOfCthulhu">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4062,7 +4062,7 @@
   <type name="Animal_LepusEuropaeus">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4117,7 +4117,7 @@
   <type name="Spotlight">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4128,7 +4128,7 @@
   <type name="Drink_Vodka">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4139,7 +4139,7 @@
   <type name="BookCandide">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4161,7 +4161,7 @@
   <type name="Att_Ghillie_Woodland">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4172,7 +4172,7 @@
   <type name="MaleIndianHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4183,7 +4183,7 @@
   <type name="Att_Buttstock_AKS74U_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4216,7 +4216,7 @@
   <type name="Att_Buttstock_AKS74U_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4260,7 +4260,7 @@
   <type name="FemaleIndianHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4282,7 +4282,7 @@
   <type name="Tool_StoneKnife">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4337,7 +4337,7 @@
   <type name="Land_bmp2_wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4359,7 +4359,7 @@
   <type name="ZombieHunterOldMAutumn_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4381,7 +4381,7 @@
   <type name="Consumable_PeltBear">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4392,7 +4392,7 @@
   <type name="Consumable_PeltDeer">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4403,7 +4403,7 @@
   <type name="Consumable_PeltGoat">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4414,7 +4414,7 @@
   <type name="Consumable_PeltWolf">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4425,7 +4425,7 @@
   <type name="ZombieFishermanGreen_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4436,7 +4436,7 @@
   <type name="Armband_Blue">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4458,7 +4458,7 @@
   <type name="Armband_Pink">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4480,7 +4480,7 @@
   <type name="DirtBikeHelmet_Visor">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4491,7 +4491,7 @@
   <type name="Plant_Pumpkin">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4524,7 +4524,7 @@
   <type name="Crafting_RabbitSnare">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4534,7 +4534,7 @@
   </type>
   <type name="BagTaloon_Blue">
     <nominal>40</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -4556,7 +4556,7 @@
   </type>
   <type name="BagTaloon_Violet">
     <nominal>40</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -4568,7 +4568,7 @@
   <type name="Bag_LeatherSack_Beige">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4579,7 +4579,7 @@
   <type name="Bag_LeatherSack_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4590,7 +4590,7 @@
   <type name="Bag_LeatherSack_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4623,7 +4623,7 @@
   <type name="ZombieSurvivorNormalFWhite_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4634,7 +4634,7 @@
   <type name="BookRussianCheatSheet">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4645,7 +4645,7 @@
   <type name="Top_LeatherJacket_Beige">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4656,7 +4656,7 @@
   <type name="Top_LeatherJacket_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4667,7 +4667,7 @@
   <type name="Top_LeatherJacket_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4689,7 +4689,7 @@
   <type name="MaleLatinoTorsoNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4700,7 +4700,7 @@
   <type name="ZombieSurvivorNormalFBlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4722,7 +4722,7 @@
   <type name="Consumable_PeltRabbit">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4744,7 +4744,7 @@
   <type name="Land_Volha_grey_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4799,7 +4799,7 @@
   <type name="Animal_GallusGallusDomesticusF_Spotted">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4810,7 +4810,7 @@
   <type name="Land_NAV_Lighthouse2">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4821,7 +4821,7 @@
   <type name="Hat_Leather_Beige">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4832,7 +4832,7 @@
   <type name="Hat_Leather_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4843,7 +4843,7 @@
   <type name="Hat_Leather_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4854,7 +4854,7 @@
   <type name="StaticRadio">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4865,7 +4865,7 @@
   <type name="BookMiddlemarch">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4898,7 +4898,7 @@
   <type name="Food_CanBakedBeans_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4909,7 +4909,7 @@
   <type name="Fence_BarbedWire">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4920,7 +4920,7 @@
   <type name="BookThePictureOfDorianGray">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4942,7 +4942,7 @@
   <type name="Cultivation_CannabisSeeds">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -4953,7 +4953,7 @@
   <type name="BookHerland">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4975,7 +4975,7 @@
   <type name="MaleAsianLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4986,7 +4986,7 @@
   <type name="FemaleLatinoFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -4997,7 +4997,7 @@
   <type name="FemaleLatinoLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5008,7 +5008,7 @@
   <type name="Crafting_SmallFishTrap">
     <nominal>0</nominal>
     <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5019,7 +5019,7 @@
   <type name="BookCinqSemainesEnBallon">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5030,7 +5030,7 @@
   <type name="M_CMAG_30Rnd_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5041,7 +5041,7 @@
   <type name="Land_Lada_red_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5052,7 +5052,7 @@
   <type name="M_CMAG_30Rnd_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5063,7 +5063,7 @@
   <type name="BagTortillaAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5074,7 +5074,7 @@
   <type name="Food_Carp">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5085,7 +5085,7 @@
   <type name="Food_Guts">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5096,7 +5096,7 @@
   <type name="Food_Lard">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5118,7 +5118,7 @@
   <type name="Food_Worm">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5129,7 +5129,7 @@
   <type name="MaleLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5184,7 +5184,7 @@
   <type name="ZombieMale15_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5206,7 +5206,7 @@
   <type name="Att_Handguard_M4RIS_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5239,7 +5239,7 @@
   <type name="Animal_CapreolusCapreolusF">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5261,7 +5261,7 @@
   <type name="Att_Handguard_M4RIS_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5294,7 +5294,7 @@
   <type name="V3S_Cargo_Orange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5305,7 +5305,7 @@
   <type name="Att_Optic_Pistol">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5316,7 +5316,7 @@
   <type name="Crafting_ImprovisedRope">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5338,7 +5338,7 @@
   <type name="BookAnnaKarenina">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5349,7 +5349,7 @@
   <type name="Land_hiluxT">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5360,7 +5360,7 @@
   <type name="Container_BearWhite">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5371,7 +5371,7 @@
   <type name="BookTheDayOfTheBeast">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5393,7 +5393,7 @@
   <type name="ZombieMale10_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5403,7 +5403,7 @@
   </type>
   <type name="Bagdrybag_Black">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -5415,7 +5415,7 @@
   <type name="Land_V3S_wreck">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5426,7 +5426,7 @@
   <type name="Att_Suppressor_Improvised">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5437,7 +5437,7 @@
   <type name="Att_Handguard_AK_Wood_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5447,7 +5447,7 @@
   </type>
   <type name="Bagdrybag_Green">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -5470,7 +5470,7 @@
   <type name="BookMadameBovary">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5480,7 +5480,7 @@
   </type>
   <type name="Container_BarrelYellow">
     <nominal>30</nominal>
-    <lifetime>3888000</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -5536,7 +5536,7 @@
   <type name="ZombieFemale10_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5569,7 +5569,7 @@
   <type name="Shirt_CheckWhiteNewAnimSystem">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5580,7 +5580,7 @@
   <type name="Att_Buttstock_AK_Wood_Camo">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5613,7 +5613,7 @@
   <type name="M4A1_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5657,7 +5657,7 @@
   <type name="BookTheOutlet">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5679,7 +5679,7 @@
   <type name="M4A1_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5701,7 +5701,7 @@
   <type name="RiverWater">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5712,7 +5712,7 @@
   <type name="BookAfterLondon">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5723,7 +5723,7 @@
   <type name="BookDeLaTerreLaLune">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5734,7 +5734,7 @@
   <type name="Animal_BosTaurusF_Spotted">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5756,7 +5756,7 @@
   <type name="Att_Optic_Reflex">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5778,7 +5778,7 @@
   <type name="BookTheDesertOfWheat">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5789,7 +5789,7 @@
   <type name="DartGun">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5799,7 +5799,7 @@
   </type>
   <type name="Container_BarrelBlue">
     <nominal>30</nominal>
-    <lifetime>3888000</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -5811,7 +5811,7 @@
   <type name="Meat_ChickenBreast">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5822,7 +5822,7 @@
   <type name="GhillieBushragTan">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -5833,7 +5833,7 @@
   <type name="ZombieHermit2_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5899,7 +5899,7 @@
   <type name="V3SWheelDouble_Ruined">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5910,7 +5910,7 @@
   <type name="Yellow_BarrelHoles">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5921,7 +5921,7 @@
   <type name="Land_datsun01T">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5932,7 +5932,7 @@
   <type name="Land_datsun02T">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5965,7 +5965,7 @@
   <type name="Mushroom_Lactarius">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -5987,7 +5987,7 @@
   <type name="V3SHood">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6009,7 +6009,7 @@
   <type name="Hermit_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6031,7 +6031,7 @@
   <type name="BookTheTurnOfTheScrew">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6086,7 +6086,7 @@
   <type name="V3SDoors_CoDriver_Blue">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6108,7 +6108,7 @@
   <type name="Animal_CervusElaphusF">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6119,7 +6119,7 @@
   <type name="V3SDoors_CoDriver_Grey">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6141,7 +6141,7 @@
   <type name="BookTheMonkARomance">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6184,8 +6184,8 @@
   </type>
   <type name="Trap_FishNet">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>604800</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6218,7 +6218,7 @@
   <type name="Land_datsun01T_spodok">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6229,7 +6229,7 @@
   <type name="Container_Bear">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6239,7 +6239,7 @@
   </type>
   <type name="BagTaloon_Green">
     <nominal>40</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -6251,7 +6251,7 @@
   <type name="ZombieMale5_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6262,7 +6262,7 @@
   <type name="BookADollsHouse">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6273,7 +6273,7 @@
   <type name="Consumable_Bandana_greenpattern">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6283,7 +6283,7 @@
   </type>
   <type name="Container_Protector_Small">
     <nominal>75</nominal>
-    <lifetime>3888000</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -6306,7 +6306,7 @@
   <type name="BookShe">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6317,7 +6317,7 @@
   <type name="Book20000LieuesSousLesMers">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6339,7 +6339,7 @@
   <type name="HatchbackDoors_Driver">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6350,7 +6350,7 @@
   <type name="MaleLatinoLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6372,7 +6372,7 @@
   <type name="Arrows_Boned">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6383,7 +6383,7 @@
   <type name="Att_Optic_Hunting">
     <nominal>15</nominal>
     <lifetime>1800</lifetime>
-    <restock>1800</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6394,7 +6394,7 @@
   <type name="Bow_pvc">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6405,7 +6405,7 @@
   <type name="BookTheGiacomoLeopardi">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6416,7 +6416,7 @@
   <type name="BookTheWarOfTheWorlds">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6438,7 +6438,7 @@
   <type name="BookTheThreeMusketeers">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6470,7 +6470,7 @@
   </type>
   <type name="BagChilds_Green">
     <nominal>80</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -6482,7 +6482,7 @@
   <type name="Shockpistol_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6493,7 +6493,7 @@
   <type name="ZombieFarmer1_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6504,7 +6504,7 @@
   <type name="Consumable_ButaneCanister">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6515,7 +6515,7 @@
   <type name="Fence_Lights">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6526,7 +6526,7 @@
   <type name="Land_Mil_House">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6537,7 +6537,7 @@
   <type name="ZombieFishermanGrey_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6548,7 +6548,7 @@
   <type name="Consumable_Bandana_blackpattern">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6570,7 +6570,7 @@
   <type name="BookSunsetPass">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6581,7 +6581,7 @@
   <type name="MaleHandsWorkingGloves">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6592,7 +6592,7 @@
   <type name="Consumable_TannedLeather">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6603,7 +6603,7 @@
   <type name="ZombieHikerSkinnyFBlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6625,7 +6625,7 @@
   <type name="BookFrankenstein">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6658,7 +6658,7 @@
   <type name="M_ak74_30Rnd_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6669,7 +6669,7 @@
   <type name="Att_Handguard_M4MP_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6680,7 +6680,7 @@
   <type name="MaleJazzFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6691,7 +6691,7 @@
   <type name="M_ak74_30Rnd_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6702,7 +6702,7 @@
   <type name="Att_Handguard_M4MP_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6713,7 +6713,7 @@
   <type name="DE_Gold">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6724,7 +6724,7 @@
   <type name="Medical_BloodBag_Full">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6746,7 +6746,7 @@
   <type name="MaleAsianTorsoNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6768,7 +6768,7 @@
   <type name="Mushroom_Macrolepiota">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6790,7 +6790,7 @@
   <type name="FireplaceIndoor">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6801,7 +6801,7 @@
   <type name="Land_Volha_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6867,7 +6867,7 @@
   <type name="Meat_MouflonSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6878,7 +6878,7 @@
   <type name="Meat_RabbitLeg">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6889,7 +6889,7 @@
   <type name="BookWealthOfNations">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6900,7 +6900,7 @@
   <type name="Crafting_Spear">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6911,7 +6911,7 @@
   <type name="Crafting_Torch">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -6944,7 +6944,7 @@
   <type name="Shockpistol">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -6966,7 +6966,7 @@
   <type name="BookTheRightsOfWoman">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -6999,7 +6999,7 @@
   <type name="MaleAfricanLegsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7021,7 +7021,7 @@
   <type name="Shoes_LeatherMoccasins_Beige">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7032,7 +7032,7 @@
   <type name="Shoes_LeatherMoccasins_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7043,7 +7043,7 @@
   <type name="Shoes_LeatherMoccasins_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7065,7 +7065,7 @@
   <type name="V3SDoors_CoDriver_Orange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7098,7 +7098,7 @@
   <type name="ZombieFemale6_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7109,7 +7109,7 @@
   <type name="SurvivorFemale">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7131,7 +7131,7 @@
   <type name="ZombieFishermanRed_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7153,7 +7153,7 @@
   <type name="Medical_CigarettePack_Merkur">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7164,7 +7164,7 @@
   <type name="ZombieHunterOldMSpring_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7186,7 +7186,7 @@
   <type name="BookDasNibelungenlied">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7197,7 +7197,7 @@
   <type name="TrashItem_SodaZlutaMalinovka">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7208,7 +7208,7 @@
   <type name="ChristmasTree">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7230,7 +7230,7 @@
   <type name="BookDonQuixote">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7241,7 +7241,7 @@
   <type name="V3S_Cargo">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7252,7 +7252,7 @@
   <type name="BookBettyZane">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7274,7 +7274,7 @@
   <type name="ZombieFemale1_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7285,7 +7285,7 @@
   <type name="FemaleLatinoHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7296,7 +7296,7 @@
   <type name="WellWater">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7329,7 +7329,7 @@
   <type name="BookDeLorigineDesEspces">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7362,7 +7362,7 @@
   <type name="BookGilgameshEpic">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7395,7 +7395,7 @@
   <type name="Land_S1023_ground_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7406,7 +7406,7 @@
   <type name="FemaleLatinoTorso">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7428,7 +7428,7 @@
   <type name="FemaleHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7439,7 +7439,7 @@
   <type name="GhillieBushragWoodland">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7450,7 +7450,7 @@
   <type name="BookNaturalSelection">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7461,7 +7461,7 @@
   <type name="BookATexasMatchmaker">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7483,7 +7483,7 @@
   <type name="Consumable_Bait">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7505,7 +7505,7 @@
   <type name="Consumable_Rags">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7516,7 +7516,7 @@
   <type name="FemaleTorso">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7527,7 +7527,7 @@
   <type name="BookDeadSouls">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7571,7 +7571,7 @@
   <type name="BookTheManWhoWasThursday">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7582,7 +7582,7 @@
   <type name="ZombieJournalistFWhite_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7615,7 +7615,7 @@
   <type name="FemaleKamilaFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7626,7 +7626,7 @@
   <type name="FemaleKamilaLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7648,7 +7648,7 @@
   <type name="MaleTorsoAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7659,7 +7659,7 @@
   <type name="Medical_CigarettePack_Chernamorka">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7670,7 +7670,7 @@
   <type name="Meat_CarpFillet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7681,7 +7681,7 @@
   <type name="ImprovisedShelterPitched">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7692,7 +7692,7 @@
   <type name="FemaleHenrietFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7703,7 +7703,7 @@
   <type name="FemaleHenrietLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7736,7 +7736,7 @@
   <type name="Food_CanTuna_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7747,7 +7747,7 @@
   <type name="BookTheVariableMan">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7758,7 +7758,7 @@
   <type name="BusHood">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7780,7 +7780,7 @@
   <type name="PowerGenerator">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7791,7 +7791,7 @@
   <type name="BookFatherGoriot">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7802,7 +7802,7 @@
   <type name="Food_CanPeaches_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7813,7 +7813,7 @@
   <type name="BookLesCorneilles">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7824,7 +7824,7 @@
   <type name="Plant_Pepper">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7846,7 +7846,7 @@
   <type name="Plant_Potato">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7879,7 +7879,7 @@
   <type name="BookTheComingRace">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7890,7 +7890,7 @@
   <type name="Meat_BearSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7956,7 +7956,7 @@
   <type name="CivSedanDoors_BackRight">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -7967,7 +7967,7 @@
   <type name="BookAndersensFairyTales">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -7988,8 +7988,8 @@
   </type>
   <type name="TentLarge_Pitched">
     <nominal>0</nominal>
-    <lifetime>3888000</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>200</max>
     <quantmin>-1</quantmin>
@@ -8065,7 +8065,7 @@
   </type>
   <type name="BagMountain_Red">
     <nominal>10</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -8077,7 +8077,7 @@
   <type name="CivSedanDoors_Driver">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8110,7 +8110,7 @@
   <type name="Meat_DeerSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8121,7 +8121,7 @@
   <type name="BookWielandOrTheTransformation">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8132,7 +8132,7 @@
   <type name="Drink_WaterPouch_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8165,7 +8165,7 @@
   <type name="BookKidnapped">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8187,7 +8187,7 @@
   <type name="GorkaHelmet_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8209,7 +8209,7 @@
   <type name="Fireplace">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>60</max>
     <quantmin>-1</quantmin>
@@ -8231,7 +8231,7 @@
   <type name="SurvivorPartsFemaleAsian">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8253,7 +8253,7 @@
   <type name="M_CMAG_20Rnd_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8264,7 +8264,7 @@
   <type name="TrashItem_SodaZlutaKolaloka">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8286,7 +8286,7 @@
   <type name="SurvivorPartsFemaleJanaZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8297,7 +8297,7 @@
   <type name="ZombieSurvivorNormalFOrange_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8308,7 +8308,7 @@
   <type name="M_CMAG_20Rnd_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8319,7 +8319,7 @@
   <type name="Light_PetrolLighter">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8363,7 +8363,7 @@
   <type name="MaleDeanHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8374,7 +8374,7 @@
   <type name="cz527_Black_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8385,7 +8385,7 @@
   <type name="SurvivorPartsFemaleWhite">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8396,7 +8396,7 @@
   <type name="Att_Handguard_M4Plastic_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8407,7 +8407,7 @@
   <type name="Meat_BoarSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8418,7 +8418,7 @@
   <type name="Att_Buttstock_AK74_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8429,7 +8429,7 @@
   <type name="Consumable_Bark_Oak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8440,7 +8440,7 @@
   <type name="Att_Handguard_M4Plastic_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8451,7 +8451,7 @@
   <type name="ZombieMale12_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8462,7 +8462,7 @@
   <type name="Cultivation_AntiPestsSpray">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8484,7 +8484,7 @@
   <type name="UndergroundStash">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8495,7 +8495,7 @@
   <type name="Consumable_Bandana_camopattern">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8506,7 +8506,7 @@
   <type name="BusDoors_Right">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8517,7 +8517,7 @@
   <type name="Ruger1022_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8561,7 +8561,7 @@
   <type name="Land_s1203_baige_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8572,7 +8572,7 @@
   <type name="Land_Volha_police_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8594,7 +8594,7 @@
   <type name="Ruger1022_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8638,7 +8638,7 @@
   <type name="cz527_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8660,7 +8660,7 @@
   <type name="Hat_Leather_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8681,8 +8681,8 @@
   </type>
   <type name="TentCar_Pitched">
     <nominal>0</nominal>
-    <lifetime>3888000</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8693,7 +8693,7 @@
   <type name="HatchbackWheel_Ruined">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8715,7 +8715,7 @@
   <type name="BookRussian">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8726,7 +8726,7 @@
   <type name="cz527_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8759,7 +8759,7 @@
   <type name="ZombiePolicemanFat_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8770,7 +8770,7 @@
   <type name="BookBlackJack">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8781,7 +8781,7 @@
   <type name="ZombieHikerSkinnyFGray_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8792,7 +8792,7 @@
   <type name="BookUncleSilas">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8803,7 +8803,7 @@
   <type name="FemaleKamilaHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8813,8 +8813,8 @@
   </type>
   <type name="Trap_TripWire">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>604800</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8825,7 +8825,7 @@
   <type name="Land_Skodovka_wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8836,7 +8836,7 @@
   <type name="SurvivorPartsNewAnimSystemReversed">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8847,7 +8847,7 @@
   <type name="Meat_MackerelFillet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8913,7 +8913,7 @@
   <type name="BookTheShunnedHouse">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8924,7 +8924,7 @@
   <type name="ZombieHermit4_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8957,7 +8957,7 @@
   <type name="Plant_Tomato">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -8967,7 +8967,7 @@
   </type>
   <type name="Bagdrybag_Orange">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -8979,7 +8979,7 @@
   <type name="BookAVoyageToArcturus">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -8990,7 +8990,7 @@
   <type name="BookMobyDick">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9023,7 +9023,7 @@
   <type name="Land_uaz_wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9045,7 +9045,7 @@
   <type name="SurvivorPartsMaleDean">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9056,7 +9056,7 @@
   <type name="SurvivorPartsMaleMatt">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9078,7 +9078,7 @@
   <type name="Medical_CigarettePack_Partyzanka">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9100,7 +9100,7 @@
   <type name="TShirtBlue">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -9111,7 +9111,7 @@
   <type name="TShirtGrey">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -9133,7 +9133,7 @@
   <type name="Consumable_PlantMaterial">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9144,7 +9144,7 @@
   <type name="ZombieMale7_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9166,7 +9166,7 @@
   <type name="SurvivorPartsFemaleAfrican">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9177,7 +9177,7 @@
   <type name="Att_Buttstock_AK74_Camo">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9188,7 +9188,7 @@
   <type name="OrienteeringCompass">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9209,8 +9209,8 @@
   </type>
   <type name="BagCourierImprovised">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9254,7 +9254,7 @@
   <type name="FirefighterAxe_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9276,7 +9276,7 @@
   <type name="ZombieMale2_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9287,7 +9287,7 @@
   <type name="ZombieFarmer3_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9298,7 +9298,7 @@
   <type name="FirefighterAxe_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9309,7 +9309,7 @@
   <type name="BookRobinsonCrusoeAdventures">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9342,7 +9342,7 @@
   <type name="TrashItem_SodaZlutaKlasik">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9353,7 +9353,7 @@
   <type name="Crafting_WoodenStick">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -9364,7 +9364,7 @@
   <type name="Crafting_LongWoodenStick">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -9375,7 +9375,7 @@
   <type name="GhillieHoodMossy">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9386,7 +9386,7 @@
   <type name="BookTheJustifiedSinner">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9408,7 +9408,7 @@
   <type name="BookBlackBeauty">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9430,7 +9430,7 @@
   <type name="Shoes_LeatherMoccasins_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9440,7 +9440,7 @@
   </type>
   <type name="Bagdrybag_Blue">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -9474,7 +9474,7 @@
   <type name="Att_Ghillie_Mossy">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9485,7 +9485,7 @@
   <type name="Drink_SodaCanEmpty">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9507,7 +9507,7 @@
   <type name="AK74_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9529,7 +9529,7 @@
   <type name="SurvivorPartsNewAnimSystem_MENU">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9573,7 +9573,7 @@
   <type name="AK74_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9617,7 +9617,7 @@
   <type name="BallisticHelmet_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9628,7 +9628,7 @@
   <type name="Map_1stperson">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9639,7 +9639,7 @@
   <type name="CarBattery_">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9660,8 +9660,8 @@
   </type>
   <type name="TentMedium_Pitched">
     <nominal>0</nominal>
-    <lifetime>3888000</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>200</max>
     <quantmin>-1</quantmin>
@@ -9683,7 +9683,7 @@
   <type name="BallisticHelmet_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9716,7 +9716,7 @@
   <type name="Att_Buttstock_M4CQB_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9727,7 +9727,7 @@
   <type name="MaleLatinoHandsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9738,7 +9738,7 @@
   <type name="BaseballBatNailed">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9749,7 +9749,7 @@
   <type name="BookDesertGold">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9760,7 +9760,7 @@
   <type name="DirtBikeHelmet_Mouthguard">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9771,7 +9771,7 @@
   <type name="BookRonickyDoone">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9782,7 +9782,7 @@
   <type name="Att_Buttstock_M4CQB_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9793,7 +9793,7 @@
   <type name="Meat_GoatSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9804,7 +9804,7 @@
   <type name="Land_s1203_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9848,7 +9848,7 @@
   <type name="BookLaDbcle">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9881,7 +9881,7 @@
   <type name="BookGreatExpectations">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9892,7 +9892,7 @@
   <type name="Consumable_Bandana_polkapattern">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9903,7 +9903,7 @@
   <type name="MaleFeetAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9914,7 +9914,7 @@
   <type name="Hermit_NewAI_Playable">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -9925,7 +9925,7 @@
   <type name="Meat_SheepSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9936,7 +9936,7 @@
   <type name="GhillieTopWoodland">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -9980,7 +9980,7 @@
   <type name="ZombieFemale8_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10024,7 +10024,7 @@
   <type name="Att_Bayonet_Mosin">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10035,7 +10035,7 @@
   <type name="CivSedanDoors_BackLeft">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10046,7 +10046,7 @@
   <type name="FridgeTest">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10068,7 +10068,7 @@
   <type name="PlateCarrierComplete">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10090,7 +10090,7 @@
   <type name="ZombieSurvivorModNormalMBlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10101,7 +10101,7 @@
   <type name="ZombieCitizenABrown_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10112,7 +10112,7 @@
   <type name="M_ShockCartridge">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10133,7 +10133,7 @@
   </type>
   <type name="Trap_LandMine">
     <nominal>1</nominal>
-    <lifetime>3600</lifetime>
+    <lifetime>604800</lifetime>
     <restock>120</restock>
     <min>10</min>
     <max>100</max>
@@ -10156,7 +10156,7 @@
   <type name="ZombieFemale3_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10222,7 +10222,7 @@
   <type name="BookTonyAndTheBeetles">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10233,7 +10233,7 @@
   <type name="BookHeartOfDarkness">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10244,7 +10244,7 @@
   <type name="Land_t72_wrecked_turret">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10277,7 +10277,7 @@
   <type name="BookJapaneseLiterature">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10288,7 +10288,7 @@
   <type name="Top_LeatherJacket_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10299,7 +10299,7 @@
   <type name="Refrigerator_Minsk">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10332,7 +10332,7 @@
   <type name="BookTreasureIsland">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10376,7 +10376,7 @@
   <type name="Land_bvp1T">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10387,7 +10387,7 @@
   <type name="PilotHelmet_ZSh3_black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10420,7 +10420,7 @@
   <type name="PilotHelmet_ZSh3_green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10453,7 +10453,7 @@
   <type name="Food_CanSardines_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10464,7 +10464,7 @@
   <type name="CivSedanWheel_Ruined">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10519,7 +10519,7 @@
   <type name="Land_HouseBlock_D2">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10530,7 +10530,7 @@
   <type name="HeadlightH7">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10541,7 +10541,7 @@
   <type name="BookTheCaveOfGold">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10552,7 +10552,7 @@
   <type name="FemaleAfricanFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10563,7 +10563,7 @@
   <type name="FemaleAfricanLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10607,7 +10607,7 @@
   <type name="MaleTorsoNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10618,7 +10618,7 @@
   <type name="BookSonsAndLovers">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10640,7 +10640,7 @@
   <type name="AKS74U_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10651,7 +10651,7 @@
   <type name="TrashCan">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10673,7 +10673,7 @@
   <type name="Medical_Bandage">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10684,7 +10684,7 @@
   <type name="BookFaustErsterTeil">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10695,7 +10695,7 @@
   <type name="AKS74U_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10728,7 +10728,7 @@
   <type name="BookTrailin">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10739,7 +10739,7 @@
   <type name="Consumable_MetalPlates">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10794,7 +10794,7 @@
   <type name="Land_NAV_Lighthouse">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10816,7 +10816,7 @@
   <type name="MaleLegsAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10860,7 +10860,7 @@
   <type name="PM73Rak">
     <nominal>5</nominal>
     <lifetime>1800</lifetime>
-    <restock>1800</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10882,7 +10882,7 @@
   <type name="BookGulliversTravels">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10926,7 +10926,7 @@
   <type name="M_dartgun_CO2">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10937,7 +10937,7 @@
   <type name="BookTheLastOfThePlainsmen">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -10959,7 +10959,7 @@
   <type name="Land_Shed_wooden">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10981,7 +10981,7 @@
   <type name="HatchbackTrunk">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -10992,7 +10992,7 @@
   <type name="SmershVest">
     <nominal>1</nominal>
     <lifetime>1800</lifetime>
-    <restock>1800</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11003,7 +11003,7 @@
   <type name="MiniDress_Pink">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11025,7 +11025,7 @@
   <type name="TrashItem_TeddyBear">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11047,7 +11047,7 @@
   <type name="M_akm_palm30_black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11058,7 +11058,7 @@
   <type name="M_akm_palm30_green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11069,7 +11069,7 @@
   <type name="BookMrchenFrKinder">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11091,7 +11091,7 @@
   <type name="Land_UH1Y_Wreck">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11102,7 +11102,7 @@
   <type name="FemaleAsianFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11113,7 +11113,7 @@
   <type name="FemaleAsianLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11190,7 +11190,7 @@
   <type name="JeansAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11234,7 +11234,7 @@
   <type name="BookCassidysRustlerRoundUp">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11245,7 +11245,7 @@
   <type name="Trap_RabbitSnare">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11255,7 +11255,7 @@
   </type>
   <type name="Bagdrybag_Yellow">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -11267,7 +11267,7 @@
   <type name="BookSelectedStories">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11289,7 +11289,7 @@
   <type name="Consumable_Firewood">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -11333,7 +11333,7 @@
   <type name="BagAssault">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11344,7 +11344,7 @@
   <type name="BookTheMahabharataOfKrishna">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11366,7 +11366,7 @@
   <type name="BookHunger">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11388,7 +11388,7 @@
   <type name="BookErewhon">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11454,7 +11454,7 @@
   <type name="V3S_Cargo_Blue">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11476,7 +11476,7 @@
   <type name="V3S_Cargo_Grey">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11498,7 +11498,7 @@
   <type name="ZombieMale14_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11509,7 +11509,7 @@
   <type name="M_CMAG_10Rnd_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11542,7 +11542,7 @@
   <type name="MaleAsianFeetNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11553,7 +11553,7 @@
   <type name="M_CMAG_10Rnd_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11586,7 +11586,7 @@
   <type name="BookLaComdieHumaine">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11619,7 +11619,7 @@
   <type name="Animal_OvisAries">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11630,7 +11630,7 @@
   <type name="FemaleAfricanHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11652,7 +11652,7 @@
   <type name="BookTheRedBadgeOfCourage">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11663,7 +11663,7 @@
   <type name="Att_Optic_Longrange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11674,7 +11674,7 @@
   <type name="PileOfWoodenPlanks">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11685,7 +11685,7 @@
   <type name="MaleFeetNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11707,7 +11707,7 @@
   <type name="BookTheLastMan">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11729,7 +11729,7 @@
   <type name="V3S_Chassis">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11751,7 +11751,7 @@
   <type name="FemaleAfricanTorso">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11784,7 +11784,7 @@
   <type name="V3S_ChassisManual">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11828,7 +11828,7 @@
   <type name="Animal_CapreolusCapreolus">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11839,7 +11839,7 @@
   <type name="Att_Handguard_AK_Rail_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11861,7 +11861,7 @@
   <type name="BookTheHeritageOfTheSioux">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11883,7 +11883,7 @@
   <type name="Att_Handguard_AK_Rail_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11894,7 +11894,7 @@
   <type name="Tool_FishingRod_Close">
     <nominal>20</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11905,7 +11905,7 @@
   <type name="GhillieSuitTan">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11938,7 +11938,7 @@
   <type name="M_ak101_30Rnd_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11949,7 +11949,7 @@
   <type name="SurvivorPartsFemaleHenriet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -11960,7 +11960,7 @@
   <type name="MaleAsianHandsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11971,7 +11971,7 @@
   <type name="Meat_CowSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -11982,7 +11982,7 @@
   <type name="M_ak101_30Rnd_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12015,7 +12015,7 @@
   <type name="Medical_BloodBag_IV">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12026,7 +12026,7 @@
   <type name="ZombieHunterOldMWinter_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12059,7 +12059,7 @@
   <type name="Plant_Cannabis">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12070,7 +12070,7 @@
   <type name="BookAndersen">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12103,7 +12103,7 @@
   <type name="Arrows_Primitive">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12125,7 +12125,7 @@
   <type name="BookSpinifexAndSand">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12147,7 +12147,7 @@
   <type name="Bag_LeatherSack_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12180,7 +12180,7 @@
   <type name="GhillieSuitWoodland">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12191,7 +12191,7 @@
   <type name="BookTheBarrier">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12202,7 +12202,7 @@
   <type name="PersonalRadio">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12213,7 +12213,7 @@
   <type name="BookThePrisonerOfZenda">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12224,7 +12224,7 @@
   <type name="ZombieParamedicMGreen_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12246,7 +12246,7 @@
   <type name="OffroadHatchback">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12257,7 +12257,7 @@
   <type name="ZombieHermit1_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12268,7 +12268,7 @@
   <type name="BookTheIslandOfDoctorMoreau">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12279,7 +12279,7 @@
   <type name="Pants_LeatherPants_Natural">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12290,7 +12290,7 @@
   <type name="TruckRadiator">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12323,7 +12323,7 @@
   <type name="Mosin9130_Green_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12334,7 +12334,7 @@
   <type name="BookHinduLiterature">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12367,7 +12367,7 @@
   <type name="Att_Buttstock_M4OE_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12411,7 +12411,7 @@
   <type name="FemaleFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12422,7 +12422,7 @@
   <type name="FemaleLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12433,7 +12433,7 @@
   <type name="ZombieMale9_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12444,7 +12444,7 @@
   <type name="Att_Buttstock_M4OE_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12455,7 +12455,7 @@
   <type name="Meat_HumanSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12466,7 +12466,7 @@
   <type name="MaleDeanFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12477,7 +12477,7 @@
   <type name="BookBilaNemoc">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12488,7 +12488,7 @@
   <type name="b95_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12499,7 +12499,7 @@
   <type name="AK101_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12521,7 +12521,7 @@
   <type name="BookTheJungleBook">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12532,7 +12532,7 @@
   <type name="Cultivation_CannabisSeedsPack">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12543,7 +12543,7 @@
   <type name="Att_Buttstock_AK_Wood_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12554,7 +12554,7 @@
   <type name="b95_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12565,7 +12565,7 @@
   <type name="AK101_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12576,7 +12576,7 @@
   <type name="Winchester70_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12587,7 +12587,7 @@
   <type name="Land_BRDM2_wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12598,7 +12598,7 @@
   <type name="Land_ural_wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12609,7 +12609,7 @@
   <type name="Animal_BosTaurusF_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12631,7 +12631,7 @@
   <type name="Winchester70_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12642,7 +12642,7 @@
   <type name="TrumpetParts">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12653,7 +12653,7 @@
   <type name="ZombieSurvivorModNormalMGray_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12697,7 +12697,7 @@
   <type name="SKS_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12708,7 +12708,7 @@
   <type name="Land_Ikarus_ground_Dayz">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12752,7 +12752,7 @@
   <type name="BookThePossessed">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12763,7 +12763,7 @@
   <type name="ZombieMale4_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12774,7 +12774,7 @@
   <type name="SKS_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12807,7 +12807,7 @@
   <type name="CivSedanTrunk">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12818,7 +12818,7 @@
   <type name="Animal_BosTaurusF_White">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12829,7 +12829,7 @@
   <type name="PlateCarrierPouches">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12851,7 +12851,7 @@
   <type name="Att_Buttstock_AK_Plastic_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12862,7 +12862,7 @@
   <type name="Att_Buttstock_AK_Plastic_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12873,7 +12873,7 @@
   <type name="FemaleIndianFeet">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12895,7 +12895,7 @@
   <type name="FemaleIndianLegs">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12928,7 +12928,7 @@
   <type name="BookRobinsonCrusoe">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12950,7 +12950,7 @@
   <type name="BookAroundTheWorldIn80Days">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12961,7 +12961,7 @@
   <type name="BookTheHoundOfTheBaskervilles">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -12983,7 +12983,7 @@
   <type name="SeaChest">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -12994,7 +12994,7 @@
   <type name="V3S_Chassis_Blue">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13005,7 +13005,7 @@
   <type name="V3S_Chassis_Grey">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13071,7 +13071,7 @@
   <type name="CableReel">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13082,7 +13082,7 @@
   <type name="Att_Handguard_AK74_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13126,7 +13126,7 @@
   <type name="M_DE_9rnd">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13137,7 +13137,7 @@
   <type name="MaleLatinoFeetNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13148,7 +13148,7 @@
   <type name="Animal_GallusGallusDomesticusF_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13225,7 +13225,7 @@
   <type name="CivSedanHood">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13302,7 +13302,7 @@
   <type name="Mosin9130_Sawedoff_Green_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13346,7 +13346,7 @@
   <type name="Animal_GallusGallusDomesticusF_White">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13356,8 +13356,8 @@
   </type>
   <type name="BagCourierImprovisedFur">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13390,7 +13390,7 @@
   <type name="Consumable_PeltSheep">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13412,7 +13412,7 @@
   <type name="Mosin9130_Sawedoff_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13434,7 +13434,7 @@
   <type name="Consumable_BoneBait">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13445,7 +13445,7 @@
   <type name="Consumable_BoneHook">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13456,7 +13456,7 @@
   <type name="ZombieCitizenB_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13489,7 +13489,7 @@
   <type name="Mosin9130_Sawedoff_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13500,7 +13500,7 @@
   <type name="WindscreenBox">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13544,7 +13544,7 @@
   <type name="BookTheScarletPimpernel">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13566,7 +13566,7 @@
   <type name="SurvivorPartsMaleAfrican">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13588,7 +13588,7 @@
   <type name="FemaleHenrietHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13610,7 +13610,7 @@
   <type name="GhillieSuitMossy">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13708,7 +13708,7 @@
   </type>
   <type name="BagMountain_Blue">
     <nominal>10</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -13731,7 +13731,7 @@
   <type name="BookTranslationsOfShakuntala">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13753,7 +13753,7 @@
   <type name="Armband">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13763,7 +13763,7 @@
   </type>
   <type name="BagMountain_Green">
     <nominal>10</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -13774,8 +13774,8 @@
   </type>
   <type name="Trap_Bear">
     <nominal>1</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>604800</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13786,7 +13786,7 @@
   <type name="BookLonesomeLand">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13830,7 +13830,7 @@
   <type name="Land_Volha_ground_DayZ">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13841,7 +13841,7 @@
   <type name="ZombieFemale5_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13874,7 +13874,7 @@
   <type name="Att_Ghillie_Tan">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -13885,7 +13885,7 @@
   <type name="ZombieFishermanBlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -13995,7 +13995,7 @@
   <type name="Land_Church_01">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14006,7 +14006,7 @@
   <type name="MaleAfricanFeetNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14028,7 +14028,7 @@
   <type name="M_Quiver_Arrows">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14039,7 +14039,7 @@
   <type name="Land_Mil_ControlTower">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14061,7 +14061,7 @@
   <type name="FoldedSpotlight">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14072,7 +14072,7 @@
   <type name="BookTheCanterburyTales">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14083,7 +14083,7 @@
   <type name="Cultivation_TomatoSeeds">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14116,7 +14116,7 @@
   <type name="Animal_SusScrofa">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14127,7 +14127,7 @@
   <type name="BusDoors_Left">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14160,7 +14160,7 @@
   <type name="Animal_UrsusArctos">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14182,7 +14182,7 @@
   <type name="Crafting_SharpStick">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -14204,7 +14204,7 @@
   <type name="BookLordJim">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14226,7 +14226,7 @@
   <type name="BookThreeMenInABoat">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14281,7 +14281,7 @@
   <type name="BookBuddenbrooks">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14292,7 +14292,7 @@
   <type name="BookTheMetamorphosesOfOvid">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14325,7 +14325,7 @@
   <type name="GhillieTopTan">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14358,7 +14358,7 @@
   <type name="SmershVestBackpack">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14368,7 +14368,7 @@
   </type>
   <type name="Container_AmmoBox300Rnd">
     <nominal>5</nominal>
-    <lifetime>3888000</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>120</restock>
     <min>10</min>
     <max>100</max>
@@ -14380,7 +14380,7 @@
   <type name="FakeWeapon">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14391,7 +14391,7 @@
   <type name="MaleAfricanTorsoNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14413,7 +14413,7 @@
   <type name="MaleHandsAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14424,7 +14424,7 @@
   <type name="Light_Candle">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14435,7 +14435,7 @@
   <type name="BookDonQuichotte">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14468,7 +14468,7 @@
   <type name="Plant_Zucchini">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14490,7 +14490,7 @@
   <type name="Att_Handguard_AK74_Camo">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14589,7 +14589,7 @@
   <type name="Att_Optic_PSO1">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>0</max>
     <quantmin>-1</quantmin>
@@ -14600,7 +14600,7 @@
   <type name="Land_Mil_Barracks">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14611,7 +14611,7 @@
   <type name="BookWarAndPeace">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14622,7 +14622,7 @@
   <type name="AdvancedImprovisedShelterPitched">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14633,7 +14633,7 @@
   <type name="V3SWheelDouble">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14644,7 +14644,7 @@
   <type name="Tool_ImprovisedFishingRod">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14655,7 +14655,7 @@
   <type name="BookCrimeAndPunishment">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14666,7 +14666,7 @@
   <type name="ShotgunIzh43_Sawedoff">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14677,7 +14677,7 @@
   <type name="Land_PowLines_Transformer2">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14710,7 +14710,7 @@
   <type name="Att_Handguard_AK_Wood_Camo">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14721,7 +14721,7 @@
   <type name="Animal_OvisOrientalis">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14743,7 +14743,7 @@
   <type name="BookTheCountryOfTheBlind">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14753,8 +14753,8 @@
   </type>
   <type name="BagImprovisedFur">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>31557600</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14765,7 +14765,7 @@
   <type name="V3SHood_Blue">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14776,7 +14776,7 @@
   <type name="V3SHood_Grey">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14798,7 +14798,7 @@
   <type name="ZombieParamedicMBlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14820,7 +14820,7 @@
   <type name="Cover_BurlapSack">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14853,7 +14853,7 @@
   <type name="Tool_MessTin">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14864,7 +14864,7 @@
   <type name="Armband_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14875,7 +14875,7 @@
   <type name="AthleticShoes_Blue">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -14886,7 +14886,7 @@
   <type name="AthleticShoes_Grey">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -14897,7 +14897,7 @@
   <type name="ZombieMale16_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14908,7 +14908,7 @@
   <type name="Armband_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14919,7 +14919,7 @@
   <type name="Animal_CanisLupus_White">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14941,7 +14941,7 @@
   <type name="AthleticShoesAbove">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -14952,7 +14952,7 @@
   <type name="BookLleMystrieuse">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -14963,7 +14963,7 @@
   <type name="AthleticShoes_Black">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -14974,7 +14974,7 @@
   <type name="AthleticShoes_Brown">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -15051,7 +15051,7 @@
   <type name="Consumable_Bark_Birch">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15073,7 +15073,7 @@
   <type name="AthleticShoes_Green">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>50</max>
     <quantmin>-1</quantmin>
@@ -15084,7 +15084,7 @@
   <type name="BookLesTroisMousquetaires">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15095,7 +15095,7 @@
   <type name="Att_Buttstock_AK_Folding_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15106,7 +15106,7 @@
   <type name="Armband_White">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15128,7 +15128,7 @@
   <type name="Food_CanSpaghetti_Open">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15139,7 +15139,7 @@
   <type name="Crafting_ChickenFeather">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15150,7 +15150,7 @@
   <type name="Att_Buttstock_AK_Folding_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15161,7 +15161,7 @@
   <type name="Container_BearDark">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15172,7 +15172,7 @@
   <type name="Container_BearPink">
     <nominal>0</nominal>
     <lifetime>600</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>0</max>
     <quantmin>-1</quantmin>
@@ -15182,7 +15182,7 @@
   </type>
   <type name="BagHunting">
     <nominal>5</nominal>
-    <lifetime>14400</lifetime>
+    <lifetime>31557600</lifetime>
     <restock>200</restock>
     <min>10</min>
     <max>100</max>
@@ -15227,7 +15227,7 @@
   <type name="ZombieMale11_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15238,7 +15238,7 @@
   <type name="HatchbackDoors_CoDriver">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15249,7 +15249,7 @@
   <type name="ZombieHunterOldMSummer_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15271,7 +15271,7 @@
   <type name="Mushroom_Psilocybe">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15315,7 +15315,7 @@
   <type name="BookNostromo">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15326,7 +15326,7 @@
   <type name="TShirtOrangeWhiteStripes">
     <nominal>0</nominal>
     <lifetime>300</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>5</max>
     <quantmin>-1</quantmin>
@@ -15348,7 +15348,7 @@
   <type name="BookTheHiddenChildren">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15359,7 +15359,7 @@
   <type name="Red_BarrelHoles">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15414,7 +15414,7 @@
   <type name="ZombieHikerSkinnyFRed_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15425,7 +15425,7 @@
   <type name="SurvivorPartsMaleAsian">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15469,7 +15469,7 @@
   <type name="V3SHood_Orange">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15480,7 +15480,7 @@
   <type name="TransitBusWheelDouble">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15491,7 +15491,7 @@
   <type name="Ammo_762_tracer">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15502,7 +15502,7 @@
   <type name="ZombieHikerSkinnyFGreen_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15513,7 +15513,7 @@
   <type name="Land_HMMWV_wrecked">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15546,7 +15546,7 @@
   <type name="SurvivorPartsMaleWhite">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15557,7 +15557,7 @@
   <type name="FemaleJanaZHands">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15590,7 +15590,7 @@
   <type name="ZombieHermit3_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15601,7 +15601,7 @@
   <type name="BookKingLear">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15623,7 +15623,7 @@
   <type name="Animal_OvisAriesF">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15645,7 +15645,7 @@
   <type name="CanisterGasoline">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15700,7 +15700,7 @@
   <type name="SurvivorPartsMaleIndian">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15711,7 +15711,7 @@
   <type name="Mosin9130_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15733,7 +15733,7 @@
   <type name="Blue_BarrelHoles">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15744,7 +15744,7 @@
   <type name="Mosin9130_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15755,7 +15755,7 @@
   <type name="Food_SmallGuts">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15777,7 +15777,7 @@
   <type name="ZombieJournalistFBlue_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15788,7 +15788,7 @@
   <type name="Meat_WolfSteak">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15810,7 +15810,7 @@
   <type name="Medical_Splint">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15854,7 +15854,7 @@
   <type name="M_akm_drum_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15865,7 +15865,7 @@
   <type name="ZombieMale6_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -15887,7 +15887,7 @@
   <type name="M_akm_drum_Green">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15898,7 +15898,7 @@
   <type name="Vest_LeatherStorage_Beige">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15909,7 +15909,7 @@
   <type name="Vest_LeatherStorage_Black">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15920,7 +15920,7 @@
   <type name="Vest_LeatherStorage_Brown">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15953,7 +15953,7 @@
   <type name="BookRasselas">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -15997,7 +15997,7 @@
   <type name="Cultivation_PepperSeeds">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -16008,7 +16008,7 @@
   <type name="Land_Mil_Guardhouse">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -16019,7 +16019,7 @@
   <type name="ZombieMale1_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -16030,7 +16030,7 @@
   <type name="ZombieFarmer2_NewAI">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -16062,8 +16062,8 @@
   </type>
   <type name="Trap_SmallFish">
     <nominal>0</nominal>
-    <lifetime>3600</lifetime>
-    <restock>0</restock>
+    <lifetime>604800</lifetime>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>
@@ -16085,7 +16085,7 @@
   <type name="BookFlyingURanch">
     <nominal>4</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>100</max>
     <quantmin>-1</quantmin>
@@ -16096,7 +16096,7 @@
   <type name="MaleHandsNew">
     <nominal>0</nominal>
     <lifetime>1800</lifetime>
-    <restock>0</restock>
+    <restock>800</restock>
     <min>10</min>
     <max>10</max>
     <quantmin>-1</quantmin>

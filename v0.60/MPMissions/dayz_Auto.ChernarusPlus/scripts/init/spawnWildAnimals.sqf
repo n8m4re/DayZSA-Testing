@@ -9,7 +9,6 @@ _maxBase = getNumber ( _cfgSpawns >> "WildAnimalBase" >> "maxSpawn");
 // _animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey","Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
 _animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey"];
 
-
 //real zombie spawning
 fnc_spawnWildAnimal = 
 {

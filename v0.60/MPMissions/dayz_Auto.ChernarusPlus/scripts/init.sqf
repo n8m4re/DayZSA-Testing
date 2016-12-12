@@ -2,6 +2,7 @@ DB_DEBUG = false;
 DEBUG_SPAWN = false;
 DZ_SAVE_SLEEP = 120;
 
+
 //functions
 fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "scripts\functions\fnc_reloadWeaponOnSpawn.sqf";
 fnc_addHandsItem = compile preprocessFileLineNumbers "scripts\functions\fnc_addHandsItem.sqf";
@@ -63,6 +64,7 @@ player_fnc_processStomach = compile preprocessFileLineNumbers "scripts\player\pl
 player_fnc_tickExposure = compile preprocessFileLineNumbers "scripts\player\player_fnc_tickExposure.sqf";
 player_plantStages = compile preprocessFileLineNumbers "scripts\player\player_plantStages.sqf";
 player_digGreenhouse = compile preprocessFileLineNumbers "scripts\player\player_digGreenhouse.sqf";
+
 
 // custom
 spawnACar =	compile preprocessFileLineNumbers "scripts\custom\spawnACar.sqf";

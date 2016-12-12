@@ -20,11 +20,14 @@ _createPlayer =
 	};
 	
 	//process client
-	[_id,_isAlive,queueTime,player_queued] spawnForClient {
+	[_id,_isAlive,queueTime,player_queued] spawnForClient 
+	{
 		titleText ["","BLACK FADED",10e10];
 		player_queued = (_this select 3);
 		playerQueueVM = _this call player_queued;
 	};
+	
+	// _pos call spawnACar;
 };
 
 //DISCONNECTION PROCESSING
