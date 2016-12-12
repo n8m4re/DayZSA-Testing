@@ -33,8 +33,8 @@ tick_states = compile preprocessFileLineNumbers "scripts\functions\tick_states.s
 player_initialize = compile preprocessFileLineNumbers "scripts\init\player_initialize.sqf";
 init_newPlayer = compile preprocessFileLineNumbers "scripts\init\init_newPlayer.sqf";
 init_newBody = compile preprocessFileLineNumbers "scripts\init\init_newBody.sqf";
-init_spawnZombies = compile preprocessFileLineNumbers "scripts\init\spawnZombies.sqf";
-init_spawnWildAnimals = compile preprocessFileLineNumbers "scripts\init\spawnWildAnimals.sqf";
+init_spawnZombies = compile preprocessFileLineNumbers "scripts\init\init_spawnZombies.sqf";
+init_spawnWildAnimals = compile preprocessFileLineNumbers "scripts\init\init_spawnWildAnimals.sqf";
 
 //cooking
 cooking_cookingProcess = compile preprocessFileLineNumbers "scripts\cooking\cooking_cookingProcess.sqf";

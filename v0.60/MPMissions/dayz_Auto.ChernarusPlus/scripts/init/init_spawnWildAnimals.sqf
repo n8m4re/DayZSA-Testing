@@ -105,6 +105,8 @@ _lastPopulatedArea = "All";
 	
 	{_types set [count _types,_x]} forEach _animalArray;
 	
+	// diag_log format [">>>>>>>>>>>>> %1",_types];
+	
 	//calculate dependency on max server population
 	if ( _mult < 0.5 && _max <= _maxBase ) then
 	{
