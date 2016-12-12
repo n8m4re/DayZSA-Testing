@@ -12,7 +12,8 @@ if !(typeName _state == "ARRAY") exitWith {true};
 
 _item setDamage (_state select 0);
 	
-null = call { 
+null = call 
+{ 
 	if ( _item isKindOf "MagazineBase" ) exitWith 
 	{
 		_item setMagazineAmmo (_state select 1);
@@ -41,7 +42,7 @@ if ( typeName _itemVars == "ARRAY" ) then
 			
 			_item setVariable [(_x select 0),_var];
 		
-			_item spawn { _this synchronizeVariable [(_x select 0), 1];};
+			// _item spawn { _this synchronizeVariable [(_x select 0), 1];};
 			
 		} forEach _itemVars;
 	};

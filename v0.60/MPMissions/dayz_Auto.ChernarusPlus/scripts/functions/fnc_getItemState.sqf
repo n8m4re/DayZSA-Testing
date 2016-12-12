@@ -54,9 +54,10 @@ _storeVariables = _this call
 
 _itemState set [0,(damage _this)];
 
-null = call {
+null = call 
+{
 
-	if (_this isKindOf "MagazineBase") exitWith 
+	if ( _this isKindOf "MagazineBase") exitWith 
 	{
 		_itemState set [1,(magazineAmmo _this)];
 	};

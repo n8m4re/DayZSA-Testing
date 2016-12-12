@@ -10,7 +10,7 @@ _last_pos = getPosATL _agent;
 //cleanup
 _respawn_delay = 300 + floor(random(120));
 
-diag_log format ["ZOMBIE:: %1 DIED at %2, respawn after %3 seconds, timestamp %4",_type, _last_pos, _cleanup_delay, time];
+diag_log format ["ZOMBIE:: %1 DIED at %2, respawn after %3 seconds, timestamp %4",_type, _last_pos, _respawn_delay, time];
 
 sleep _respawn_delay;
 
