@@ -72,9 +72,9 @@ static void DataBaseWrite(string in1, string in2, string in3)
 
 	if (file != 0) {
 		
-		strrep(in3, "<null>", "[]");
+		// strrep(in3, "<null>", "[]");
 		
-		// strrep(in3, "<null>", "\'" + "\'");
+		strrep(in3, "<null>", "\'" + "\'");
 		
 		// strrep(in3, "\"","\'");
 		
