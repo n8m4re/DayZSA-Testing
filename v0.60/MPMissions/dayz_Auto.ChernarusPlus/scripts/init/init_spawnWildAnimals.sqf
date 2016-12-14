@@ -6,19 +6,19 @@ _totalAreas = ((count _cfgSpawns) - 1);
 _posZ = 0;
 _maxBase = getNumber ( _cfgSpawns >> "WildAnimalBase" >> "maxSpawn");
 
-// _animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey","Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
-_animalArray = ["Animal_CanisLupus_White","Animal_CanisLupus_Grey"];
-
 //real zombie spawning
 fnc_spawnWildAnimal = 
 {
 	DZ_TotalAnimals = DZ_TotalAnimals + 1;
+	
 	_type = _this select 0;
+	
 	_wildAnimal = createAgent [_type, _this select 1,[],0,"CAN_COLLIDE"];
-	diag_log format["SPAWN ANIMAL: %1 | POS: %2", _type,_this select 1];
+	
+	// diag_log format["SPAWN ANIMAL: %1 | POS: %2", _type,_this select 1];
 	
 	
-	if ( _type in _animalArray) then 
+	if ( _type in DZ_AnimalsTypes) then 
 	{
 		_wildAnimal addeventhandler ["killed",{null = _this spawn event_killedWildAnimal} ];
 	};
@@ -103,9 +103,9 @@ _lastPopulatedArea = "All";
 	_locations = getArray( _class >> "locations");
 	_types = getArray( _class >> "types");
 	
-	{_types set [count _types,_x]} forEach _animalArray;
+	{_types set [count _types,_x]} forEach DZ_AnimalsTypes;
 	
-	// diag_log format [">>>>>>>>>>>>> %1",_types];
+	// diag_log format [">>>>>>>>>>>>> %1",_class];
 	
 	//calculate dependency on max server population
 	if ( _mult < 0.5 && _max <= _maxBase ) then

@@ -88,7 +88,38 @@ else
 			_delta = rain * 0.2;
 		};
 	};
+	/*
+	//THIS SHOULD BE removed completely imo
+	if ( !(isNull (_agent itemInSlot "Feet")) ) then
+	{
+		_speed = speed _agent;
+		if ( _speed > 0.5 ) then
+		{
+			_shoes = _agent itemInSlot "Feet";
+			if ( damage _shoes < 1 ) then
+			{
+				_rough = getNumber (configFile >> "CfgSurfaces" >> surfaceType getPosASL _agent >> "rough");
+				_hp = getNumber (configFile >> "CfgVehicles" >> typeOf _shoes >> "armor");
+				if (_speed < 5) then
+				{
+					_rough = _rough * 0.25;
+				};
+				if (_speed >= 5 && _speed <= 10) then
+				{
+					_rough = _rough * 0.5;
+				};
+				if (_speed > 15) then
+				{
+					_rough = _rough * 2;
+				};
 
+				_dmg = (1/_hp) * 0.01 * _rough;
+				_shoes setDamage damage _shoes + _dmg;
+			};
+		};
+	};
+	*/
+	
 };
 
 
@@ -193,12 +224,8 @@ _fireplace_temper_coef = 0;
 _fireplace_heat_radius = 2.5;
 _fireplace = [_agent, 'FireplaceBase', [], _fireplace_heat_radius] call fnc_getNearestObject; //radius max 2.5m
 if !(isNil "_fireplace") then
-{
-	
-	
-	
-	
-	_min_fireplace_heat_tempearature = 70; //in °C
+{	
+	_min_fireplace_heat_tempearature = 70; //in Â°C
 	
 	_fireplace_temperature = _fireplace getVariable ['temperature',0];
 	_agent_distance = (getPosASL _agent) distance (getPosASL _fireplace);
@@ -207,9 +234,10 @@ if !(isNil "_fireplace") then
 	{
 		_oldtemp = _agent getVariable["bodytemperature",37.7];
 	
-		if(_oldtemp < 37.6)then
+		if (_oldtemp < 37.6) then
 		{
 			_temp = 0.008 * (_fireplace_heat_radius - ((getPosASL _agent) distance (getPosASL _fireplace)));
+		
 			if (_temp > 0) then
 			{
 				_agent setVariable["bodytemperature",_oldtemp + _temp];
@@ -222,12 +250,12 @@ if !(isNil "_fireplace") then
 			_fireplace_temper_coef = 210; //heatcomformt ~210
 		};
 		//over-heat
-		if (_agent_distance <= 1.0 && _agent_distance > 0.5) exitWith //radius 0.4-0.8m
+		if (_agent_distance <= 1.0 and _agent_distance > 0.5) exitWith //radius 0.4-0.8m
 		{
 			_fireplace_temper_coef = 60;  //heatcomformt ~40-60
 		};
 		//low heat
-		if (_agent_distance <= _fireplace_heat_radius && _agent_distance > 1.0) exitWith //radius 0.8-2.5m
+		if (_agent_distance <= _fireplace_heat_radius and _agent_distance > 1.0) exitWith //radius 0.8-2.5m
 		{
 			_fireplace_temper_coef = 30; //heatcomformt ~10-30
 		};

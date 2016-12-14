@@ -2,6 +2,10 @@ DB_DEBUG = false;
 DEBUG_SPAWN = false;
 DZ_SAVE_SLEEP = 120;
 
+// "Animal_CanisLupus_White","Animal_CanisLupus_Grey"  // WOLF
+// DZ_AnimalsTypes = [];
+DZ_AnimalsTypes = ["Animal_OvisOrientalis","Animal_SusDomesticus","Animal_SusScrofa","Animal_VulpesVulpes","Animal_UrsusArctos","Animal_OvisAriesF","Animal_OvisAries","Animal_CervusElaphusF","Animal_CervusElaphus","Animal_CapreolusCapreolusF","Animal_CapreolusCapreolus","Animal_CapraHircus"];
+
 
 //functions
 fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "scripts\functions\fnc_reloadWeaponOnSpawn.sqf";
@@ -35,6 +39,7 @@ init_newPlayer = compile preprocessFileLineNumbers "scripts\init\init_newPlayer.
 init_newBody = compile preprocessFileLineNumbers "scripts\init\init_newBody.sqf";
 init_spawnZombies = compile preprocessFileLineNumbers "scripts\init\init_spawnZombies.sqf";
 init_spawnWildAnimals = compile preprocessFileLineNumbers "scripts\init\init_spawnWildAnimals.sqf";
+init_spawnChristmasTrees = compile preprocessFileLineNumbers "scripts\init\init_spawnChristmasTrees.sqf";
 
 //cooking
 cooking_cookingProcess = compile preprocessFileLineNumbers "scripts\cooking\cooking_cookingProcess.sqf";
@@ -69,10 +74,10 @@ player_digGreenhouse = compile preprocessFileLineNumbers "scripts\player\player_
 // custom
 spawnACar =	compile preprocessFileLineNumbers "scripts\custom\spawnACar.sqf";
 createFullEquipment = compile preprocessFileLineNumbers "scripts\custom\createFullEquipment.sqf";
-spawnChristmasTrees = compile preprocessFileLineNumbers "scripts\custom\spawnChristmasTrees.sqf";
 
-call fnc_generatePlayerSpawnpoints;
 
 // client
 player_queued = compile preprocessFileLineNumbers "modulesDayZ\scripts\player_queued.sqf";
 
+
+call fnc_generatePlayerSpawnpoints;

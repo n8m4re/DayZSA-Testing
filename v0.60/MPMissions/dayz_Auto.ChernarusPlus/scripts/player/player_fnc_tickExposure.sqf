@@ -27,8 +27,7 @@ _situation = switch true do
 } forEach _items;
 
 _damper = 1 - ((_damper min 1) max 0);
+
 _wci = (windChill * _damper);
 
-//diag_log format["WCI: %1",(_wci)];
-//hintSilent str(_wci);
 _result

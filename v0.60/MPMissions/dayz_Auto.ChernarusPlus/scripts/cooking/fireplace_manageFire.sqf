@@ -75,11 +75,8 @@ _is_player_looking_at_fire =
 {
 	_agent = _this select 0;
 	_fireplace = _this select 1;
-	//hint format["playerTarget _agent = %1", playerTarget owner _agent];
-	
-	//oldui	
-	(playerTarget owner _agent == _fireplace)
-	// false
+	//oldui	(playerTarget owner _agent == _fireplace)
+	false
 };
 
 _is_posing = 
