@@ -76,10 +76,7 @@ if !(_newChar) then
 
 };
 
-
-
 player_queued_isrunning = false;
-
 
 5 fadeSound 0;
 5 fadeSpeech 0;

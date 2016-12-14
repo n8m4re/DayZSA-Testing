@@ -1,7 +1,7 @@
 DZ_spawnpass3params = [30.0,70.0,25.0,70.0,0.5,2.0];
 DZ_spawnpointsfile = "spawnpoints_players.bin";
 
-queueTime = -12;
+queueTime = -15;
 
 _createPlayer = 
 {
@@ -123,15 +123,20 @@ _disconnectPlayer =
 					
 					null = _agent call fnc_reloadWeaponOnSpawn;	
 					
+					null = [_agent,call compile callFunction ["DataBaseRead","QUICKBAR",format["UID_%1",_uid]]] call fnc_addQuickBarItems;
 				};
 		};
 	};
 };
 
+
+
 "respawn" addPublicVariableEventHandler
 {
 	_agent = _this select 1;
+	
 	_id = owner _agent;
+	
 	_uid = getClientUID _id;
 		
 	// _agent setVariable["respawningPlayer", true];
@@ -154,7 +159,8 @@ _disconnectPlayer =
 		//---------------------------------
 		
 		//process client
-		[_id,false,queueTime,player_queued] spawnForClient { 
+		[_id,false,queueTime,player_queued] spawnForClient 
+		{ 
 			titleText ["Respawning... Please wait...","BLACK FADED",10e10];
 			player_queued = (_this select 3);
 			playerQueueVM = _this call player_queued;
@@ -162,15 +168,19 @@ _disconnectPlayer =
 	};
 };
 
+
+
 "clientNew" addPublicVariableEventHandler
 {
 
 	_array = _this select 1;
+	
 	_id = _array select 2;
 	
 	diag_log format ["CLIENT %1 request to spawn %2",_id,_this];
 	
 	_uid = getClientUID _id;
+	
 	_savedChar = _uid call fnc_dbFindInProfile;
 	
 	if (_savedChar select 0) exitWith {diag_log format ["CLIENT %1 spawn request rejected as already alive character",_id]};
@@ -184,11 +194,11 @@ _disconnectPlayer =
 	if (DEBUG_SPAWN) then 
 	{
 		_pos = [7201.3716, 3013.104,0]; 
-		// _pos = [7053.37,2771.16,11.8116]; 
+		_pos = [7053.37,2771.16,11.8116]; 
 	};
 	
 	// approximate position of camera needs to be set ASAP (network optimization)
-		diag_log format["SPAWN: updateServerCameraForNewCLient for new player"];
+	diag_log format["SPAWN: updateServerCameraForNewCLient for new player"];
 	_id updateServerCameraForNewClient _pos;
 
 	//load data
@@ -207,8 +217,10 @@ _disconnectPlayer =
 	
 	_agent = createAgent [_mySkin,  _pos, [], 0, "NONE"];
 	
-	if (DEBUG_SPAWN) then {
+	if (DEBUG_SPAWN) then 
+	{
 		call createFullEquipment;
+		
 		_v = _agent createInInventory "tool_flashlight";
 		_v = _agent createInInventory "tool_transmitter";
 		_v = _v createInInventory "consumable_battery9V";_v setVariable ["power",30000];
@@ -243,6 +255,8 @@ _disconnectPlayer =
 	
 };
 
+
 // Create player on connection
 onPlayerConnecting _createPlayer;
+
 onPlayerDisconnected _disconnectPlayer;

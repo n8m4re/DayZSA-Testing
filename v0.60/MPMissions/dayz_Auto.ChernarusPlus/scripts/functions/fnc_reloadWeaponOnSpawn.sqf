@@ -6,44 +6,44 @@ _itemInHands = itemInHands _agent;
 
 _itemsInInventory = itemsInInventory _agent;
 
-{
+	{
 
-	if(isClass(configFile >> "CfgMagazines" >> typeOf _x)) then 
-	{	
-		_parent = itemParent _x;
-		
-		if(isClass(configFile >> "cfgWeapons" >> typeOf _parent)) then 
-		{
-			moveToGround _parent;
-			moveToGround _x;
-			_parent moveToInventory _x;
-			_agent moveToInventory _parent;
-			//_agent moveToHands _parent;
-			// _agent playAction 'ReloadMagazine';
-			// _agent moveItemFromHandsToInventory _parent;
-		};		
-	};
+		if(isClass(configFile >> "CfgMagazines" >> typeOf _x)) then 
+		{	
+			_parent = itemParent _x;
+			
+			if(isClass(configFile >> "cfgWeapons" >> typeOf _parent)) then 
+			{
+				_a = moveToGround _x; 
+				_b = moveToGround _parent;
+				waitUntil {_a && _b};
+				null = _parent moveToInventory _x;
+				null = _agent moveToInventory _parent;
+				// _agent playAction 'ReloadMagazine';
+			};		
+		};
 
-} forEach  _itemsInInventory;
+	} forEach  _itemsInInventory;
+
 
 /*
 if !(isNull _itemInHands) then 
 {
-		if !(isClass(configFile >> "cfgWeapons" >> typeOf _itemInHands))exitWith{};	
-	
+		if !(isClass(configFile >> "cfgWeapons" >> typeOf _itemInHands)) exitWith{};	
 		{
+			
 			if(isClass(configFile >> "CfgMagazines" >> typeOf _x)) then 
 			{	
-				_parent = itemParent _x;
-				moveToGround _parent;
-				moveToGround _x;
-				_parent moveToInventory _x;
-				_agent playAction 'ReloadMagazine';
+				_a = moveToGround _x;
+				_b = moveToGround _itemInHands;
+				waitUntil {_a && _b};
+				null =_itemInHands moveToInventory _x;
 				
-				// _agent moveToHands _parent;
-				// _agent takeInHands _parent;
-				
+				// null = _agent takeInHands _itemInHands;
+				// _agent moveInHands _parent;
 			};
 		} forEach (itemsInInventory _itemInHands);
 };	
 */
+
+true

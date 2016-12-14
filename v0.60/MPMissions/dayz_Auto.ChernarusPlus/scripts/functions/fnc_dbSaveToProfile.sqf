@@ -17,8 +17,8 @@ _char set [0,((lifeState _agent == "ALIVE")&&(not captive _agent))];
 _char set [1,(typeOf _agent)];
 _char set [2,(getPosATL _agent)];
 _char set [3,(getDir _agent)];
-_char set [4,(vectorUp _agent)];
-_char set [5,(vectorDir _agent)];
+_char set [4,0]; //_char set [4,(vectorUp _agent)];
+_char set [5,0]; // _char set [5,(vectorDir _agent)];
 _char set [6,(animationState _agent)];
 
 // Save CHAR 

@@ -1,4 +1,4 @@
-private ["_uid","_char","_key","_agent","_state","_hands","_slots","_quickbar"];
+private ["_uid","_char","_key","_agent"];
 
 _uid = _this;
 
@@ -7,14 +7,6 @@ _char = _uid call fnc_dbFindInProfile;
 _key = format["UID_%1",_uid];
 
 if !(_char select 0) exitWith {objNull};
-
-_state = call compile callFunction ["DataBaseRead","STATE",_key];
-
-_hands = call compile callFunction ["DataBaseRead","HANDS",_key];
-
-_slots = call compile callFunction ["DataBaseRead","SLOTS",_key];
-
-_quickbar = call compile callFunction ["DataBaseRead","QUICKBAR",_key];
 
 _agent = createAgent [(_char select 1),(_char select 2),[],0,"NONE"];
 
@@ -28,7 +20,7 @@ _agent switchMove (_char select 6);
 
 // _agent setVectorDir (_char select 5);
 
-// null = _agent moveToHands objNull;
+null = _agent takeInHands objNull;
 
 // STATE
 {
@@ -45,11 +37,11 @@ _agent switchMove (_char select 6);
 
 	_agent setVariable[_name,_value];
 
-} forEach _state;
+} forEach (call compile callFunction ["DataBaseRead","STATE",_key]);
 
 
 // HANDS
-null = [_agent,_hands] call fnc_addHandsItem;
+null = [_agent,(call compile callFunction ["DataBaseRead","HANDS",_key])] call fnc_addHandsItem;
 
 
 // INVENTORY
@@ -57,15 +49,13 @@ _inventory = [];
 {
 	_re = call compile callFunction ["DataBaseRead",_x,_key];
 	_inventory set [(count _inventory),_re];
-} forEach _slots;
+} forEach ( call compile callFunction ["DataBaseRead","SLOTS",_key] );
 null = [_agent,_inventory] call fnc_addInvItems;
 
 
-
 // QUICKBAR
-null = [_agent,_quickbar] call fnc_addQuickBarItems;
+// null = [_agent,(call compile callFunction ["DataBaseRead","QUICKBAR",_key])] call fnc_addQuickBarItems; // ==> dbLoadPlayer.sqf 
 
-			
 if (DB_DEBUG) then {diag_log format[":::: dbLoadFromProfile: %1",_char]};
 
 _agent
