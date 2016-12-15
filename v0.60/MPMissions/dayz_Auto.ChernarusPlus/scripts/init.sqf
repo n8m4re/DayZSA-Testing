@@ -21,8 +21,8 @@ fnc_dbLoadFromProfile = compile preprocessFileLineNumbers "scripts\functions\fnc
 fnc_dbSaveToProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbSaveToProfile.sqf";
 fnc_dbCreateCharInProfile = compile preprocessFileLineNumbers "scripts\functions\fnc_dbCreateCharInProfile.sqf";
 fnc_generatePlayerSpawnpoints = compile preprocessFileLineNumbers "scripts\functions\fnc_generatePlayerSpawnpoints.sqf";
-// Temporary function for send notifiers to Enfusion Script
 fnc_sendNotifiersToEnfusion = compile preprocessFileLineNumbers "scripts\functions\fnc_sendNotifiersToEnfusion.sqf";
+
 
 dbLoadPlayer = compile preprocessFileLineNumbers "scripts\functions\dbLoadPlayer.sqf";
 dbSavePlayerPrep = compile preprocessFileLineNumbers "scripts\functions\dbSavePlayerPrep.sqf";

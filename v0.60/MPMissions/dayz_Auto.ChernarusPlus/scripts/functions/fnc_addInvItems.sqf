@@ -34,15 +34,24 @@ if !(typeName _items == "ARRAY") exitWith {true};
 				
 		};		
 
-		if (count _state > 0) then 
-		{ 
-			 null = [_item,_state] call fnc_addItemState; 
+		if ( typeName _state == "ARRAY" ) then 
+		{
+			if !( count _state <= 0 ) then 
+			{ 
+				null = [_item,_state] call fnc_addItemState;
+			};
+		};
+
+		
+		if ( typeName _inv == "ARRAY" ) then 
+		{
+			if !( count _inv <= 0 ) then 
+			{ 
+				null = [_item,_inv] call fnc_addInvItems;
+			};
 		};
 		
-		if (count _inv > 0) then 
-		{
-			 null = [_item,_inv] call fnc_addInvItems;
-		};
+		
 		
 		null = call 
 		{
@@ -52,6 +61,7 @@ if !(typeName _items == "ARRAY") exitWith {true};
 				_item call event_fnc_foodStage;
 			};
 		};
+		
 } forEach _items;
 
 true
