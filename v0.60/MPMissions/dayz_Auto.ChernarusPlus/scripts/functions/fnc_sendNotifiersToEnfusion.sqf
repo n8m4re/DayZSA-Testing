@@ -1,34 +1,33 @@
-private["_myNtfrs","_name","_added"];
-
+private["_myNtfrs","_color","_item","_i","_name"];
 _myNtfrs = [];
+_color = [];
 
-_added = [];
-
-_myNtfrs = _this getVariable ["myNotifiers",[]];
-
+_myNtfrs = _this getVariable ["myNotifiers",[]];	
+	
+for [{_i=0},{ _i < count _myNtfrs},{_i=_i+1}] do
 {
-	if !( isNil "_x" ) then 
-	{	
-		if (typeName _x == "ARRAY") then
+	_item = _myNtfrs select _i;		
+	
+	if !( isNil "_item" ) then
+	{		
+		if (typeName _item == "ARRAY") then
 		{
-			if ( count _x > 0 ) then
+			_name = "";
+			_color = [0,0,0];
+			_alpha = 0;
+		
+			if ( count _item > 0 ) then
 			{	
-				
-				_name = _x select 0;
-				_color = _x select 1;
+				_name = _item select 0;
+				_color = _item select 1;
 				_alpha = 0.5;
-				null = _this callMethod ["SQF_PlayerNotifierAdd", _name, _forEachIndex, _color select 0, _color select 1, _color select 2, _alpha];
-				_added set [count  _added, 1];
 			};
+			
+			_this callMethod ["SQF_PlayerNotifierAdd", _name, _i, _color select 0, _color select 1, _color select 2, _alpha];				
 		};
 	};
-} forEach _myNtfrs;
-
-
-if ( count _added > 0 ) then
-{
-	null = _this callMethod ["SQF_PlayerNotifierSend"];
-	_added = [];
 };
+
+_this callMethod ["SQF_PlayerNotifierSend"];
 
 true
