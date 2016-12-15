@@ -1,9 +1,9 @@
 
-  // _filename = "spawnpoints_players.bin";
-	_filename = format["spawnpointsPlayers.%1",worldName];
+// _filename = "spawnpoints_players.bin";
+// _filename = format["spawnpointsPlayers.%1",worldName];
   
   _spawnparams = [
-	  _filename,
+	  DZ_SpawnPointsFile,
 		1 / 8.0,      // SPT_gridDensity
 		40.0,         // SPT_gridWidth
 		40.0,         // SPT_gridHeight

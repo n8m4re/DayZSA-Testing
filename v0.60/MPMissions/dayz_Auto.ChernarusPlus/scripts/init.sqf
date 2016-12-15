@@ -1,6 +1,10 @@
 DB_DEBUG = false; 
 DEBUG_SPAWN = false;
 DZ_SAVE_SLEEP = 120;
+DZ_QUEUETIME = -15;
+
+// DZ_SpawnPointsFile = "spawnpoints_players.bin";
+DZ_SpawnPointsFile = format["spawnpointsPlayers.%1",worldName];
 
 // "Animal_CanisLupus_White","Animal_CanisLupus_Grey"  // WOLF
 // DZ_AnimalsTypes = [];

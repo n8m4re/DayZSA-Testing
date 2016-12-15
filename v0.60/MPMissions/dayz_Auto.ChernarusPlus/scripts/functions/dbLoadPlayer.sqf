@@ -1,8 +1,3 @@
-DZ_spawnpass3params = [30.0,70.0,25.0,70.0,0.5,2.0];
-DZ_spawnpointsfile = "spawnpoints_players.bin";
-
-queueTime = -15;
-
 _createPlayer = 
 {
 	diag_log format["CONNECTION: _id: %1 _uid: %2 _name: %3",_id,_uid,_name];
@@ -20,7 +15,7 @@ _createPlayer =
 	};
 	
 	//process client
-	[_id,_isAlive,queueTime,player_queued] spawnForClient 
+	[_id,_isAlive,DZ_QUEUETIME,player_queued] spawnForClient 
 	{
 		titleText ["","BLACK FADED",10e10];
 		player_queued = (_this select 3);
@@ -56,7 +51,7 @@ _disconnectPlayer =
 			
 			_hands = itemInHands _agent;
 					
-			_wait = queueTime;
+			_wait = DZ_QUEUETIME;
 			
 			_wait = (-_wait) max 0;
 			 
@@ -159,7 +154,7 @@ _disconnectPlayer =
 		//---------------------------------
 		
 		//process client
-		[_id,false,queueTime,player_queued] spawnForClient 
+		[_id,false,DZ_QUEUETIME,player_queued] spawnForClient 
 		{ 
 			titleText ["Respawning... Please wait...","BLACK FADED",10e10];
 			player_queued = (_this select 3);
@@ -189,7 +184,7 @@ _disconnectPlayer =
 	
 	_charInv = _array select 1;
 	
-	_pos = findCachedSpawnPoint [ DZ_spawnpointsfile, DZ_spawnpass3params ];
+	_pos = findCachedSpawnPoint [DZ_spawnpointsfile,[30.0,70.0,25.0,70.0,0.5,2.0]];
 	
 	if (DEBUG_SPAWN) then 
 	{
