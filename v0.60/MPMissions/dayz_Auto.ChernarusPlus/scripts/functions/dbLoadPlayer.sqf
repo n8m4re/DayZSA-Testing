@@ -49,7 +49,7 @@ _disconnectPlayer =
 			
 			diag_log format ["DISCONNECT: Player %1 agent %2 after %3 seconds",_uid,_agent,_connected];
 			
-			_hands = itemInHands _agent;
+			// _hands = itemInHands _agent;
 					
 			_wait = DZ_QUEUETIME;
 			
