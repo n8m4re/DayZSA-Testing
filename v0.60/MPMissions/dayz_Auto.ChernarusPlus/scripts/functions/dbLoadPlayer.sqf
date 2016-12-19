@@ -64,8 +64,11 @@ _disconnectPlayer =
 			//----- simple scheduler part -----
 			diag_log format ["SCHEDULER: Removing disconnecting clientId %1, name %2, UID %3", _id, _name, _uid];
 			_freedPos = connectedPlayers find _id;
-			connectedPlayers set [_freedPos,0];
-			diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
+			if (_freedPos >= 0) then
+			{
+				connectedPlayers set [_freedPos,0];
+				diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
+			};
 			//---------------------------------	
 			
 			if (alive _agent) then {
