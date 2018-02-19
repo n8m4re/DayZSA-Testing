@@ -23,9 +23,23 @@ _clientNew =
 
 _clientRespawn = 
 {
+
 	[_uid, _agent] call fnc_dbDestroyProfile;
+	
 	_freedPos = connectedPlayers find _id;
+	
 	connectedPlayers set [_freedPos,0];
+	
+	[_id] spawnForClient {titleText ["","BLACK",1];};
+	
+	if (vehicle _agent != _agent) then {
+		moveOut _agent;
+	};
+	
+	if (alive _agent) then {
+		deleteVehicle _agent;
+	};	
+	
 	[_id,_uid] call fnc_newPlayer;
 };
 
