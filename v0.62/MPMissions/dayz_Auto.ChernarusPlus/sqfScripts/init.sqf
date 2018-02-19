@@ -27,7 +27,6 @@ fnc_previousPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc
 fnc_newPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_newPlayer.sqf";
 event_playerKilled = compile preprocessFileLineNumbers "sqfScripts\events\event_playerKilled.sqf";
 player_initialize = compile preprocessFileLineNumbers "sqfScripts\init\player_initialize.sqf";
-dbSavePlayerPrep = compile preprocessFileLineNumbers "sqfScripts\functions\dbSavePlayerPrep.sqf";
 dbSavePlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbSavePlayer.sqf";
 dbLoadPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbLoadPlayer.sqf";
 
