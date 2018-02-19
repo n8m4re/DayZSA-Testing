@@ -7,6 +7,8 @@ DZ_SAVE_SLEEP = 120;
 DZ_MAX_ZOMBIES = 3500;
 DZ_MAX_ANIMALS = 500;
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_reloadWeaponOnSpawn.sqf";
 fnc_addHandsItem = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_addHandsItem.sqf";
 fnc_addQuickBarItems = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_addQuickBarItems.sqf";
@@ -20,7 +22,6 @@ fnc_dbLoadFromProfile = compile preprocessFileLineNumbers "sqfScripts\functions\
 fnc_dbSaveToProfile = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_dbSaveToProfile.sqf";
 fnc_dbCreateCharInProfile = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_dbCreateCharInProfile.sqf";
 fnc_generatePlayerSpawnpoints = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_generatePlayerSpawnpoints.sqf";
-fnc_sendNotifiersToEnfusion = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_sendNotifiersToEnfusion.sqf";
 fnc_posBubbles = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_posBubbles.sqf";
 fnc_previousPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_previousPlayer.sqf";
 fnc_newPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_newPlayer.sqf";
