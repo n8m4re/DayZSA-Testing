@@ -1,4 +1,6 @@
-DB_DEBUG=false;DZ_SAVE_SLEEP=0;DZ_MAX_ZOMBIES=0;DZ_MAX_ANIMALS=0;DZ_SPAWN_TIME=30;
+DB_DEBUG=false;DZ_SAVE_SLEEP=0;DZ_MAX_ZOMBIES=0;DZ_MAX_ANIMALS=0;DZ_SPAWN_TIME=30;DZ_MP_CONNECT=false;DZ_PLAYER_COUNT=getServerMaxPlayers;connectedPlayers=[]; for "_x" from 0 to (DZ_PLAYER_COUNT-1) do{connectedPlayers set [_x,0];};
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 call compile preprocessFileLineNumbers "\dz\modulesDayZ\init.sqf";
 fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_reloadWeaponOnSpawn.sqf";
 fnc_addHandsItem = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_addHandsItem.sqf";
@@ -23,10 +25,9 @@ dbSavePlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbSavePla
 dbLoadPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbLoadPlayer.sqf";
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
-
 // custom stuff
 
 cust_createFullEquipment = compile preprocessFileLineNumbers "sqfScripts\custom\cust_createFullEquipment.sqf";
 
-
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
+

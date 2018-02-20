@@ -15,7 +15,9 @@ _clientNew =
 		[_id,_uid] call fnc_newPlayer;
 	};
 
-	[_id,DZ_SPAWN_TIME] spawnForClient 
+
+
+	[_id,DZ_SPAWN_TIME] spawnForClient
 	{	
 		_timer = _this select 1;
 		DZ_Brightness=0;DZ_Contrast=0;
@@ -36,6 +38,9 @@ _clientNew =
 		};
 		
 	};
+	
+	// [_id,] spawnForClient {	};
+	
 };
 
 
@@ -43,12 +48,12 @@ _clientNew =
 _clientRespawn = 
 {
 	
-	_vm = [_agent,_id,_uid] spawn 
+	
+	_vm = [_agent,_id] spawn 
 	{
 		_agent 	= _this select 0;
 		_id 	= _this select 1; 
-		_uid 	= _this select 2;
-		
+		_uid 	= getClientUID _id;
 		_timer 	= DZ_SPAWN_TIME;
 
 		[_uid,_agent] call fnc_dbDestroyProfile;

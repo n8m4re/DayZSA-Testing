@@ -70,8 +70,8 @@
 	<event name="InfectedVillage">
         <waves>20</waves>
         <nominal>40</nominal>
-        <min>20</min>
-        <max>300</max>
+        <min>50</min>
+        <max>600</max>
         <lifetime>1800</lifetime>
         <restock>600</restock>
         <saferadius>0</saferadius>
@@ -116,8 +116,8 @@
     <event name="InfectedFirefighter">
         <waves>20</waves>
         <nominal>40</nominal>
-        <min>20</min>
-        <max>300</max>
+        <min>50</min>
+        <max>600</max>
         <lifetime>1800</lifetime>
         <restock>10</restock>
         <saferadius>0</saferadius>
@@ -134,8 +134,8 @@
     <event name="InfectedArmy">
         <waves>20</waves>
         <nominal>50</nominal>
-        <min>20</min>
-        <max>300</max>
+       <min>50</min>
+        <max>600</max>
         <lifetime>1800</lifetime>
         <restock>10</restock>
         <saferadius>0</saferadius>
@@ -154,8 +154,8 @@
     <event name="InfectedPolice">
         <waves>20</waves>
         <nominal>50</nominal>
-        <min>20</min>
-        <max>300</max>
+        <min>50</min>
+        <max>600</max>
         <lifetime>1800</lifetime>
         <restock>10</restock>
         <saferadius>0</saferadius>
@@ -171,8 +171,8 @@
     <event name="InfectedMedic">
         <waves>20</waves>
         <nominal>50</nominal>
-        <min>20</min>
-        <max>300</max>
+        <min>50</min>
+        <max>600</max>
         <lifetime>1800</lifetime>
         <restock>10</restock>
         <saferadius>0</saferadius>
@@ -192,9 +192,9 @@
     </event>
     <event name="InfectedCity">
         <waves>20</waves>
-        <nominal>50</nominal>
-        <min>20</min>
-        <max>300</max>
+        <nominal>80</nominal>
+       <min>100</min>
+        <max>600</max>
         <lifetime>1800</lifetime>
         <restock>10</restock>
         <saferadius>0</saferadius>
@@ -214,6 +214,15 @@
 			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Flat"/>
 			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Summer"/>
 			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_SoldierNorma"/>
+			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_DoctorSkinny"/>
+			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Blue"/>
+			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Green"/>
+			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Red"/>
+			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black"/>
+			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black"/>
+			<child flags="0" lootmax="2" lootmin="0" max="20" min="0" type="ZmbM_ParamedicNormal_Black"/>
+			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PolicemanFat"/>
+            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_PoliceWomanNormal"/>
         </children>
     </event>
     <event name="AnimalDeer">

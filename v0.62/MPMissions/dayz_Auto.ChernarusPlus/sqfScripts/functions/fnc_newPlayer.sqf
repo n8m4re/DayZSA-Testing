@@ -50,5 +50,4 @@ connectedPlayers set [_freePos,_id];
 null = _agent call fnc_reloadWeaponOnSpawn;
 
 
-
 	

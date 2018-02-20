@@ -11,4 +11,5 @@
     <category id="9" type="custom"/>
     <category id="10" type="building"/>
     <category id="11" type="door"/>
+	<category id="12" type="player"/>
 </categories>
