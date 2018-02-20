@@ -50,10 +50,8 @@ setWindFnMin 0.2;
 setWindFnMax 1;
 
 call init_spawnZombies;
-sleep 1;
-call init_spawnWildAnimals;
-sleep 1;
-call init_spawnServerEvent;
+// call init_spawnWildAnimals;
+// call init_spawnServerEvent;
 // dbInitEconomy ["http://127.0.0.1:8181/"];
 dbInitEconomy [true];
 
