@@ -8,7 +8,7 @@ _posArr = call fnc_posBubbles;
 
 _pos = _posArr select (floor random (count _posArr));
 
-// _pos = [7053.37,2771.16,11.8116]; 
+if (DB_DEBUG) then { _pos = [7053.37,2771.16,11.8116]; };
 
 _mySkin = DZ_SkinsArray select (floor random (count DZ_SkinsArray));
 
@@ -22,7 +22,7 @@ _myShoe = _shoe select (floor random (count _shoe));
 
 _agent = createAgent [_mySkin,  _pos, [], 0, "NONE"];
 
-if (!isNil "cust_createFullEquipment") then {
+if (!isNil "cust_createFullEquipment" && DB_DEBUG ) then {
 
 	_agent call cust_createFullEquipment;
 
