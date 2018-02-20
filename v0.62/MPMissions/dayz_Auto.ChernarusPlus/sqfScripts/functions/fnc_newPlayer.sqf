@@ -8,7 +8,7 @@ _posArr = call fnc_posBubbles;
 
 _pos = _posArr select (floor random (count _posArr));
 
-_pos = [7053.37,2771.16,11.8116]; 
+// _pos = [7053.37,2771.16,11.8116]; 
 
 _mySkin = DZ_SkinsArray select (floor random (count DZ_SkinsArray));
 
