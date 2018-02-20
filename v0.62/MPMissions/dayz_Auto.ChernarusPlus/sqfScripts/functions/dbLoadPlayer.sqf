@@ -10,13 +10,14 @@ _clientNew =
 	_isAlive = _savedChar select 0;
 	_pos = _savedChar select 2;
 	
-		
 	if (_isAlive) then 
 	{
 		[_id,_uid,_pos] call fnc_previousPlayer
 		
 	} else {
+	
 		[_id,_uid] call fnc_newPlayer;
+		
 	}
 	
 };

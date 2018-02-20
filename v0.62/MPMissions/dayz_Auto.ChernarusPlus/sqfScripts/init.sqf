@@ -3,11 +3,12 @@ setTimeForScripts 90;
 call compile preprocessFileLineNumbers "\dz\modulesDayZ\init.sqf";
 
 DB_DEBUG = false; 
-DZ_SAVE_SLEEP = 120;
-DZ_MAX_ZOMBIES = 3500;
+DZ_SAVE_SLEEP = 60; // Player Save every x seconds
+DZ_MAX_ZOMBIES = 9999;
 DZ_MAX_ANIMALS = 500;
-//--------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_reloadWeaponOnSpawn.sqf";
 fnc_addHandsItem = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_addHandsItem.sqf";
@@ -27,21 +28,21 @@ fnc_previousPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc
 fnc_newPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_newPlayer.sqf";
 event_playerKilled = compile preprocessFileLineNumbers "sqfScripts\events\event_playerKilled.sqf";
 player_initialize = compile preprocessFileLineNumbers "sqfScripts\init\player_initialize.sqf";
+init_newBody = compile preprocessFileLineNumbers "sqfScripts\init\init_newBody.sqf";
 dbSavePlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbSavePlayer.sqf";
 dbLoadPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbLoadPlayer.sqf";
 
-
+// custom stuff
+//cust_createFullEquipment = compile preprocessFileLineNumbers "sqfScripts\custom\cust_createFullEquipment.sqf";
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 DZ_PLAYER_COUNT = getServerMaxPlayers;
 connectedPlayers = [];
-
 for "_x" from 0 to (DZ_PLAYER_COUNT-1) do{connectedPlayers set [_x,0];};
-diag_log format ["SCHEDULER: Connected players array init, count %1, %2",count connectedPlayers, connectedPlayers];
 
 call dbLoadPlayer;
 
-_humidity = random 0.8;
-[0,0] setOvercast _humidity;
+[0,0] setOvercast random 0.8;
 simulWeatherSync;
 
 setWindMaxSpeed 10;
@@ -52,24 +53,24 @@ setWindFnMax 1;
 call init_spawnZombies;
 call init_spawnWildAnimals;
 call init_spawnServerEvent;
-// dbInitEconomy ["http://127.0.0.1:8181/"];
+
 dbInitEconomy [true];
+// dbInitEconomy ["http://127.0.0.1:8181/"];
 
 setTimeForScripts 0.03;
 
-//----- simple scheduler part -----
 index = 0;
 indexTarget = DZ_PLAYER_COUNT;
 onEachFrame {	
 	if (index < DZ_PLAYER_COUNT) then {
 		_playerToTick = connectedPlayers select index;	
-		//diag_log format ["SCHEDULER: Select clientId to tick %1 on index %2", _playerToTick, index];	
+		// diag_log format ["SCHEDULER: Select clientId to tick %1 on index %2", _playerToTick, index];	
 		if (_playerToTick != 0) then {
 			_player = playerOn _playerToTick;		
 			if ((alive _player) and (isSGTicksEnabled)) then
 			{
-				//diag_log format ["SCHEDULER: Run ticks for clientId %1 on index %2", _playerToTick, index];
-				//[_player,format ["DEBUG: Tick tock... diagFPS %1, indexTarget %2", diag_fps, indexTarget],""] call fnc_playerMessage;
+				// diag_log format ["SCHEDULER: Run ticks for clientId %1 on index %2", _playerToTick, index];
+				// [_player,format ["DEBUG: Tick tock... diagFPS %1, indexTarget %2", diag_fps, indexTarget],""] call fnc_playerMessage;
 				_player call tick_modifiers;	
 				_player call tick_states;		
 				_player call tick_environment;
@@ -83,6 +84,6 @@ onEachFrame {
 		index = 0;
 	};
 };
-//---------------------------------
 
 DZ_MP_CONNECT = true;
+

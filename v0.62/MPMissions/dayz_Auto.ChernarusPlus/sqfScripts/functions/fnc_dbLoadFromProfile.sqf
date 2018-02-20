@@ -20,7 +20,7 @@ _agent switchMove (_char select 6);
 
 // _agent setVectorDir (_char select 5);
 
-null = _agent takeInHands objNull;
+// null = _agent takeInHands objNull;
 
 // STATE
 {
