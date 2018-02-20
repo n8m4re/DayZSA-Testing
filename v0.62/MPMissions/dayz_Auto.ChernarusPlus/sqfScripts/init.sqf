@@ -3,7 +3,7 @@ call compile preprocessFileLineNumbers "sqfScripts\compiles.sqf";
 
 DB_DEBUG = false;
 DZ_SAVE_SLEEP = 60; // Player Save every x seconds
-DZ_MAX_ZOMBIES = 9999;
+DZ_MAX_ZOMBIES = 1200;
 DZ_MAX_ANIMALS = 500;
 
 DZ_PLAYER_COUNT = getServerMaxPlayers;
