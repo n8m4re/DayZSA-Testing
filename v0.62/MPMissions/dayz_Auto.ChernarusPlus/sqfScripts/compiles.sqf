@@ -1,4 +1,4 @@
-DB_DEBUG=false;DZ_SAVE_SLEEP=120;DZ_MAX_ZOMBIES=0;DZ_MAX_ANIMALS=0;
+DB_DEBUG=false;DZ_SAVE_SLEEP=0;DZ_MAX_ZOMBIES=0;DZ_MAX_ANIMALS=0;DZ_SPAWN_TIME=30;
 call compile preprocessFileLineNumbers "\dz\modulesDayZ\init.sqf";
 fnc_reloadWeaponOnSpawn = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_reloadWeaponOnSpawn.sqf";
 fnc_addHandsItem = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_addHandsItem.sqf";

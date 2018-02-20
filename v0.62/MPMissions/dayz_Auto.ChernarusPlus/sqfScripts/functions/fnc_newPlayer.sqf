@@ -37,7 +37,7 @@ if (!isNil "cust_createFullEquipment" && DB_DEBUG ) then {
 
 _agent call init_newPlayer;
 
-_agent initDBIDs[_id,_uid];
+// _agent initDBIDs[_id,_uid];
 
 [_agent,_uid,_id] call init_newBody;
 
@@ -48,4 +48,7 @@ _freePos = connectedPlayers find 0;
 connectedPlayers set [_freePos,_id];	
 
 null = _agent call fnc_reloadWeaponOnSpawn;
+
+
+
 	
