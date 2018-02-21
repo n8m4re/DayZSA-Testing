@@ -25,7 +25,7 @@ if ( _uidFound == 0 ) then
 	
 	connectedPlayers set [_freePos,_id];	
 	
-	null = _agent call fnc_reloadWeaponOnSpawn;	
+	 null = _agent call fnc_reloadWeaponOnSpawn;	
 	
 	null = [_agent,call compile callFunction ["DataBaseRead","QUICKBAR",format["UID_%1",_uid]]] call fnc_addQuickBarItems;
 	

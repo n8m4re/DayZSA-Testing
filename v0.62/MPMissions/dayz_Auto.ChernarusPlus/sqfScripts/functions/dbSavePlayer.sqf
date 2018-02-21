@@ -24,7 +24,7 @@ if ((lifeState _agent == "ALIVE")&&(not captive _agent)) then {
 		
 		_killed = true;
 		
-		[_uid, _agent] call fnc_dbDestroyProfile;
+		_uid call fnc_dbDestroyProfile;
 		
 		diag_log "Saved as dead";
 		

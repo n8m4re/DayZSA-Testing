@@ -8,6 +8,7 @@ _clientNew =
 	_dummy = createAgent ["SurvivorPartsMaleAfrican",[0,0,0],[],0,"NONE"];
 	_dummy setCaptive true;
 	_dummy setPosATL [0,0,0];
+	_dummy setVariable ["isDummy",true];
 	_id selectPlayer _dummy;
 	_dummy setDamage 1;
 	
@@ -48,23 +49,17 @@ _clientNew =
 
 _clientRespawn = 
 {
-	
-	
-	_vm = [_agent,_id] spawn 
+
+	_vm = _id spawn 
 	{
-		_agent 	= _this select 0;
-		_id 	= _this select 1; 
+		_id 	= _this; 
 		_uid 	= getClientUID _id;
 		_timer 	= DZ_SPAWN_TIME;
 
-		[_uid,_agent] call fnc_dbDestroyProfile;
+		_uid call fnc_dbDestroyProfile;
 		
 		_freedPos = connectedPlayers find _id;
 		connectedPlayers set [_freedPos,0];
-		
-		if (vehicle _agent != _agent) then {moveOut _agent};
-		
-		if (alive _agent) then {deleteVehicle _agent};
 		
 		if (_timer > 0) then {
 			while {_timer > -1} do {
@@ -73,7 +68,6 @@ _clientRespawn =
 				sleep 1;
 			};
 		};
-		
 		
 		[_id,_uid] call fnc_newPlayer;
 		
@@ -85,44 +79,51 @@ _clientRespawn =
 
 _disconnectPlayer =
 {	
-	_vm = [_agent,_id,_uid,_name] spawn 
-	{
-		_agent 	= _this select 0;
-		_id 	= _this select 1; 
-		_uid 	= _this select 2;
-		_name 	= _this select 3;
-		
-		_killed = [0,_uid,_agent] call dbSavePlayer;
-
-		diag_log format ["SCHEDULER: Removing disconnecting clientId %1, name %2", _id, _name];
-		
-		_freedPos = connectedPlayers find _id;
-		if (_freedPos >= 0) then
-		{
-			connectedPlayers set [_freedPos,0];
-			diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
-		};
-		
-		if (isNull _agent) then
-		{
-			diag_log format ["SCHEDULER: Agent is null - disconnecting clientId %1, name %2", _id, _name];
-		};
-		
-		if (!isNull _agent) then
-		{
-			sleep 1;
-			
-			_agent playAction "SitDown";
-			
-			sleep DZ_SPAWN_TIME - 1;
-			
-			if ( !_killed ) then {
-				[1,_uid,_agent] call dbSavePlayer;
-			};
-		};
-		
-		endDisconnectPlayer [_agent,_uid];
+	/*
+	 _vm = [_agent,_id,_uid,_name] spawn 
+	 {
+			_agent 	= _this select 0;
+			_id 	= _this select 1; 
+			_uid 	= _this select 2;
+			_name 	= _this select 3;
 	};
+	*/
+
+		_isDummy = _agent getVariable ["isDummy",false];
+	
+		if (!_isDummy) then 
+		{
+			_killed = [0,_uid,_agent] call dbSavePlayer;
+		
+			diag_log format ["SCHEDULER: Removing disconnecting clientId %1, name %2", _id, _name];
+			
+			_freedPos = connectedPlayers find _id;
+			if (_freedPos >= 0) then
+			{
+				connectedPlayers set [_freedPos,0];
+				diag_log format ["SCHEDULER: Updated 'connected players' array %1", connectedPlayers];
+			};
+			
+			if (isNull _agent) then
+			{
+				diag_log format ["SCHEDULER: Agent is null - disconnecting clientId %1, name %2", _id, _name];
+			};
+			
+			if (!isNull _agent) then
+			{
+				sleep 1;
+				
+				_agent playAction "SitDown";
+				
+				sleep DZ_SPAWN_TIME - 1;
+				
+				if ( !_killed ) then {
+					[1,_uid,_agent] call dbSavePlayer;
+				};
+			};
+		 };
+		endDisconnectPlayer [_agent,_uid];
+	
 };
 
 

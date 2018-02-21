@@ -1,8 +1,6 @@
-private ["_uid","_agent","_key","_slots","_files"];
+private ["_uid","_key","_slots","_files"];
 
-_uid = _this select 0;
-
-_agent = _this select 1;
+_uid = _this;
 
 _key = format["UID_%1",_uid];
 
