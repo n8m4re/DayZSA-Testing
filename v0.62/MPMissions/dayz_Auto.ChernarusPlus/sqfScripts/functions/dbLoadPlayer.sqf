@@ -4,42 +4,43 @@ _clientNew =
 	//_cid  = _this select 2;
 	//_pid  = _this select 3;
 	
-	_uid 		= getClientUID _id;
-	_savedChar 	= _uid call fnc_dbFindInProfile;
-	_isAlive 	= _savedChar select 0;
-	_pos 		= _savedChar select 2;
 	
-	if (_isAlive) then {
-		[_id,_uid,_pos] call fnc_previousPlayer;
-	} else {
-		[_id,_uid] call fnc_newPlayer;
-	};
-
-
-
-	[_id,DZ_SPAWN_TIME] spawnForClient
-	{	
-		_timer = _this select 1;
-		DZ_Brightness=0;DZ_Contrast=0;
+	_dummy = createAgent ["SurvivorPartsMaleAfrican",[-100,-100,-100],[],0,"NONE"];
+	_dummy setCaptive true;
+	_dummy setPosATL [-100,-100,-100];
+	_id selectPlayer _dummy;
+	_dummy setDamage 1;
+	
+	_vm = [_id,_dummy] spawn 
+	{
+		_id 		= _this select 0;
+		_dummy 		= _this select 1;
+		_uid 		= getClientUID _id;
+		_savedChar 	= _uid call fnc_dbFindInProfile;
+		_isAlive 	= _savedChar select 0;
+		_pos 		= _savedChar select 2;
+		_timer 		= DZ_SPAWN_TIME;
+		
+		[_id] spawnForClient {setEVUser -5};
+		
 		if (_timer > 0) then {
-			disableUserInput true;
-			while {_timer > 0} do 
-			{	
-				titleText[format["Spawning in %1 seconds... Please wait...",_timer],"BLACK FADED",10e10];			
+			while {_timer > -1} do {
+				[_id,_timer] spawnForClient {titleText[format["Spawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10]};
 				_timer = _timer - 1;
-				if (_timer <= 0) then {
-					DZ_Brightness=1;DZ_Contrast=1;
-					titleText["","BLACK",10e10];
-					disableUserInput false;
-				};
-				
 				sleep 1;
 			};
 		};
 		
-	};
+		deleteVehicle _dummy;
 	
-	// [_id,] spawnForClient {	};
+		if (_isAlive) then {
+			[_id,_uid,_pos] call fnc_previousPlayer;
+		} else {
+			[_id,_uid] call fnc_newPlayer;
+		};
+			
+		[_id] spawnForClient {titleText["","PLAIN",1]};
+	};
 	
 };
 
@@ -66,16 +67,17 @@ _clientRespawn =
 		if (alive _agent) then {deleteVehicle _agent};
 		
 		if (_timer > 0) then {
-			while {_timer > 0} do {
-				[_id,_timer] spawnForClient {titleText[format["Respawning in %1 seconds... Please wait...",(_this select 1)],"BLACK FADED",10e10]};
+			while {_timer > -1} do {
+				[_id,_timer] spawnForClient {titleText[format["Respawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10]};
 				_timer = _timer - 1;
 				sleep 1;
 			};
 		};
 		
-		[_id] spawnForClient {titleText["","BLACK",1]};
 		
 		[_id,_uid] call fnc_newPlayer;
+		
+		[_id] spawnForClient {titleText["","PLAIN",1]};
 		
 	};
 	

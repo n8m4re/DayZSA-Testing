@@ -23,7 +23,12 @@ dbInitEconomy [true];
 call dbLoadPlayer;
 
 
-setTimeForScripts 0.03;
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+setTimeForScripts 0.03; 
 index = 0;
 indexTarget = DZ_PLAYER_COUNT;
 onEachFrame {	

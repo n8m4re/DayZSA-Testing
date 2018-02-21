@@ -30,4 +30,3 @@ dbLoadPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbLoadPla
 cust_createFullEquipment = compile preprocessFileLineNumbers "sqfScripts\custom\cust_createFullEquipment.sqf";
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
-
