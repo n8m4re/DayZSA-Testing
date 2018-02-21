@@ -5,9 +5,9 @@ _clientNew =
 	//_pid  = _this select 3;
 	
 	
-	_dummy = createAgent ["SurvivorPartsMaleAfrican",[-100,-100,-100],[],0,"NONE"];
+	_dummy = createAgent ["SurvivorPartsMaleAfrican",[0,0,0],[],0,"NONE"];
 	_dummy setCaptive true;
-	_dummy setPosATL [-100,-100,-100];
+	_dummy setPosATL [0,0,0];
 	_id selectPlayer _dummy;
 	_dummy setDamage 1;
 	
