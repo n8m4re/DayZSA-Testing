@@ -71,7 +71,7 @@ _clientRespawn =
 			};
 		};
 		
-		//uiSleep 1;
+		uiSleep 1.5;
 		
 		[_id] spawnForClient {titleText["","BLACK",1]};
 		
