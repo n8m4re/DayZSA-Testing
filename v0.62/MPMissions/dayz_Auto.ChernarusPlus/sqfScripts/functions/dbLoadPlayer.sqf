@@ -35,7 +35,7 @@ _clientNew =
 		
 		deleteVehicle _dummy;
 	
-		uiSleep 1;
+		uiSleep 1.5;
 	
 		if (_isAlive) then {
 			[_id,_uid,_pos] call fnc_previousPlayer;
