@@ -71,7 +71,7 @@ _clientRespawn =
 			};
 		};
 		
-		uiSleep 1;
+		//uiSleep 1;
 		
 		[_id] spawnForClient {titleText["","BLACK",1]};
 		
@@ -83,15 +83,13 @@ _clientRespawn =
 };
 
 _disconnectPlayer =
-{	
-		
+{		
 	 _vm = [_agent,_id,_uid,_name] spawn 
 	 {
 			_agent 	= _this select 0;
 			_id 	= _this select 1; 
 			_uid 	= _this select 2;
 			_name 	= _this select 3;
-	
 			_isDummy = _agent getVariable ["isDummy",false];
 		
 			if (!_isDummy) then 
@@ -115,13 +113,16 @@ _disconnectPlayer =
 				
 				if (!isNull _agent) then
 				{
-					uiSleep DZ_SPAWN_TIME;
+					if (DZ_SPAWN_TIME > 0) then {
+						uiSleep DZ_SPAWN_TIME;
+					};
 					
 					if ( !_killed ) then {
 						[1,_uid,_agent] call dbSavePlayer;
 					};
 				};
-			 };
+			 
+			};
 			 
 			 endDisconnectPlayer [_agent,_uid];
 		 };
