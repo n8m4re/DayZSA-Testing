@@ -1,10 +1,10 @@
 setTimeForScripts 90;
 call compile preprocessFileLineNumbers "sqfScripts\compiles.sqf";
 
-DB_DEBUG = false;
+DB_DEBUG = true;
 DZ_SAVE_SLEEP = 60; // Player Save every x seconds
-DZ_SPAWN_TIME = 30; // Wait time for spawn in x seconds
-DZ_MAX_ZOMBIES = 1200;
+DZ_SPAWN_TIME = 1; // Wait time for spawn in x seconds
+DZ_MAX_ZOMBIES = 1500;
 DZ_MAX_ANIMALS = 250;
 
 [0,0] setOvercast random 0.8;
@@ -14,10 +14,11 @@ setWindSpeedOfChange 50;
 setWindFnMin 0.2;
 setWindFnMax 1;
 
-call init_spawnZombies;
+/*
 call init_spawnWildAnimals;
 call init_spawnServerEvent;
-
+*/
+call init_spawnZombies;
 dbInitEconomy [true];
 // dbInitEconomy ["http://127.0.0.1:8181/"];
 call dbLoadPlayer;
