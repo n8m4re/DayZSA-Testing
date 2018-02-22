@@ -4,14 +4,14 @@ _clientNew =
 	//_cid  = _this select 2;
 	//_pid  = _this select 3;
 	
-	[_id] spawnForClient {setEVUser -5;disableUserInput true};
-	
 	_dummy = createAgent ["SurvivorPartsMaleAfrican",[0,0,0],[],0,"NONE"];
-	// _dummy setCaptive true;
-	_dummy setPosATL [0,0,0];
+	//_dummy setCaptive true;
+	//_dummy setPosATL [0,0,0];
 	_dummy setVariable ["isDummy",true];
+	_dummy setVariable ["health",100];
+	_dummy setVariable ["blood",100];
+	// _dummy setDamage 1;
 	_id selectPlayer _dummy;
-	_dummy setDamage 1;
 	
 	_vm = [_id,_dummy] spawn 
 	{
@@ -23,19 +23,22 @@ _clientNew =
 		_pos 		= _savedChar select 2;
 		_timer 		= DZ_SPAWN_TIME;
 		
-		if (_timer > 0) then {
-			while {_timer > -1} do {
-				[_id,_timer] spawnForClient {titleText[format["Spawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10]};
-				_timer = _timer - 1;
-				uiSleep 1;
-			};
-		};
 		
-		[_id] spawnForClient {disableUserInput false;titleText["","PLAIN",10e10]};
+		if (_timer > 0) then {
+		
+			[_id] spawnForClient {setEVUser -5;disableUserInput true};
+			
+			while {_timer > -1} do {
+				[_id,_timer] spawnForClient {titleText[format["Spawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10];};
+				_timer = _timer - 1;
+				sleep 1;
+			};
+			[_id] spawnForClient {disableUserInput false;titleText["","PLAIN",10e10];};
+		};
 		
 		deleteVehicle _dummy;
 	
-		uiSleep 1.5;
+		sleep 1;
 	
 		if (_isAlive) then {
 			[_id,_uid,_pos] call fnc_previousPlayer;
@@ -65,15 +68,15 @@ _clientRespawn =
 		
 		if (_timer > 0) then {
 			while {_timer > -1} do {
-				[_id,_timer] spawnForClient {titleText[format["Respawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10]};
+				[_id,_timer] spawnForClient {titleText[format["Respawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10];};
 				_timer = _timer - 1;
-				uiSleep 1;
+				sleep 1;
 			};
 		};
 		
-		uiSleep 1.5;
+		sleep 1;
 		
-		[_id] spawnForClient {titleText["","BLACK",1]};
+		[_id] spawnForClient {titleText["","BLACK",1];};
 		
 		[_id,_uid] call fnc_newPlayer;
 		
@@ -114,7 +117,7 @@ _disconnectPlayer =
 				if (!isNull _agent) then
 				{
 					if (DZ_SPAWN_TIME > 0) then {
-						uiSleep DZ_SPAWN_TIME;
+						sleep DZ_SPAWN_TIME;
 					};
 					
 					if ( !_killed ) then {
