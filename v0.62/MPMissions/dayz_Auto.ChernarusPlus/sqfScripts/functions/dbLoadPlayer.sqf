@@ -22,18 +22,20 @@ _clientNew =
 		_isAlive 	= _savedChar select 0;
 		_pos 		= _savedChar select 2;
 		_timer 		= DZ_SPAWN_TIME;
-	
+		
 		if (_timer > 0) then {
 			while {_timer > -1} do {
 				[_id,_timer] spawnForClient {titleText[format["Spawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10]};
 				_timer = _timer - 1;
-				sleep 1;
+				uiSleep 1;
 			};
 		};
 		
+		[_id] spawnForClient {disableUserInput false;titleText["","PLAIN",10e10]};
+		
 		deleteVehicle _dummy;
 	
-		sleep 2;
+		uiSleep 1;
 	
 		if (_isAlive) then {
 			[_id,_uid,_pos] call fnc_previousPlayer;
@@ -41,7 +43,6 @@ _clientNew =
 			[_id,_uid] call fnc_newPlayer;
 		};
 			
-		[_id] spawnForClient {titleText["","PLAIN",1];disableUserInput false};
 	};
 	
 };
@@ -66,13 +67,15 @@ _clientRespawn =
 			while {_timer > -1} do {
 				[_id,_timer] spawnForClient {titleText[format["Respawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10]};
 				_timer = _timer - 1;
-				sleep 1;
+				uiSleep 1;
 			};
 		};
 		
-		[_id,_uid] call fnc_newPlayer;
+		[_id] spawnForClient {titleText["","PLAIN",10e10]};
 		
-		[_id] spawnForClient {titleText["","PLAIN",1]};
+		uiSleep 1;
+		
+		[_id,_uid] call fnc_newPlayer;
 		
 	};
 	
@@ -111,7 +114,7 @@ _disconnectPlayer =
 				
 				if (!isNull _agent) then
 				{
-					sleep DZ_SPAWN_TIME;
+					uiSleep DZ_SPAWN_TIME;
 					
 					if ( !_killed ) then {
 						[1,_uid,_agent] call dbSavePlayer;
