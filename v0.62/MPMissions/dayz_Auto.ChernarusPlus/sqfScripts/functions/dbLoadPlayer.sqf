@@ -36,8 +36,10 @@ _clientNew =
 			[_id] spawnForClient {disableUserInput false;titleText["","PLAIN",10e10];};
 		};
 		
+		_dummy setDamage 1;
+		
 		deleteVehicle _dummy;
-	
+		
 		sleep 1;
 	
 		if (_isAlive) then {
