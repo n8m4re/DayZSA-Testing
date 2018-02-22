@@ -71,13 +71,13 @@ _clientRespawn =
 			};
 		};
 		
-		
-		
 		uiSleep 1;
+		
+		[_id] spawnForClient {titleText["","BLACK",1]};
 		
 		[_id,_uid] call fnc_newPlayer;
 		
-		[_id] spawnForClient {titleText["","PLAIN",1]};
+		
 	};
 	
 };
