@@ -15,19 +15,20 @@ _clientNew =
 			[_id,DZ_SPAWN_TIME] spawnForClient {
 			
 					sTIMER = _this select 1;
-					
 					null = [] spawn { while {sTIMER > -1} do {setEVUser -5;};};
 	
+					disableUserInput true;
+					
 					while {sTIMER > -1} do {
-						disableUserInput true;
 						titleText[format["Spawning in %1 seconds... Please wait...",sTIMER],"PLAIN",10e10];
 						sTIMER = sTIMER - 1;
 						sleep 1;	
 					};
-						
-				titleText["","PLAIN",10e10];
-				disableUserInput false;
-			};
+					
+					disableUserInput false;	
+				
+					titleText["","PLAIN",10e10];
+				};
 	};
 	
 	if (_isAlive) then {[_id,_uid,_pos] call fnc_previousPlayer} else {[_id,_uid] call fnc_newPlayer};
