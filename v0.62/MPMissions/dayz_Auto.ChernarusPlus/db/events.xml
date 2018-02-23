@@ -1,425 +1,453 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <events>
-    <event name="VehicleCivilianSedan">
-        <waves>3</waves>
-        <nominal>5</nominal>
-        <min>10</min>
-        <max>15</max>
-        <lifetime>0</lifetime>
-        <restock>0</restock>
-        <saferadius>1000</saferadius>
-        <distanceradius>2000</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>1</deletedamaged>
-        <flags>262400</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="8" min="8" type="CivilianSedan"/>
-			 <child flags="0" lootmax="0" lootmin="0" max="8" min="8" type="Bicycle"/>
-			 <child flags="0" lootmax="0" lootmin="0" max="8" min="8" type="Enduro"/>
-        </children>
-    </event>
-    <event name="FridgeTest">
-        <waves>3</waves>
-        <nominal>19</nominal>
-        <min>0</min>
-        <max>0</max>
-        <lifetime>0</lifetime>
-        <restock>0</restock>
-        <saferadius>500</saferadius>
-        <distanceradius>500</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>262400</flags>
-        <children/>
-    </event>
-    <event name="StaticHeliCrash">
-        <waves>4</waves>
-        <nominal>10</nominal>
-        <min>2</min>
-        <max>10</max>
-        <lifetime>800</lifetime>
-        <restock>1</restock>
-        <saferadius>1000</saferadius>
-        <distanceradius>2000</distanceradius>
-        <cleanupradius>500</cleanupradius>
-        <deletedamaged>1</deletedamaged>
-        <flags>131344</flags>
-        <children>
-            <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_Mi8_Crashed"/>
-			 <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_UH1Y_Wreck"/>
-			  <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_hiluxT"/>
-			   <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_bmp2_wrecked"/>
-			    <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_bvp1T"/>
-        </children>
-    </event>
-    <event name="InfectedSolitude">
-        <waves>20</waves>
-        <nominal>50</nominal>
-        <min>20</min>
-        <max>300</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Beige"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Blue"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Beige"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Black"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Green"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Red"/>
-        </children>
-    </event>
-	<event name="InfectedVillage">
-        <waves>20</waves>
-        <nominal>40</nominal>
-        <min>50</min>
-        <max>600</max>
-        <lifetime>1800</lifetime>
-        <restock>600</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child max="4" min="0" type="ZmbM_HermitSkinny_Beige"/>
-            <child max="4" min="0" type="ZmbM_HermitSkinny_Black"/>
-            <child max="4" min="0" type="ZmbM_HermitSkinny_Green"/>
-            <child max="4" min="0" type="ZmbM_HermitSkinny_Red"/>
-            <child max="4" min="0" type="ZmbM_FarmerFat_Beige"/>
-            <child max="4" min="0" type="ZmbM_FarmerFat_Blue"/>
-            <child max="4" min="0" type="ZmbM_FarmerFat_Brown"/>
-            <child max="4" min="0" type="ZmbM_FarmerFat_Green"/>
-            <child max="4" min="0" type="ZmbM_FishermanOld_Blue"/>
-            <child max="4" min="0" type="ZmbM_FishermanOld_Green"/>
-            <child max="4" min="0" type="ZmbM_FishermanOld_Grey"/>
-            <child max="4" min="0" type="ZmbM_FishermanOld_Red"/>
-            <child max="4" min="0" type="ZmbM_HunterOld_Autumn"/>
-            <child max="4" min="0" type="ZmbM_HunterOld_Spring"/>
-            <child max="4" min="0" type="ZmbM_HunterOld_Summer"/>
-            <child max="4" min="0" type="ZmbM_HunterOld_Winter"/>
-            <child max="4" min="0" type="ZmbM_VillagerOld_Blue"/>
-            <child max="4" min="0" type="ZmbM_VillagerOld_Green"/>
-            <child max="4" min="0" type="ZmbM_HikerSkinny_Green"/>
-            <child max="4" min="0" type="ZmbM_HikerSkinny_Yellow"/>
-            <child max="4" min="0" type="ZmbF_HikerSkinny_Blue"/>
-            <child max="4" min="0" type="ZmbF_HikerSkinny_Grey"/>
-            <child max="4" min="0" type="ZmbF_HikerSkinny_Green"/>
-            <child max="4" min="0" type="ZmbF_HikerSkinny_Red"/>
-            <child max="4" min="0" type="ZmbF_SurvivorNormal_Blue"/>
-            <child max="4" min="0" type="ZmbF_SurvivorNormal_Orange"/>
-            <child max="4" min="0" type="ZmbF_SurvivorNormal_Red"/>
-            <child max="4" min="0" type="ZmbF_SurvivorNormal_White"/>	
-            <child max="4" min="0" type="ZmbM_SurvivorDean_Black"/>
-            <child max="4" min="0" type="ZmbM_SurvivorDean_Blue"/>
-			<child max="4" min="0" type="ZmbM_SurvivorDean_Grey"/>
-        </children>
-    </event>
-    <event name="InfectedFirefighter">
-        <waves>20</waves>
-        <nominal>40</nominal>
-        <min>50</min>
-        <max>600</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FirefighterNormal"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_ParamedicNormal_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FishermanOld_Blue"/>
-        </children>
-    </event>
-    <event name="InfectedArmy">
-        <waves>20</waves>
-        <nominal>50</nominal>
-       <min>50</min>
-        <max>600</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_PautRev"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_Autumn"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_Flat"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_Summer"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_SoldierNormal"/>
-        </children>
-    </event>
-    <event name="InfectedPolice">
-        <waves>20</waves>
-        <nominal>50</nominal>
-        <min>50</min>
-        <max>600</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PolicemanFat"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_PoliceWomanNormal"/>
-        </children>
-    </event>
-    <event name="InfectedMedic">
-        <waves>20</waves>
-        <nominal>50</nominal>
-        <min>50</min>
-        <max>600</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_DoctorSkinny"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Blue"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Green"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Red"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="20" min="0" type="ZmbM_ParamedicNormal_Black"/>
-        </children>
-    </event>
-    <event name="InfectedCity">
-        <waves>20</waves>
-        <nominal>80</nominal>
-       <min>100</min>
-        <max>600</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524816</flags>
-        <children>
-            <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_SurvivorNormal_Blue"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_SurvivorNormal_Red"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_SurvivorNormal_White"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_SurvivorDean_Blue"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_SurvivorDean_Grey"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_SurvivorDean_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_PautRev"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Autumn"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Flat"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Summer"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_SoldierNorma"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_DoctorSkinny"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Blue"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Green"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Red"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="20" min="0" type="ZmbM_ParamedicNormal_Black"/>
-			<child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PolicemanFat"/>
-            <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_PoliceWomanNormal"/>
-        </children>
-    </event>
-    <event name="AnimalDeer">
-        <waves>0</waves>
-        <nominal>10</nominal>
-        <min>20</min>
-        <max>70</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>325443</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="30" min="0" type="Animal_CervusElaphus"/>
-			<child flags="0" lootmax="0" lootmin="0" max="50" min="0" type="Animal_CervusElaphusF"/>
-        </children>
-    </event>
-    <event name="AnimalCow">
-        <waves>0</waves>
-        <nominal>20</nominal>
-        <min>20</min>
-        <max>50</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>325443</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_BosTaurus_Brown"/>
-			<child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_BosTaurus_Spotted"/>
-			<child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_BosTaurus_White"/>
-            <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_BosTaurusF_Brown"/>
-			<child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_BosTaurusF_Spotted"/>
-			<child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_BosTaurusF_White"/>
-        </children>
-    </event>
-    <event name="AnimalRoeDeer">
-        <waves>0</waves>
-        <nominal>10</nominal>
-        <min>20</min>
-        <max>40</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>325443</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_CapreolusCapreolus"/>
-			<child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_CapreolusCapreolusF"/>
-        </children>
-    </event>
-    <event name="AnimalWolf">
-        <waves>0</waves>
-        <nominal>0</nominal>
-        <min>0</min>
-        <max>0</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>325443</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="80" min="0" type="Animal_CanisLupus_White"/>
-			<child flags="0" lootmax="0" lootmin="0" max="120" min="0" type="Animal_CanisLupus_Grey"/>
-        </children>
-    </event>
-    <event name="AnimalHen">
-        <waves>0</waves>
-        <nominal>50</nominal>
-        <min>20</min>
-        <max>150</max>
-        <lifetime>1800</lifetime>
-        <restock>10</restock>
-        <saferadius>0</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>10</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>325443</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_GallusGallusDomesticus"/>
-			<child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_GallusGallusDomesticusF_Brown"/>
-			<child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_GallusGallusDomesticusF_Spotted"/>
-            <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_GallusGallusDomesticusF_White"/>
-        </children>
-    </event>
-    <event name="Loot">
-        <waves>9</waves>
-        <nominal>28000</nominal>
-        <min>20000</min>
-        <max>60000</max>
-        <lifetime>14400</lifetime>
-        <restock>600</restock>
-        <saferadius>1</saferadius>
-        <distanceradius>0</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>524560</flags>
-        <children/>
-    </event>
-    <event name="VehicleOffroadHatchback">
-        <waves>3</waves>
-        <nominal>6</nominal>
-        <min>3</min>
-        <max>6</max>
-        <lifetime>25000</lifetime>
-        <restock>0</restock>
-        <saferadius>1000</saferadius>
-        <distanceradius>2000</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>1</deletedamaged>
-        <flags>262400</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="6" min="6" type="OffroadHatchback"/>
-        </children>
-    </event>
-    <event name="StaticPoliceCar">
-        <waves>0</waves>
-        <nominal>10</nominal>
-        <min>2</min>
-        <max>4</max>
-        <lifetime>2500</lifetime>
-        <restock>0</restock>
-        <saferadius>500</saferadius>
-        <distanceradius>2000</distanceradius>
-        <cleanupradius>200</cleanupradius>
-        <deletedamaged>0</deletedamaged>
-        <flags>131344</flags>
-        <children>
-            <child flags="0" lootmax="5" lootmin="2" max="10" min="10" type="Land_Volha_police_DayZ"/>
-        </children>
-    </event>
-    <event name="VehicleTransitBus">
-        <waves>3</waves>
-        <nominal>5</nominal>
-        <min>3</min>
-        <max>5</max>
-        <lifetime>25000</lifetime>
-        <restock>0</restock>
-        <saferadius>1000</saferadius>
-        <distanceradius>2000</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>1</deletedamaged>
-        <flags>262400</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="TransitBus"/>
-        </children>
-    </event>
-    <event name="VehicleV3SCargo">
-        <waves>3</waves>
-        <nominal>0</nominal>
-        <min>3</min>
-        <max>5</max>
-        <lifetime>2500</lifetime>
-        <restock>0</restock>
-        <saferadius>1000</saferadius>
-        <distanceradius>2000</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>1</deletedamaged>
-        <flags>262400</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo_Orange"/>
-            <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo_Blue"/>
-            <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo_Grey"/>
-            <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo"/>
-        </children>
-    </event>
-    <event name="VehicleV3SChassis">
-        <waves>3</waves>
-        <nominal>10</nominal>
-        <min>5</min>
-        <max>10</max>
-        <lifetime>2500</lifetime>
-        <restock>0</restock>
-        <saferadius>1000</saferadius>
-        <distanceradius>1500</distanceradius>
-        <cleanupradius>0</cleanupradius>
-        <deletedamaged>1</deletedamaged>
-        <flags>262400</flags>
-        <children>
-            <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis_Orange"/>
-            <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis"/>
-            <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis_Blue"/>
-            <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis_Grey"/>
-        </children>
-    </event>
+  <event name="StaticHeliCrash">
+    <waves>4</waves>
+    <nominal>10</nominal>
+    <min>2</min>
+    <max>10</max>
+    <lifetime>800</lifetime>
+    <restock>1</restock>
+    <saferadius>1000</saferadius>
+    <distanceradius>2000</distanceradius>
+    <cleanupradius>500</cleanupradius>
+    <deletedamaged>1</deletedamaged>
+    <flags>131344</flags>
+    <children>
+      <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_Mi8_Crashed" />
+      <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_UH1Y_Wreck" />
+      <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_hiluxT" />
+      <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_bmp2_wrecked" />
+      <child flags="0" lootmax="20" lootmin="10" max="8" min="1" type="Land_bvp1T" />
+    </children>
+  </event>
+  <event name="InfectedSolitude">
+    <waves>25</waves>
+    <nominal>50</nominal>
+    <min>30</min>
+    <max>300</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Beige" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Brown" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Beige" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Red" />
+    </children>
+  </event>
+  <event name="InfectedVillage">
+    <waves>25</waves>
+    <nominal>50</nominal>
+    <min>50</min>
+    <max>600</max>
+    <lifetime>1800</lifetime>
+    <restock>600</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+      <child max="4" min="0" type="ZmbM_HermitSkinny_Beige" />
+      <child max="4" min="0" type="ZmbM_HermitSkinny_Black" />
+      <child max="4" min="0" type="ZmbM_HermitSkinny_Green" />
+      <child max="4" min="0" type="ZmbM_HermitSkinny_Red" />
+      <child max="4" min="0" type="ZmbM_FarmerFat_Beige" />
+      <child max="4" min="0" type="ZmbM_FarmerFat_Blue" />
+      <child max="4" min="0" type="ZmbM_FarmerFat_Brown" />
+      <child max="4" min="0" type="ZmbM_FarmerFat_Green" />
+      <child max="4" min="0" type="ZmbM_FishermanOld_Blue" />
+      <child max="4" min="0" type="ZmbM_FishermanOld_Green" />
+      <child max="4" min="0" type="ZmbM_FishermanOld_Grey" />
+      <child max="4" min="0" type="ZmbM_FishermanOld_Red" />
+      <child max="4" min="0" type="ZmbM_HunterOld_Autumn" />
+      <child max="4" min="0" type="ZmbM_HunterOld_Spring" />
+      <child max="4" min="0" type="ZmbM_HunterOld_Summer" />
+      <child max="4" min="0" type="ZmbM_HunterOld_Winter" />
+      <child max="4" min="0" type="ZmbM_VillagerOld_Blue" />
+      <child max="4" min="0" type="ZmbM_VillagerOld_Green" />
+      <child max="4" min="0" type="ZmbM_HikerSkinny_Green" />
+      <child max="4" min="0" type="ZmbM_HikerSkinny_Yellow" />
+      <child max="4" min="0" type="ZmbF_HikerSkinny_Blue" />
+      <child max="4" min="0" type="ZmbF_HikerSkinny_Grey" />
+      <child max="4" min="0" type="ZmbF_HikerSkinny_Green" />
+      <child max="4" min="0" type="ZmbF_HikerSkinny_Red" />
+      <child max="4" min="0" type="ZmbF_SurvivorNormal_Blue" />
+      <child max="4" min="0" type="ZmbF_SurvivorNormal_Orange" />
+      <child max="4" min="0" type="ZmbF_SurvivorNormal_Red" />
+      <child max="4" min="0" type="ZmbF_SurvivorNormal_White" />
+      <child max="4" min="0" type="ZmbM_SurvivorDean_Black" />
+      <child max="4" min="0" type="ZmbM_SurvivorDean_Blue" />
+      <child max="4" min="0" type="ZmbM_SurvivorDean_Grey" />
+    </children>
+  </event>
+  <event name="InfectedFirefighter">
+    <waves>25</waves>
+    <nominal>50</nominal>
+    <min>50</min>
+    <max>600</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FirefighterNormal" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_ParamedicNormal_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FishermanOld_Blue" />
+    </children>
+  </event>
+  <event name="InfectedArmy">
+    <waves>25</waves>
+    <nominal>50</nominal>
+    <min>50</min>
+    <max>600</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_PautRev" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_Autumn" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_Flat" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PatrolNormal_Summer" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_SoldierNormal" />
+    </children>
+  </event>
+  <event name="InfectedPolice">
+    <waves>25</waves>
+    <nominal>50</nominal>
+    <min>50</min>
+    <max>600</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PolicemanFat" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_PoliceWomanNormal" />
+    </children>
+  </event>
+  <event name="InfectedMedic">
+    <waves>25</waves>
+    <nominal>60</nominal>
+    <min>60</min>
+    <max>600</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_DoctorSkinny" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Red" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="20" min="0" type="ZmbM_ParamedicNormal_Black" />
+    </children>
+  </event>
+  <event name="InfectedCity">
+    <waves>25</waves>
+    <nominal>100</nominal>
+    <min>300</min>
+    <max>800</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524816</flags>
+    <children>
+	  <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Beige" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HermitSkinny_Red" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Beige" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Brown" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FarmerFat_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FishermanOld_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FishermanOld_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FishermanOld_Grey" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_FishermanOld_Red" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HunterOld_Autumn" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HunterOld_Spring" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HunterOld_Summer" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HunterOld_Winter" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_VillagerOld_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_VillagerOld_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HikerSkinny_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_HikerSkinny_Yellow" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_HikerSkinny_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_HikerSkinny_Grey" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_HikerSkinny_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_HikerSkinny_Red" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0"type="ZmbF_SurvivorNormal_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_SurvivorNormal_Orange" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_SurvivorNormal_Red" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_SurvivorNormal_White" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_SurvivorDean_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_SurvivorDean_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_SurvivorDean_Grey" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_PautRev" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Autumn" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Flat" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_PatrolNormal_Summer" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_SoldierNorma" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbF_DoctorSkinny" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Blue" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Green" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Red" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="30" min="0" type="ZmbM_ParamedicNormal_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="20" min="0" type="ZmbM_ParamedicNormal_Black" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbM_PolicemanFat" />
+      <child flags="0" lootmax="2" lootmin="0" max="50" min="0" type="ZmbF_PoliceWomanNormal" />
+    </children>
+  </event>
+  <event name="AnimalDeer">
+    <waves>0</waves>
+    <nominal>10</nominal>
+    <min>20</min>
+    <max>70</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>325443</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="30" min="0" type="Animal_CervusElaphus" />
+      <child flags="0" lootmax="0" lootmin="0" max="50" min="0" type="Animal_CervusElaphusF" />
+    </children>
+  </event>
+  <event name="AnimalCow">
+    <waves>0</waves>
+    <nominal>20</nominal>
+    <min>20</min>
+    <max>50</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>325443</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_BosTaurus_Brown" />
+      <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_BosTaurus_Spotted" />
+      <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_BosTaurus_White" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_BosTaurusF_Brown" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_BosTaurusF_Spotted" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_BosTaurusF_White" />
+    </children>
+  </event>
+  <event name="AnimalRoeDeer">
+    <waves>0</waves>
+    <nominal>10</nominal>
+    <min>20</min>
+    <max>40</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>325443</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_CapreolusCapreolus" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_CapreolusCapreolusF" />
+    </children>
+  </event>
+  <event name="AnimalWolf">
+    <waves>0</waves>
+    <nominal>0</nominal>
+    <min>0</min>
+    <max>0</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>325443</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="80" min="0" type="Animal_CanisLupus_White" />
+      <child flags="0" lootmax="0" lootmin="0" max="120" min="0" type="Animal_CanisLupus_Grey" />
+    </children>
+  </event>
+  <event name="AnimalBear">
+    <waves>0</waves>
+    <nominal>0</nominal>
+    <min>0</min>
+    <max>0</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>325443</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="80" min="0" type="Animal_UrsusArctos" />
+    </children>
+  </event>
+  <event name="AnimalHen">
+    <waves>0</waves>
+    <nominal>50</nominal>
+    <min>20</min>
+    <max>150</max>
+    <lifetime>1800</lifetime>
+    <restock>10</restock>
+    <saferadius>0</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>10</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>325443</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="20" min="0" type="Animal_GallusGallusDomesticus" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_GallusGallusDomesticusF_Brown" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_GallusGallusDomesticusF_Spotted" />
+      <child flags="0" lootmax="0" lootmin="0" max="40" min="0" type="Animal_GallusGallusDomesticusF_White" />
+    </children>
+  </event>
+  <event name="StaticPoliceCar">
+    <waves>0</waves>
+    <nominal>10</nominal>
+    <min>2</min>
+    <max>4</max>
+    <lifetime>2500</lifetime>
+    <restock>0</restock>
+    <saferadius>500</saferadius>
+    <distanceradius>2000</distanceradius>
+    <cleanupradius>200</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>131344</flags>
+    <children>
+      <child flags="0" lootmax="5" lootmin="2" max="10" min="10" type="Land_Volha_police_DayZ" />
+    </children>
+  </event>
+  <event name="Loot">
+    <waves>9</waves>
+    <nominal>28000</nominal>
+    <min>20000</min>
+    <max>60000</max>
+    <lifetime>14400</lifetime>
+    <restock>600</restock>
+    <saferadius>1</saferadius>
+    <distanceradius>0</distanceradius>
+    <cleanupradius>0</cleanupradius>
+    <deletedamaged>0</deletedamaged>
+    <flags>524560</flags>
+    <children />
+  </event>
+  <event name="VehicleOffroadHatchback">
+    <waves>3</waves>
+    <nominal>6</nominal>
+    <min>3</min>
+    <max>6</max>
+    <lifetime>25000</lifetime>
+    <restock>0</restock>
+    <saferadius>1000</saferadius>
+    <distanceradius>2000</distanceradius>
+    <cleanupradius>0</cleanupradius>
+    <deletedamaged>1</deletedamaged>
+    <flags>262400</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="6" min="6" type="OffroadHatchback" />
+    </children>
+  </event>
+  <event name="VehicleTransitBus">
+    <waves>3</waves>
+    <nominal>5</nominal>
+    <min>3</min>
+    <max>5</max>
+    <lifetime>25000</lifetime>
+    <restock>0</restock>
+    <saferadius>1000</saferadius>
+    <distanceradius>2000</distanceradius>
+    <cleanupradius>0</cleanupradius>
+    <deletedamaged>1</deletedamaged>
+    <flags>262400</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="TransitBus" />
+    </children>
+  </event>
+  <event name="VehicleV3SCargo">
+    <waves>3</waves>
+    <nominal>0</nominal>
+    <min>3</min>
+    <max>5</max>
+    <lifetime>2500</lifetime>
+    <restock>0</restock>
+    <saferadius>1000</saferadius>
+    <distanceradius>2000</distanceradius>
+    <cleanupradius>0</cleanupradius>
+    <deletedamaged>1</deletedamaged>
+    <flags>262400</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo_Orange" />
+      <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo_Blue" />
+      <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo_Grey" />
+      <child flags="0" lootmax="0" lootmin="0" max="5" min="5" type="V3S_Cargo" />
+    </children>
+  </event>
+  <event name="VehicleV3SChassis">
+    <waves>3</waves>
+    <nominal>10</nominal>
+    <min>5</min>
+    <max>10</max>
+    <lifetime>2500</lifetime>
+    <restock>0</restock>
+    <saferadius>1000</saferadius>
+    <distanceradius>1500</distanceradius>
+    <cleanupradius>0</cleanupradius>
+    <deletedamaged>1</deletedamaged>
+    <flags>262400</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis_Orange" />
+      <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis" />
+      <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis_Blue" />
+      <child flags="0" lootmax="0" lootmin="0" max="10" min="10" type="V3S_Chassis_Grey" />
+    </children>
+  </event>
+  <event name="VehicleCivilianSedan">
+    <waves>3</waves>
+    <nominal>5</nominal>
+    <min>10</min>
+    <max>15</max>
+    <lifetime>0</lifetime>
+    <restock>0</restock>
+    <saferadius>1000</saferadius>
+    <distanceradius>2000</distanceradius>
+    <cleanupradius>0</cleanupradius>
+    <deletedamaged>1</deletedamaged>
+    <flags>262400</flags>
+    <children>
+      <child flags="0" lootmax="0" lootmin="0" max="8" min="8" type="CivilianSedan" />
+    </children>
+  </event>
+
 </events>

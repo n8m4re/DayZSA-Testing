@@ -4,7 +4,7 @@ call compile preprocessFileLineNumbers "sqfScripts\compiles.sqf";
 DB_DEBUG = false;
 DZ_SAVE_SLEEP = 60; // Player Save every x seconds
 DZ_SPAWN_TIME = 30; // Wait time for spawn in x seconds
-DZ_MAX_ZOMBIES = 1500;
+DZ_MAX_ZOMBIES = 800;
 DZ_MAX_ANIMALS = 250;
 
 [0,0] setOvercast random 0.8;

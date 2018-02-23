@@ -13,5 +13,5 @@ admin_log format["%1(uid=%2) was KILLED by %3(uid=%4).",name _agent, getPlayerUI
 
 if (DZ_MP_CONNECT) then
 {
-	[_uid, _agent] call fnc_dbDestroyProfile;
+	_uid call fnc_dbDestroyProfile;
 };
