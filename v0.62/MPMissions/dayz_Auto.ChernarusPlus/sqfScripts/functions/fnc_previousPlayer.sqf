@@ -20,12 +20,10 @@ if ( _uidFound == 0 ) then
 	_agent = _uid call fnc_dbLoadFromProfile;
 	
 	[_agent,_uid,_id] call init_newBody;
+		
+	connectedPlayers set [(connectedPlayers find 0), _id];
 	
-	_freePos = connectedPlayers find 0;
-	
-	connectedPlayers set [_freePos,_id];	
-	
-	 null = _agent call fnc_reloadWeaponOnSpawn;	
+	//null = _agent call fnc_reloadWeaponOnSpawn;	
 	
 	null = [_agent,call compile callFunction ["DataBaseRead","QUICKBAR",format["UID_%1",_uid]]] call fnc_addQuickBarItems;
 	

@@ -43,11 +43,9 @@ _agent call init_newPlayer;
 
 null = _uid call fnc_dbCreateCharInProfile;	
 
-_freePos = connectedPlayers find 0;
-
-connectedPlayers set [_freePos,_id];	
-
-null = _agent call fnc_reloadWeaponOnSpawn;
+connectedPlayers set [(connectedPlayers find 0), _id];
+	
+// null = _agent call fnc_reloadWeaponOnSpawn;
 
 
 	

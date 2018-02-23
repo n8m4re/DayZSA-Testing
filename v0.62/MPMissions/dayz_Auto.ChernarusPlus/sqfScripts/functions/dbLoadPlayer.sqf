@@ -1,54 +1,37 @@
+//_cid  = _this select 2;
+//_pid  = _this select 3;
 
 _clientNew =
 {
-	//_cid  = _this select 2;
-	//_pid  = _this select 3;
-	
-	_dummy = createAgent ["SurvivorPartsMaleAfrican",[0,0,0],[],0,"NONE"];
-	//_dummy setCaptive true;
-	//_dummy setPosATL [0,0,0];
-	_dummy setVariable ["isDummy",true];
-	_dummy setVariable ["health",100];
-	_dummy setVariable ["blood",100];
-	// _dummy setDamage 1;
-	_id selectPlayer _dummy;
-	
-	_vm = [_id,_dummy] spawn 
+
+	_uid 		= getClientUID _id;
+	_savedChar 	= _uid call fnc_dbFindInProfile;
+	_isAlive 	= _savedChar select 0;
+	_pos 		= _savedChar select 2;
+
+
+	if (DZ_SPAWN_TIME > 0) then 
 	{
-		_id 		= _this select 0;
-		_dummy 		= _this select 1;
-		_uid 		= getClientUID _id;
-		_savedChar 	= _uid call fnc_dbFindInProfile;
-		_isAlive 	= _savedChar select 0;
-		_pos 		= _savedChar select 2;
-		_timer 		= DZ_SPAWN_TIME;
-		
-		
-		if (_timer > 0) then {
-		
-			[_id] spawnForClient {setEVUser -5;disableUserInput true};
+			[_id,DZ_SPAWN_TIME] spawnForClient {
 			
-			while {_timer > -1} do {
-				[_id,_timer] spawnForClient {titleText[format["Spawning in %1 seconds... Please wait...",(_this select 1)],"PLAIN",10e10];};
-				_timer = _timer - 1;
-				sleep 1;
-			};
-			[_id] spawnForClient {disableUserInput false;titleText["","PLAIN",10e10];};
-		};
-		
-		_dummy setDamage 1;
-		
-		deleteVehicle _dummy;
-		
-		sleep 1;
+					sTIMER = _this select 1;
+					
+					null = [] spawn { while {sTIMER > -1} do {setEVUser -5;};};
 	
-		if (_isAlive) then {
-			[_id,_uid,_pos] call fnc_previousPlayer;
-		} else {
-			[_id,_uid] call fnc_newPlayer;
-		};
-			
+					while {sTIMER > -1} do {
+						disableUserInput true;
+						titleText[format["Spawning in %1 seconds... Please wait...",sTIMER],"PLAIN",10e10];
+						sTIMER = sTIMER - 1;
+						sleep 1;	
+					};
+						
+				titleText["","PLAIN",10e10];
+				disableUserInput false;
+			};
 	};
+	
+	if (_isAlive) then {[_id,_uid,_pos] call fnc_previousPlayer} else {[_id,_uid] call fnc_newPlayer};
+
 	
 };
 
@@ -57,16 +40,18 @@ _clientNew =
 _clientRespawn = 
 {
 
-	_vm = _id spawn 
+	_uid 	= getClientUID _id;
+	_timer 	= DZ_SPAWN_TIME;
+
+	_vm = [_id,_uid,_timer] spawn 
 	{
-		_id 	= _this; 
-		_uid 	= getClientUID _id;
-		_timer 	= DZ_SPAWN_TIME;
+		_id 	= _this select 0; 
+		_uid 	= _this select 1;
+		_timer 	= _this select 2;
 
 		_uid call fnc_dbDestroyProfile;
-		
-		_freedPos = connectedPlayers find _id;
-		connectedPlayers set [_freedPos,0];
+
+		connectedPlayers set [(connectedPlayers find _id), 0];
 		
 		if (_timer > 0) then {
 			while {_timer > -1} do {
@@ -82,19 +67,21 @@ _clientRespawn =
 		
 		[_id,_uid] call fnc_newPlayer;
 		
-		
 	};
 	
 };
 
 _disconnectPlayer =
 {		
-	 _vm = [_agent,_id,_uid,_name] spawn 
+	
+
+	 _vm = [_agent,_id,_uid,_name,_killed] spawn 
 	 {
 			_agent 	= _this select 0;
 			_id 	= _this select 1; 
 			_uid 	= _this select 2;
 			_name 	= _this select 3;
+			_killed = _this select 4;
 			_isDummy = _agent getVariable ["isDummy",false];
 		
 			if (!_isDummy) then 
@@ -129,8 +116,10 @@ _disconnectPlayer =
 			 
 			};
 			 
-			 endDisconnectPlayer [_agent,_uid];
+				endDisconnectPlayer [_agent,_uid];
+			 
 		 };
+		 
 		
 	
 };
