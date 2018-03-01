@@ -17,7 +17,6 @@ fnc_generatePlayerSpawnpoints = compile preprocessFileLineNumbers "sqfScripts\fu
 fnc_posBubbles = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_posBubbles.sqf";
 fnc_previousPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_previousPlayer.sqf";
 fnc_newPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_newPlayer.sqf";
-fnc_createDummy = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_createDummy.sqf";
 event_playerKilled = compile preprocessFileLineNumbers "sqfScripts\events\event_playerKilled.sqf";
 player_initialize = compile preprocessFileLineNumbers "sqfScripts\init\player_initialize.sqf";
 init_newBody = compile preprocessFileLineNumbers "sqfScripts\init\init_newBody.sqf";
