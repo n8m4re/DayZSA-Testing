@@ -37,7 +37,7 @@ class DataBase
 				MakeDirectory(alive);
 			}
 			
-			if (alivedir == 0) {
+			if (deaddir == 0) {
 				MakeDirectory(dead);
 			}
 	}
