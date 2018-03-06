@@ -9,7 +9,7 @@ if (isNull _obj) exitWith {true};
 if !(typeName _items == "ARRAY") exitWith {true};
 
 {
-		private["_class","_state","_inv","_item"];
+		private["_class","_state","_inv","_item","_invNew"];
 		
 		_class = _x select 0;
 		
@@ -45,9 +45,13 @@ if !(typeName _items == "ARRAY") exitWith {true};
 		
 		if ( typeName _inv == "ARRAY" ) then 
 		{
+
+			_newInv = [];
+			
 			if !( count _inv <= 0 ) then 
 			{ 
-				null = [_item,_inv] call fnc_addInvItems;
+				_newInv = _inv call fnc_invOrder;						
+				null = [_item,_newInv] call fnc_addInvItems;
 			};
 		};
 		

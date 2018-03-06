@@ -17,11 +17,14 @@ fnc_generatePlayerSpawnpoints = compile preprocessFileLineNumbers "sqfScripts\fu
 fnc_posBubbles = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_posBubbles.sqf";
 fnc_previousPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_previousPlayer.sqf";
 fnc_newPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_newPlayer.sqf";
+fnc_getItemSize = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_getItemSize.sqf";
+fnc_invOrder = compile preprocessFileLineNumbers "sqfScripts\functions\fnc_invOrder.sqf";
 event_playerKilled = compile preprocessFileLineNumbers "sqfScripts\events\event_playerKilled.sqf";
 player_initialize = compile preprocessFileLineNumbers "sqfScripts\init\player_initialize.sqf";
 init_newBody = compile preprocessFileLineNumbers "sqfScripts\init\init_newBody.sqf";
 dbSavePlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbSavePlayer.sqf";
 dbLoadPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbLoadPlayer.sqf";
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 // custom stuff
@@ -29,4 +32,27 @@ dbLoadPlayer = compile preprocessFileLineNumbers "sqfScripts\functions\dbLoadPla
 cust_createFullEquipment = compile preprocessFileLineNumbers "sqfScripts\custom\cust_createFullEquipment.sqf";
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

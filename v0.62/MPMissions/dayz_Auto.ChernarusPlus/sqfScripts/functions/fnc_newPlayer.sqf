@@ -25,6 +25,9 @@ _agent = createAgent [_mySkin,  _pos, [], 0, "NONE"];
 if (!isNil "cust_createFullEquipment" && DB_DEBUG ) then {
 
 	_agent call cust_createFullEquipment;
+_v = _agent createInInventory "Consumable_Stone";
+_v = _agent createInInventory "EN5C_Canteen";
+
 
 } else {
 
