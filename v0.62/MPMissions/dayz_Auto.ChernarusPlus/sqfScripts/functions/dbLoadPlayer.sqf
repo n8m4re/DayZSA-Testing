@@ -15,8 +15,9 @@ _clientNew =
 			[_id,DZ_SPAWN_TIME] spawnForClient {
 			
 					sTIMER = _this select 1;
-					null = [] spawn { while {sTIMER > -1} do {setEVUser -5;};};
-	
+					
+					null = [] spawn {while {sTIMER > -1} do {setEVUser -5}};
+					
 					disableUserInput true;
 					
 					while {sTIMER > -1} do {
@@ -26,7 +27,7 @@ _clientNew =
 					};
 					
 					disableUserInput false;	
-				
+
 					titleText["","PLAIN",10e10];
 				};
 	};

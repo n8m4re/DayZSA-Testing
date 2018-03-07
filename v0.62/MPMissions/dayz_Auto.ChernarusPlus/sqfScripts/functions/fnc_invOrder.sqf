@@ -28,17 +28,16 @@ if ( typeName _arrSizes == "ARRAY" ) then
 {
 	if !( count _arrSizes <= 0 ) then 
 	{ 
-	
 		{
-				_size = _x select 0;
-				_index = _x select 1;
-								
-				if ( _size >  1 ) then 
-				{
-					_sizeHigh set [ (count _sizeHigh), _inv select _index];
-				} else {
-					_sizeLow set [ (count _sizeLow), _inv select _index];
-				};
+			_size = _x select 0;
+			_index = _x select 1;
+							
+			if ( _size >  1 ) then 
+			{
+				_sizeHigh set [ (count _sizeHigh), _inv select _index];
+			} else {
+				_sizeLow set [ (count _sizeLow), _inv select _index];
+			};
 				
 		} forEach _arrSizes;
 									

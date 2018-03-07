@@ -47,9 +47,10 @@ null = [_agent,(call compile callFunction ["DataBaseRead","HANDS",_key])] call f
 // INVENTORY
 _inventory = [];
 {
-	_re = call compile callFunction ["DataBaseRead",_x,_key];
-	_inventory set [(count _inventory),_re];
+	_inventory set [(count _inventory), call compile callFunction ["DataBaseRead",_x,_key] ];
 } forEach ( call compile callFunction ["DataBaseRead","SLOTS",_key] );
+
+
 null = [_agent,_inventory] call fnc_addInvItems;
 
 
